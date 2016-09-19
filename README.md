@@ -24,3 +24,29 @@ To run the sample apps, open any of the Ad Format's .xcodeproj file with Xcode 8
 ## License
 
 These sample apps are provided under MIT license. For more information, please see the LICENSE file. For information about InMobi SDK's license, please see the InMobi folder.
+
+## Change logs
+
+###Build 6.0.0 [19/Sep/2016]
+-------------
+- Fully compliant with iOS 10
+- Deprecating support for iOS 7
+- Integrates as a drag-drop replacement framework
+- Added support for WKWebview
+- Brand new video solution:
+	* Drag-drop library upgrade for existing SDK 5xx.
+	* High render rates
+	* Stall free video experience
+	* No Java Script
+	* Enormous data savings for users
+	* Better security and monetization
+- Added support for easier integration.
+- Added support for better debugging.
+- Support for IPV6.
+- Bug fixes
+	* Fixed an issue where the Interstitial Ad disappears
+	* Fixed an issue where the endcard doesn't show in some cases for fullscreen Native Video.
+- A new delegate method introduced in IMInterstitialDelegate to indicate fetch completion of the ad.
+- A new delegate method have been introduced in IMNative to indicate impression tracking of the ad view.
+- Two new delegate methods have been introduced in IMNativeStrandsDelegate to indicate impression tracking of the ad view and click of the ad view.
+- Removed support for IMStrandTableViewAdapter
