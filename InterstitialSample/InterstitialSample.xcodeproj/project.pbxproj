@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DB9E57C1D83687900A4365A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9E57B1D83687900A4365A /* main.m */; };
+		3DB9E57F1D83687900A4365A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9E57E1D83687900A4365A /* AppDelegate.m */; };
+		3DB9E5821D83687900A4365A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9E5811D83687900A4365A /* ViewController.m */; };
+		3DB9E5851D83687900A4365A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB9E5831D83687900A4365A /* Main.storyboard */; };
+		3DB9E5871D83687900A4365A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB9E5861D83687900A4365A /* Assets.xcassets */; };
+		3DB9E58A1D83687900A4365A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB9E5881D83687900A4365A /* LaunchScreen.storyboard */; };
+		3DB9E5981D83688B00A4365A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9E5971D83688B00A4365A /* AppDelegate.swift */; };
+		3DB9E59A1D83688B00A4365A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9E5991D83688B00A4365A /* ViewController.swift */; };
+		3DB9E59D1D83688B00A4365A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB9E59B1D83688B00A4365A /* Main.storyboard */; };
+		3DB9E59F1D83688B00A4365A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB9E59E1D83688B00A4365A /* Assets.xcassets */; };
+		3DB9E5A21D83688B00A4365A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB9E5A01D83688B00A4365A /* LaunchScreen.storyboard */; };
+		3DB9E6261D837B3D00A4365A /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E6251D837B3D00A4365A /* InMobiSDK.framework */; };
+		3DB9E6281D837B4200A4365A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E6271D837B4200A4365A /* libz.tbd */; };
+		3DB9E62A1D837B4700A4365A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E6291D837B4700A4365A /* libsqlite3.tbd */; };
+		3DB9E62B1D837B5100A4365A /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E6251D837B3D00A4365A /* InMobiSDK.framework */; };
+		3DB9E6431D83834A00A4365A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E6271D837B4200A4365A /* libz.tbd */; };
+		3DB9E6441D83834F00A4365A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E6291D837B4700A4365A /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3DB9E5771D83687900A4365A /* InterstitialSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterstitialSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB9E57B1D83687900A4365A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DB9E57D1D83687900A4365A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DB9E57E1D83687900A4365A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DB9E5801D83687900A4365A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3DB9E5811D83687900A4365A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3DB9E5841D83687900A4365A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DB9E5861D83687900A4365A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DB9E5891D83687900A4365A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DB9E58B1D83687900A4365A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB9E5951D83688B00A4365A /* InterstitialSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterstitialSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB9E5971D83688B00A4365A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DB9E5991D83688B00A4365A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DB9E59C1D83688B00A4365A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DB9E59E1D83688B00A4365A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DB9E5A11D83688B00A4365A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DB9E5A31D83688B00A4365A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB9E6251D837B3D00A4365A /* InMobiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InMobiSDK.framework; path = ../InMobi/InMobiSDK.framework; sourceTree = "<group>"; };
+		3DB9E6271D837B4200A4365A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3DB9E6291D837B4700A4365A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB9E5741D83687900A4365A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB9E62A1D837B4700A4365A /* libsqlite3.tbd in Frameworks */,
+				3DB9E6281D837B4200A4365A /* libz.tbd in Frameworks */,
+				3DB9E6261D837B3D00A4365A /* InMobiSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB9E5921D83688B00A4365A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB9E6441D83834F00A4365A /* libsqlite3.tbd in Frameworks */,
+				3DB9E6431D83834A00A4365A /* libz.tbd in Frameworks */,
+				3DB9E62B1D837B5100A4365A /* InMobiSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DB9E56E1D83687900A4365A = {
+			isa = PBXGroup;
+			children = (
+				3DB9E5791D83687900A4365A /* InterstitialSample */,
+				3DB9E5961D83688B00A4365A /* InterstitialSwiftSample */,
+				3DB9E5781D83687900A4365A /* Products */,
+				3DB9E6241D837B3B00A4365A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DB9E5781D83687900A4365A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB9E5771D83687900A4365A /* InterstitialSample.app */,
+				3DB9E5951D83688B00A4365A /* InterstitialSwiftSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DB9E5791D83687900A4365A /* InterstitialSample */ = {
+			isa = PBXGroup;
+			children = (
+				3DB9E57D1D83687900A4365A /* AppDelegate.h */,
+				3DB9E57E1D83687900A4365A /* AppDelegate.m */,
+				3DB9E5801D83687900A4365A /* ViewController.h */,
+				3DB9E5811D83687900A4365A /* ViewController.m */,
+				3DB9E5831D83687900A4365A /* Main.storyboard */,
+				3DB9E5861D83687900A4365A /* Assets.xcassets */,
+				3DB9E5881D83687900A4365A /* LaunchScreen.storyboard */,
+				3DB9E58B1D83687900A4365A /* Info.plist */,
+				3DB9E57A1D83687900A4365A /* Supporting Files */,
+			);
+			path = InterstitialSample;
+			sourceTree = "<group>";
+		};
+		3DB9E57A1D83687900A4365A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DB9E57B1D83687900A4365A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DB9E5961D83688B00A4365A /* InterstitialSwiftSample */ = {
+			isa = PBXGroup;
+			children = (
+				3DB9E5971D83688B00A4365A /* AppDelegate.swift */,
+				3DB9E5991D83688B00A4365A /* ViewController.swift */,
+				3DB9E59B1D83688B00A4365A /* Main.storyboard */,
+				3DB9E59E1D83688B00A4365A /* Assets.xcassets */,
+				3DB9E5A01D83688B00A4365A /* LaunchScreen.storyboard */,
+				3DB9E5A31D83688B00A4365A /* Info.plist */,
+			);
+			path = InterstitialSwiftSample;
+			sourceTree = "<group>";
+		};
+		3DB9E6241D837B3B00A4365A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB9E6291D837B4700A4365A /* libsqlite3.tbd */,
+				3DB9E6271D837B4200A4365A /* libz.tbd */,
+				3DB9E6251D837B3D00A4365A /* InMobiSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB9E5761D83687900A4365A /* InterstitialSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB9E58E1D83687900A4365A /* Build configuration list for PBXNativeTarget "InterstitialSample" */;
+			buildPhases = (
+				3DB9E5731D83687900A4365A /* Sources */,
+				3DB9E5741D83687900A4365A /* Frameworks */,
+				3DB9E5751D83687900A4365A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InterstitialSample;
+			productName = InterstitialSample;
+			productReference = 3DB9E5771D83687900A4365A /* InterstitialSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DB9E5941D83688B00A4365A /* InterstitialSwiftSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB9E5A41D83688B00A4365A /* Build configuration list for PBXNativeTarget "InterstitialSwiftSample" */;
+			buildPhases = (
+				3DB9E5911D83688B00A4365A /* Sources */,
+				3DB9E5921D83688B00A4365A /* Frameworks */,
+				3DB9E5931D83688B00A4365A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InterstitialSwiftSample;
+			productName = InterstitialSwiftSample;
+			productReference = 3DB9E5951D83688B00A4365A /* InterstitialSwiftSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DB9E56F1D83687900A4365A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = InMobi;
+				TargetAttributes = {
+					3DB9E5761D83687900A4365A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					3DB9E5941D83688B00A4365A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3DB9E5721D83687900A4365A /* Build configuration list for PBXProject "InterstitialSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DB9E56E1D83687900A4365A;
+			productRefGroup = 3DB9E5781D83687900A4365A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DB9E5761D83687900A4365A /* InterstitialSample */,
+				3DB9E5941D83688B00A4365A /* InterstitialSwiftSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DB9E5751D83687900A4365A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB9E58A1D83687900A4365A /* LaunchScreen.storyboard in Resources */,
+				3DB9E5871D83687900A4365A /* Assets.xcassets in Resources */,
+				3DB9E5851D83687900A4365A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB9E5931D83688B00A4365A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB9E5A21D83688B00A4365A /* LaunchScreen.storyboard in Resources */,
+				3DB9E59F1D83688B00A4365A /* Assets.xcassets in Resources */,
+				3DB9E59D1D83688B00A4365A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB9E5731D83687900A4365A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB9E5821D83687900A4365A /* ViewController.m in Sources */,
+				3DB9E57F1D83687900A4365A /* AppDelegate.m in Sources */,
+				3DB9E57C1D83687900A4365A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB9E5911D83688B00A4365A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB9E59A1D83688B00A4365A /* ViewController.swift in Sources */,
+				3DB9E5981D83688B00A4365A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DB9E5831D83687900A4365A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB9E5841D83687900A4365A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DB9E5881D83687900A4365A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB9E5891D83687900A4365A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3DB9E59B1D83688B00A4365A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB9E59C1D83688B00A4365A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DB9E5A01D83688B00A4365A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB9E5A11D83688B00A4365A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DB9E58C1D83687900A4365A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../InMobi";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DB9E58D1D83687900A4365A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../InMobi";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DB9E58F1D83687900A4365A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InterstitialSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inmobi.InterstitialSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DB9E5901D83687900A4365A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InterstitialSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inmobi.InterstitialSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3DB9E5A51D83688B00A4365A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InterstitialSwiftSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inmobi.InterstitialSwiftSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3DB9E5A61D83688B00A4365A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InterstitialSwiftSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inmobi.InterstitialSwiftSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB9E5721D83687900A4365A /* Build configuration list for PBXProject "InterstitialSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB9E58C1D83687900A4365A /* Debug */,
+				3DB9E58D1D83687900A4365A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB9E58E1D83687900A4365A /* Build configuration list for PBXNativeTarget "InterstitialSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB9E58F1D83687900A4365A /* Debug */,
+				3DB9E5901D83687900A4365A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB9E5A41D83688B00A4365A /* Build configuration list for PBXNativeTarget "InterstitialSwiftSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB9E5A51D83688B00A4365A /* Debug */,
+				3DB9E5A61D83688B00A4365A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DB9E56F1D83687900A4365A /* Project object */;
+}
