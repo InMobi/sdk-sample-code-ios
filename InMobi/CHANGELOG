@@ -1,6 +1,25 @@
 ===================================
 InMobi Monetization SDK for iOS
 ===================================
+Build 6.1.1 [14/Feb/2017]
+-------------
+- Bug Fixes
+
+Build 6.1.0 [06/Feb/2017]
+-------------
+- Added support for in-feed video ads
+- Fixed a typo in IMSDKHouseholdIncome enum
+- Now Interstitial ad formats can have transparent background
+- Bug Fixes
+
+Build 6.0.1 [23/Nov/2016]
+-------------
+- Added Auto close support for Native Fullscreen ads
+- Minor enhancements for customization in Video ads
+- Crash in scrollable asset fixed
+- Bug Fixes
+- Removed dependencies on EventKit and EventKitUI frameworks
+
 Build 6.0.0 [19/Sep/2016]
 -------------
 - Fully compliant with iOS 10
@@ -18,13 +37,10 @@ Build 6.0.0 [19/Sep/2016]
 - Added support for better debugging.
 - Support for IPV6.
 - Bug fixes
-	* Fixed an issue where the Interstitial Ad disappears
-	* Fixed an issue where the endcard doesn't show in some cases for fullscreen Native Video.
 - A new delegate method introduced in IMInterstitialDelegate to indicate fetch completion of the ad.
 - A new delegate method have been introduced in IMNative to indicate impression tracking of the ad view.
 - Two new delegate methods have been introduced in IMNativeStrandsDelegate to indicate impression tracking of the ad view and click of the ad view.
 - Removed support for IMStrandTableViewAdapter
-
 
 - APIs Added
 	* IMInterstitialDelegate
