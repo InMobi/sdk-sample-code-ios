@@ -51,7 +51,7 @@ typedef NS_ENUM (NSInteger, IMSDKEthnicity) {
 
 typedef NS_ENUM(NSInteger, IMSDKHouseholdIncome) {
     kIMSDKHouseholdIncomeBelow5kUSD = 1,
-    kIMSDKHouseholdIncomeBetweek5kAnd10kUSD,
+    kIMSDKHouseholdIncomeBetween5kAnd10kUSD,
     kIMSDKHouseholdIncomeBetween10kAnd15kUSD,
     kIMSDKHouseholdIncomeBetween15kAnd20kUSD,
     kIMSDKHouseholdIncomeBetween20kAnd25kUSD,
