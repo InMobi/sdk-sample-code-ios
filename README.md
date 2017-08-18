@@ -27,6 +27,29 @@ These sample apps are provided under MIT license. For more information, please s
 
 ## Change logs
 
+###Build 6.1.2 [03/Mar/2017]
+-------------
+- Bug Fixes
+
+###Build 6.1.1 [14/Feb/2017]
+-------------
+- Bug Fixes
+
+###Build 6.1.0 [06/Feb/2017]
+-------------
+- Added support for in-feed video ads
+- Fixed a typo in IMSDKHouseholdIncome enum
+- Now Interstitial ad formats can have transparent background
+- Bug Fixes
+
+###Build 6.0.1 [23/Nov/2016]
+-------------
+- Added Auto close support for Native Fullscreen ads
+- Minor enhancements for customization in Video ads
+- Crash in scrollable asset fixed
+- Bug Fixes
+- Removed dependencies on EventKit and EventKitUI frameworks
+
 ###Build 6.0.0 [19/Sep/2016]
 -------------
 - Fully compliant with iOS 10
