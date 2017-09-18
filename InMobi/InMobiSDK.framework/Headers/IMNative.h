@@ -13,9 +13,42 @@
 
 @interface IMNative : NSObject
 /**
+ * The primary view of the native ad. This view is rendered by InMobi and should be used by the publisher to display the ad. Impressions will be computed on this view.
+ * @param width The width of the primary view. Typically this should be the screen width.
+ */
+-(UIView*)primaryViewOfWidth:(CGFloat)width;
+/**
  * The content of the native ad.
  */
-@property (nonatomic, strong, readonly) NSString* adContent;
+@property (nonatomic, strong, readonly) NSString* customAdContent;
+/**
+ * The title of the native ad.
+ */
+@property (nonatomic, strong, readonly) NSString* adTitle;
+/**
+ * The description of the native ad.
+ */
+@property (nonatomic, strong, readonly) NSString* adDescription;
+/**
+ * The icon url of the ad.
+ */
+@property (nonatomic, strong, readonly) UIImage* adIcon;
+/**
+ * The text to be specified for the cta. Typically this should be the text of the button.
+ */
+@property (nonatomic, strong, readonly) NSString* adCtaText;
+/**
+ * A custom rating field for the native ad.
+ */
+@property (nonatomic, strong, readonly) NSString* adRating;
+/**
+ * The landing page url of the Native ad.
+ */
+@property (nonatomic, strong, readonly) NSURL* adLandingPageUrl;
+/**
+ * Indicates if the ad is an app download ad.
+ */
+@property (nonatomic, readonly) BOOL isAppDownload;
 /**
  * The delegate to receive callbacks
  */
@@ -31,12 +64,12 @@
 @property (nonatomic, strong) NSDictionary* extras;
 /**
  * Initialize a Native ad with the given PlacementId
- * @param placementId The placementId for loading the interstitial
+ * @param placementId The placementId for loading the native ad
  */
 -(instancetype)initWithPlacementId:(long long)placementId;
 /**
  * Initialize a Native ad with the given PlacementId
- * @param placementId The placementId for loading the interstitial
+ * @param placementId The placementId for loading the native ad
  * @param delegate The delegate to receive callbacks from IMNative
  */
 -(instancetype)initWithPlacementId:(long long)placementId delegate:(id<IMNativeDelegate>)delegate;
@@ -45,38 +78,15 @@
  */
 -(void)load;
 /**
- * Binds the native instance to the rendered view to fire impressions.
- * @param native The native instance that was used to create the view.
- * @param view The view that has rendered the native ad's content
+ * Indicates if the native ad is ready to be displayed.
  */
-+(void)bindNative:(IMNative*)native toView:(UIView*)view;
+-(BOOL)isReady;
 /**
- * Use this method to stop tracking impressions on a particular view. This method should be called especially when using native ads inside UITableView.
- * If the view submited previously was a UITableViewCell, please use this method to stop tracking the view to avoid faulty impressions.
- * Your -(UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexpath:(NSIndexPath*)indexPath should look like below
- 
-        if(isAnAd) { //This is an ad.
-            // Build the native ad from the assets.
-            //Call bindNative to start tracking impressions.
-            [IMNative bindNative:nativeAd toView:view];
-        } else { //This is a content element.
-            [IMNative unBindView:view];
-        }
- 
- * @param view The view on which the impressions should not be tracked anymore.
+ * Reports the click action to the native ad and open the landing page.
  */
-+(void)unBindView:(UIView*)view;
+-(void)reportAdClickAndOpenLandingPage;
 /**
- * Reports that a click has happened on the native ad.
- * @param params Any additional params that the publisher would like to report.
+ * Recycle the view that was presented by the native ad
  */
--(void)reportAdClick:(NSDictionary*)params;
-/**
- * Reports that a click has happened on the native ad and open the landing page too.
- * @param params Any additional params that the publisher would like to report.
- */
--(void)reportAdClickAndOpenLandingURL:(NSDictionary*)params;
-
-
-
+-(void)recyclePrimaryView;
 @end
