@@ -35,7 +35,7 @@ class ViewController: UIViewController,IMNativeDelegate {
 
     func nativeDidFinishLoading(_ native: IMNative!) {
         NSLog("InMobi Native Did finished loading");
-        self.contentView.addSubview(native.primaryView(ofWidth: 200.0));
+        self.contentView.addSubview(native.primaryView(ofWidth: contentView.frame.size.width));
         self.AdTitle.text = native.adTitle;
         self.AdIcon.image = native.adIcon;
         // Additonal information needs to be supplied here

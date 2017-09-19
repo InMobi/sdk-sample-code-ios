@@ -21,7 +21,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    /*
+     * Initialize the InMobi SDK immediately after the app launches.
+     */
     [IMSdk initWithAccountID:INMOBI_ACCOUNT_ID];
+    /*
+     * Enable logging for better debuggability. Please turn off the logs before submitting your App to the AppStore
+     */
     [IMSdk setLogLevel:kIMSDKLogLevelDebug];
     return YES;
 }

@@ -18,7 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        /*
+         * Initialize the InMobi SDK immediately after the app launches.
+         */
         IMSdk.initWithAccountID(INMOBI_ACCOUNT_ID)
+        /*
+         * Enable logging for better debuggability. Please turn off the logs before submitting your App to the AppStore
+         */
         IMSdk.setLogLevel(IMSDKLogLevel.debug);
         return true
     }
