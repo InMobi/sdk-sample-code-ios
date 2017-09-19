@@ -24,8 +24,5 @@ FOUNDATION_EXPORT const unsigned char InMobiSDKVersionString[];
 #import <InMobiSDK/IMInterstitialDelegate.h>
 
 #import <InMobiSDK/IMNative.h>
-#import <InMobiSDK/IMCustomNative.h>
 #import <InMobiSDK/IMNativeDelegate.h>
-#import <InMobiSDK/IMNativeStrands.h>
-#import <InMobiSDK/IMNativeStrandsDelegate.h>
 
