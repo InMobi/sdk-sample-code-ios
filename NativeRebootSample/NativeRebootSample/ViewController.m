@@ -42,7 +42,7 @@
 
 -(void)nativeDidFinishLoading:(IMNative*)native{
     NSLog(@"InMobi Native finished loading");
-    [self.contentView addSubview:[native primaryViewOfWidth:_contentView.frame.size.width]];
+    [self.contentView addSubview:[native primaryViewOfWidth:self.contentView.frame.size.width]];
     self.AdTitle.text = native.adTitle;
     self.adIconImage.image = native.adIcon;
 }
