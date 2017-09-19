@@ -61,4 +61,12 @@
  * Notifies the delegate that the native ad impression has been tracked
  */
 -(void)nativeAdImpressed:(IMNative*)native;
+/**
+ * Notifies the delegate that the native ad has been interacted with.
+ */
+-(void)native:(IMNative*)native didInteractWithParams:(NSDictionary*)params;
+/**
+ * Notifies the delegate that the native ad has finished playing media.
+ */
+-(void)nativeDidFinishPlayingMedia:(IMNative*)native;
 @end

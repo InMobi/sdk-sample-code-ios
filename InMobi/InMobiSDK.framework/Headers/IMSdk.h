@@ -31,17 +31,6 @@
  */
 +(void)setLogLevel:(IMSDKLogLevel)desiredLogLevel;
 /**
- * Register a user specific id with the SDK
- * @param identifier The user Id.
- * @param type The user Id type.
- */
-+(void)addId:(NSString*)identifier forType:(IMSDKIdType)type;
-/**
- * Deregister a particular set of Ids
- * @param type The user Id type.
- */
-+(void)removeIdType:(IMSDKIdType)type;
-/**
  * Provide the user's age to the SDK for targetting purposes.
  * @param age The user's age.
  */

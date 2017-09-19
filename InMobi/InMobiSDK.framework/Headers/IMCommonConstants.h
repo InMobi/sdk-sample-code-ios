@@ -9,12 +9,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, IMSDKIdType) {
-    kIMSDKIdTypeSession,
-    kIMSDKIdTypeLogin
-};
-
-
 typedef NS_ENUM(NSInteger, IMSDKLogLevel) {
     kIMSDKLogLevelNone,
     kIMSDKLogLevelError,
@@ -63,11 +57,13 @@ typedef NS_ENUM(NSInteger, IMSDKHouseholdIncome) {
 };
 typedef NS_ENUM(NSInteger, IMSDKAgeGroup) {
     kIMSDKAgeGroupBelow18 = 1,
-    kIMSDKAgeGroupBetween18And20,
-    kIMSDKAgeGroupBetween21And24,
-    kIMSDKAgeGroupBetween25And34,
-    kIMSDKAgeGroupBetween35And54,
-    kIMSDKAgeGroupAbove55
+    kIMSDKAgeGroupBetween18And24,
+    kIMSDKAgeGroupBetween25And29,
+    kIMSDKAgeGroupBetween30And34,
+    kIMSDKAgeGroupBetween35And44,
+    kIMSDKAgeGroupBetween45And54,
+    kIMSDKAgeGroupBetween55And65,
+    kIMSDKAgeGroupAbove65
 };
 
 #endif
