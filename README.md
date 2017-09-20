@@ -14,7 +14,7 @@ Three sample apps are provided as per Ad Formats
 
 	BannerSample
 	InterstitialSample 
-	NativeRebootSample
+	NativeSample
 
 The latest InMobi iOS SDK is available in the InMobi folder along with its change logs.
 

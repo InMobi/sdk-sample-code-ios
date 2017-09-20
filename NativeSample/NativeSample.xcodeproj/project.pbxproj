@@ -21,13 +21,15 @@
 		BE4397781F45C84C001A9E26 /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4397771F45BD19001A9E26 /* InMobiSDK.framework */; };
 		BE9A7C731F41866800FD738B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9A7C721F41866800FD738B /* libsqlite3.tbd */; };
 		BE9A7C761F41869000FD738B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9A7C751F41869000FD738B /* libz.tbd */; };
+		BEB202291F727BE900C0E151 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE23066B1F3C6CFC005BE1B5 /* Info.plist */; };
+		BEB202321F727F9800C0E151 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEB202311F727F9800C0E151 /* Info.plist */; };
 		BED13C4E1F6FD34700E32B8D /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED13C4D1F6FD34700E32B8D /* InMobiSDK.framework */; };
 		BEE5184B1F41AC99006FC52D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9A7C721F41866800FD738B /* libsqlite3.tbd */; };
 		BEE5184C1F41ACA3006FC52D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9A7C751F41869000FD738B /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BE2306571F3C6CFC005BE1B5 /* NativeRebootSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeRebootSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2306571F3C6CFC005BE1B5 /* NativeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE23065B1F3C6CFC005BE1B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE23065D1F3C6CFC005BE1B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE23065E1F3C6CFC005BE1B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,16 +39,16 @@
 		BE2306661F3C6CFC005BE1B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE2306691F3C6CFC005BE1B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE23066B1F3C6CFC005BE1B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE2306751F3C6D1E005BE1B5 /* NativeRebootSampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeRebootSampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2306751F3C6D1E005BE1B5 /* NativeSampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeSampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2306771F3C6D1E005BE1B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE2306791F3C6D1E005BE1B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE23067C1F3C6D1E005BE1B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE23067E1F3C6D1E005BE1B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE2306811F3C6D1E005BE1B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BE2306831F3C6D1E005BE1B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE4397771F45BD19001A9E26 /* InMobiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InMobiSDK.framework; path = ../InMobi/InMobiSDK.framework; sourceTree = "<group>"; };
 		BE9A7C721F41866800FD738B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		BE9A7C751F41869000FD738B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BEB202311F727F9800C0E151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BED13C4D1F6FD34700E32B8D /* InMobiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InMobiSDK.framework; path = ../../../Desktop/InMobi_iOS_SDK_7.0.0/InMobiSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,8 +79,8 @@
 		BE23064E1F3C6CFB005BE1B5 = {
 			isa = PBXGroup;
 			children = (
-				BE2306591F3C6CFC005BE1B5 /* NativeRebootSample */,
-				BE2306761F3C6D1E005BE1B5 /* NativeRebootSampleSwift */,
+				BE2306591F3C6CFC005BE1B5 /* NativeSample */,
+				BE2306761F3C6D1E005BE1B5 /* NativeSampleSwift */,
 				BE2306581F3C6CFC005BE1B5 /* Products */,
 				BE2306871F3C6DE3005BE1B5 /* Frameworks */,
 			);
@@ -87,13 +89,13 @@
 		BE2306581F3C6CFC005BE1B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE2306571F3C6CFC005BE1B5 /* NativeRebootSample.app */,
-				BE2306751F3C6D1E005BE1B5 /* NativeRebootSampleSwift.app */,
+				BE2306571F3C6CFC005BE1B5 /* NativeSample.app */,
+				BE2306751F3C6D1E005BE1B5 /* NativeSampleSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BE2306591F3C6CFC005BE1B5 /* NativeRebootSample */ = {
+		BE2306591F3C6CFC005BE1B5 /* NativeSample */ = {
 			isa = PBXGroup;
 			children = (
 				BE23065D1F3C6CFC005BE1B5 /* AppDelegate.h */,
@@ -106,7 +108,7 @@
 				BE23066B1F3C6CFC005BE1B5 /* Info.plist */,
 				BE23065A1F3C6CFC005BE1B5 /* Supporting Files */,
 			);
-			path = NativeRebootSample;
+			path = NativeSample;
 			sourceTree = "<group>";
 		};
 		BE23065A1F3C6CFC005BE1B5 /* Supporting Files */ = {
@@ -117,7 +119,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BE2306761F3C6D1E005BE1B5 /* NativeRebootSampleSwift */ = {
+		BE2306761F3C6D1E005BE1B5 /* NativeSampleSwift */ = {
 			isa = PBXGroup;
 			children = (
 				BE2306771F3C6D1E005BE1B5 /* AppDelegate.swift */,
@@ -125,9 +127,9 @@
 				BE23067B1F3C6D1E005BE1B5 /* Main.storyboard */,
 				BE23067E1F3C6D1E005BE1B5 /* Assets.xcassets */,
 				BE2306801F3C6D1E005BE1B5 /* LaunchScreen.storyboard */,
-				BE2306831F3C6D1E005BE1B5 /* Info.plist */,
+				BEB202311F727F9800C0E151 /* Info.plist */,
 			);
-			path = NativeRebootSampleSwift;
+			path = NativeSampleSwift;
 			sourceTree = "<group>";
 		};
 		BE2306871F3C6DE3005BE1B5 /* Frameworks */ = {
@@ -144,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BE2306561F3C6CFC005BE1B5 /* NativeRebootSample */ = {
+		BE2306561F3C6CFC005BE1B5 /* NativeSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE23066E1F3C6CFC005BE1B5 /* Build configuration list for PBXNativeTarget "NativeRebootSample" */;
+			buildConfigurationList = BE23066E1F3C6CFC005BE1B5 /* Build configuration list for PBXNativeTarget "NativeSample" */;
 			buildPhases = (
 				BE2306531F3C6CFC005BE1B5 /* Sources */,
 				BE2306541F3C6CFC005BE1B5 /* Frameworks */,
@@ -156,14 +158,14 @@
 			);
 			dependencies = (
 			);
-			name = NativeRebootSample;
+			name = NativeSample;
 			productName = NativeRebootSample;
-			productReference = BE2306571F3C6CFC005BE1B5 /* NativeRebootSample.app */;
+			productReference = BE2306571F3C6CFC005BE1B5 /* NativeSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BE2306741F3C6D1E005BE1B5 /* NativeRebootSampleSwift */ = {
+		BE2306741F3C6D1E005BE1B5 /* NativeSampleSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE2306841F3C6D1E005BE1B5 /* Build configuration list for PBXNativeTarget "NativeRebootSampleSwift" */;
+			buildConfigurationList = BE2306841F3C6D1E005BE1B5 /* Build configuration list for PBXNativeTarget "NativeSampleSwift" */;
 			buildPhases = (
 				BE2306711F3C6D1E005BE1B5 /* Sources */,
 				BE2306721F3C6D1E005BE1B5 /* Frameworks */,
@@ -173,9 +175,9 @@
 			);
 			dependencies = (
 			);
-			name = NativeRebootSampleSwift;
+			name = NativeSampleSwift;
 			productName = NativeRebootSampleSwift;
-			productReference = BE2306751F3C6D1E005BE1B5 /* NativeRebootSampleSwift.app */;
+			productReference = BE2306751F3C6D1E005BE1B5 /* NativeSampleSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +202,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BE2306521F3C6CFB005BE1B5 /* Build configuration list for PBXProject "NativeRebootSample" */;
+			buildConfigurationList = BE2306521F3C6CFB005BE1B5 /* Build configuration list for PBXProject "NativeSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -213,8 +215,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE2306561F3C6CFC005BE1B5 /* NativeRebootSample */,
-				BE2306741F3C6D1E005BE1B5 /* NativeRebootSampleSwift */,
+				BE2306561F3C6CFC005BE1B5 /* NativeSample */,
+				BE2306741F3C6D1E005BE1B5 /* NativeSampleSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB202291F727BE900C0E151 /* Info.plist in Resources */,
 				BE23066A1F3C6CFC005BE1B5 /* LaunchScreen.storyboard in Resources */,
 				BE2306671F3C6CFC005BE1B5 /* Assets.xcassets in Resources */,
 				BE2306651F3C6CFC005BE1B5 /* Main.storyboard in Resources */,
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB202321F727F9800C0E151 /* Info.plist in Resources */,
 				BE2306821F3C6D1E005BE1B5 /* LaunchScreen.storyboard in Resources */,
 				BE23067F1F3C6D1E005BE1B5 /* Assets.xcassets in Resources */,
 				BE23067D1F3C6D1E005BE1B5 /* Main.storyboard in Resources */,
@@ -398,7 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WZMMZ9FP6W;
 				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
-				INFOPLIST_FILE = NativeRebootSample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NativeSample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -413,7 +417,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WZMMZ9FP6W;
 				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
-				INFOPLIST_FILE = NativeRebootSample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NativeSample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -428,7 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WZMMZ9FP6W;
 				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
-				INFOPLIST_FILE = NativeRebootSampleSwift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NativeSampleSwift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -446,7 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WZMMZ9FP6W;
 				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
-				INFOPLIST_FILE = NativeRebootSampleSwift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NativeSampleSwift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -460,7 +464,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE2306521F3C6CFB005BE1B5 /* Build configuration list for PBXProject "NativeRebootSample" */ = {
+		BE2306521F3C6CFB005BE1B5 /* Build configuration list for PBXProject "NativeSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE23066C1F3C6CFC005BE1B5 /* Debug */,
@@ -469,7 +473,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE23066E1F3C6CFC005BE1B5 /* Build configuration list for PBXNativeTarget "NativeRebootSample" */ = {
+		BE23066E1F3C6CFC005BE1B5 /* Build configuration list for PBXNativeTarget "NativeSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE23066F1F3C6CFC005BE1B5 /* Debug */,
@@ -478,7 +482,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE2306841F3C6D1E005BE1B5 /* Build configuration list for PBXNativeTarget "NativeRebootSampleSwift" */ = {
+		BE2306841F3C6D1E005BE1B5 /* Build configuration list for PBXNativeTarget "NativeSampleSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE2306851F3C6D1E005BE1B5 /* Debug */,

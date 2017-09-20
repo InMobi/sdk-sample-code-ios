@@ -10,7 +10,7 @@
 @import InMobiSDK.IMSdk;
 
 
-#define INMOBI_ACCOUNT_ID @"fce23c9469784fb7952bf4534140689a"
+#define INMOBI_ACCOUNT_ID @"4028cb8b2c3a0b45012c406824e800ba"
 
 @interface AppDelegate ()
 

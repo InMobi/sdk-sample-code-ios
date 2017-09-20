@@ -10,7 +10,7 @@ import UIKit
 import InMobiSDK.IMNative
 import InMobiSDK.IMNativeDelegate
 
-let INMOBI_NATIVE_PLACEMENT: Int64 = 1490507084124
+let INMOBI_NATIVE_PLACEMENT: Int64 = 1501663239052
 
 class ViewController: UIViewController,IMNativeDelegate {
        

@@ -11,7 +11,7 @@
 @import InMobiSDK.IMNativeDelegate;
 
 #ifndef INMOBI_ACCOUNT_ID
-#define INMOBI_NATIVE_PLACEMENT 1490507084124
+#define INMOBI_NATIVE_PLACEMENT 1501663239052
 #endif
 @interface ViewController () <IMNativeDelegate>
 

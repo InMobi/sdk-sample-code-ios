@@ -8,7 +8,7 @@
 
 import UIKit
 import InMobiSDK.IMSdk
-let INMOBI_ACCOUNT_ID: String = "fce23c9469784fb7952bf4534140689a"
+let INMOBI_ACCOUNT_ID: String = "4028cb8b2c3a0b45012c406824e800ba"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
