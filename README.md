@@ -44,6 +44,59 @@ These sample apps are provided under MIT license. For more information, please s
 - Support for GIF images
 - Performance improvements
 
+
+- APIs Added
+    * IMNative class
+     + -(UIView*)primaryViewOfWidth:(CGFloat)width;
+     + @property (nonatomic, strong, readonly) NSString* customAdContent;
+     + @property (nonatomic, strong, readonly) NSString* adTitle;
+     + @property (nonatomic, strong, readonly) NSString* adDescription;
+     + @property (nonatomic, strong, readonly) UIImage* adIcon;
+     + @property (nonatomic, strong, readonly) NSString* adCtaText;
+     + @property (nonatomic, strong, readonly) NSString* adRating;
+     + @property (nonatomic, strong, readonly) NSURL* adLandingPageUrl;
+     + @property (nonatomic, readonly) BOOL isAppDownload;
+     + -(BOOL)isReady;
+     + -(void)reportAdClickAndOpenLandingPage;
+
+
+  * IMNativeDelegate
+    + -(void)native:(IMNative*)native rewardActionCompletedWithRewards:(NSDictionary*)rewards;
+    + -(void)native:(IMNative*)native didInteractWithParams:(NSDictionary*)params;
+    + -(void)nativeDidFinishPlayingMedia:(IMNative*)native;
+
+- APIs Removed
+  * IMNativeStrands class
+   + @interface IMNativeStrands : NSObject
+   + @property (nonatomic, weak) id<IMNativeStrandsDelegate>delegate;
+   + @property (nonatomic, strong) NSString* keywords;
+   + @property (nonatomic, strong) NSDictionary* extras;
+   + -(instancetype)initWithPlacementId:(long long)placementId position:(NSInteger)position;
+   + -(instancetype)initWithPlacementId:(long long)placementId;
+   + -(void)load;
+   + -(UIView*)strandsView;
+   + - (void)recycleView;
+   + - (CGSize)strandsViewSize;
+
+ * IMNativeStrandsDelegate protocol
+    + @interface IMNativeStrands : NSObject
+    + -(void)nativeStrandsDidFinishLoading:(IMNativeStrands*)nativeStrands;
+    + -(void)nativeStrands:(IMNativeStrands*)nativeStrands didFailToLoadWithError:(IMRequestStatus*)error;
+    + -(void)nativeStrandsWillPresentScreen:(IMNativeStrands*)nativeStrands;
+    + -(void)nativeStrandsDidPresentScreen:(IMNativeStrands*)nativeStrands;
+    + -(void)nativeStrandsWillDismissScreen:(IMNativeStrands*)nativeStrands;
+    + -(void)nativeStrandsDidDismissScreen:(IMNativeStrands*)nativeStrands;
+    + -(void)userWillLeaveApplicationFromNativeStrands:(IMNativeStrands*)nativeStrands;
+    + -(void)nativeStrandsAdImpressed:(IMNativeStrands*)nativeStrands;
+    + -(void)nativeStrandsAdClicked:(IMNativeStrands*)nativeStrands;
+
+ * IMNative class
+    + @property (nonatomic, strong, readonly) NSString* adContent;
+    + +(void)bindNative:(IMNative*)native toView:(UIView*)view;
+    + +(void)unBindView:(UIView*)view;
+    + -(void)reportAdClick:(NSDictionary*)params;
+    + -(void)reportAdClickAndOpenLandingURL:(NSDictionary*)params;
+
 ###Build 6.1.2 [03/Mar/2017]
 -------------
 - Bug Fixes
