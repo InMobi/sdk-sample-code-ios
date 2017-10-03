@@ -26,6 +26,10 @@ These sample apps are provided under MIT license. For more information, please s
 
 ## Change logs
 
+###Build 7.0.1 [27/Sept/2017]
+-------------
+- Bug Fixes
+
 ###Build 7.0.0 [15/Sept/2017]
 -------------
 - Bug Fixes
