@@ -28,26 +28,32 @@ BOOL isSecondScreenDisplayed;
      isSecondScreenDisplayed = NO;
      self.screenWidth = [[UIScreen mainScreen] bounds].size.width;
      self.screenHeight = [[UIScreen mainScreen] bounds].size.height;
-    
-    //Please wait Label
-    [self.activityIndicator startAnimating];
-    self.pw_label.hidden = YES;
-   
+    self.SplashAdView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.screenWidth, self.screenHeight)];
     [self.show_button addTarget:self
                      action:@selector(showAd)
            forControlEvents:UIControlEventTouchUpInside];
-    
+    [self setDefaultProperties];
+    [self.activityIndicator startAnimating];
+//    [self addDefaultViews];
+    [self initiateNativeAd];
+}
+
+-(void)setDefaultProperties{
+    self.pw_label.hidden = true;
     self.show_button.hidden = true;
-    
+}
+
+-(void)initiateNativeAd{
     self.InMobiNativeAd = [[IMNative alloc] initWithPlacementId:self.placementID];
     self.InMobiNativeAd.delegate = self;
     [self.InMobiNativeAd load];
-    
-    self.SplashAdView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.screenWidth, self.screenHeight)];
-    self.SplashAdView.hidden = true;
+}
+
+-(void)addDefaultViews{
+ //   self.SplashAdView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.screenWidth, self.screenHeight)];
+    self.SplashAdView.hidden = false;
     [self.view addSubview:_SplashAdView];
     [self.view bringSubviewToFront:_SplashAdView];
-    // Do any additional setup after loading the view from its nib.
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -59,6 +65,13 @@ BOOL isSecondScreenDisplayed;
     // Dispose of any resources that can be recreated.
 }
 
+-(void)dealloc {
+    self.InMobiNativeAd.delegate = nil;
+    self.InMobiNativeAd = nil;
+}
+
+#pragma mark - utility methods
+
 -(void)ShowIfSplashAdIsReady{
     if(self.InMobiNativeAd.isReady){
         self.show_button.hidden = false;
@@ -69,10 +82,12 @@ BOOL isSecondScreenDisplayed;
 }
 
 -(void)showAd{
-    UIView* AdPrimaryViewOfCorrectWidth = [_InMobiNativeAd primaryViewOfWidth:_screenWidth];
-    [self.SplashAdView addSubview:AdPrimaryViewOfCorrectWidth];
-    self.SplashAdView.hidden = false;
+//    UIView* AdPrimaryViewOfCorrectWidth = [_InMobiNativeAd primaryViewOfWidth:_screenWidth];
+    self.SplashAdView = [_InMobiNativeAd primaryViewOfWidth:_screenWidth];
+//    [self.SplashAdView addSubview:AdPrimaryViewOfCorrectWidth];
+ //   self.SplashAdView.hidden = false;
     self.show_button.hidden = true;
+    [self addDefaultViews];
     [self performSelector:@selector(dismissAd) withObject:nil afterDelay:6.0];
 }
 
@@ -82,13 +97,14 @@ BOOL isSecondScreenDisplayed;
     }
     else{
         [self reloadAd];
-        [self.navigationController popViewControllerAnimated:YES];
+//        [self addDefaultViews];
     }
 }
 
 -(void)reloadAd{
     self.navigationController.navigationBar.layer.zPosition = 0;
     [self.SplashAdView removeFromSuperview];
+    self.show_button.hidden = false;
 }
 
 - (void)ShowMessage:(NSString *)message dismissAfter:(NSTimeInterval)interval{
@@ -101,11 +117,7 @@ BOOL isSecondScreenDisplayed;
     self.pw_label.hidden = TRUE;
 }
 
--(void)dealloc {
-    [self.InMobiNativeAd recyclePrimaryView];
-    self.InMobiNativeAd.delegate = nil;
-    self.InMobiNativeAd = nil;
-}
+#pragma mark - native call backs
 
 /*The native ad notifies its delegate that it is ready. Fetching publisher-specific ad asset content from native.adContent. The publisher will specify the format. If the publisher does not provide a format, no ad will be loaded.*/
 -(void)nativeDidFinishLoading:(IMNative*)native{

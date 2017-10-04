@@ -9,6 +9,7 @@
 #import "IMPreRollViewController.h"
 #import "AppConstants.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import <AVKit/AVKit.h>
 
 
 @interface IMPreRollViewController () <IMNativeDelegate>
@@ -21,7 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *MoviePlayerCloseButton;
 @property (weak, nonatomic) IBOutlet UILabel *pw_label;
 
-@property (nonatomic,strong) MPMoviePlayerController *MoviePlayer;
+@property (nonatomic,strong) AVPlayerViewController *MoviePlayer;
 
 @end
 
@@ -31,35 +32,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.screenWidth = [[UIScreen mainScreen] bounds].size.width;
-    self.screenHeight = [[UIScreen mainScreen] bounds].size.height;
-    
-    //Please wait Label
-    
-    self.pw_label.hidden = YES;
-    
     [self.show_button addTarget:self action:@selector(showAd) forControlEvents:UIControlEventTouchUpInside];
-
-    self.show_button.hidden = true;
-    
-    self.InMobiNativeAd = [[IMNative alloc] initWithPlacementId:self.placementID];
-    self.InMobiNativeAd.delegate = self;
-    [self.InMobiNativeAd load];
+    [self setDefaultValues];
+    [self instantiateNativeAd];
     
     self.PrerollAdView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _screenWidth, _screenHeight)];
     self.PrerollAdView.hidden = true;
     [self.view addSubview:self.PrerollAdView];
     
-    NSURL *urlString=[NSURL URLWithString:PREROLL_URL];
-    self.MoviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:urlString];
-    self.MoviePlayer.scalingMode = MPMovieScalingModeFill;
-    self.MoviePlayer.view.hidden = true;
-    self.MoviePlayer.view.transform = CGAffineTransformRotate(_MoviePlayer.view.transform,
-                                                          90.0 * M_PI/180.0);
-    self.MoviePlayer.view.frame = CGRectMake(0, 0, _screenWidth, _screenHeight);
-    [self.view addSubview:_MoviePlayer.view];
-    
-    
+    [self instantiateMoviePlayer];
     [self.MoviePlayerCloseButton addTarget:self
                                 action:@selector(closeMoviePlayer)
                       forControlEvents:UIControlEventTouchUpInside];
@@ -71,10 +52,31 @@
     
     [self.view bringSubviewToFront:self.MoviePlayer.view];
     [self.view bringSubviewToFront:self.MoviePlayerCloseButton];
-    [self.view bringSubviewToFront:self.PrerollAdView];
 }
 
--(void)viewDidAppear:(BOOL)animated{
+-(void)setDefaultValues{
+    self.screenWidth = [[UIScreen mainScreen] bounds].size.width;
+    self.screenHeight = [[UIScreen mainScreen] bounds].size.height;
+    self.pw_label.hidden = true;
+    self.show_button.hidden = true;
+}
+
+-(void)instantiateMoviePlayer{
+    NSURL *urlString=[NSURL URLWithString:PREROLL_URL];
+    AVPlayer *player = [AVPlayer playerWithURL:urlString];
+    self.MoviePlayer = [[AVPlayerViewController alloc] init];
+    self.MoviePlayer.view.hidden = true;
+    self.MoviePlayer.player = player;
+    self.MoviePlayer.view.transform = CGAffineTransformRotate(_MoviePlayer.view.transform,
+                                                              90.0 * M_PI/180.0);
+    self.MoviePlayer.view.frame = CGRectMake(0, 0, self.screenWidth, self.screenHeight);
+    [self.view addSubview:self.MoviePlayer.view];
+}
+
+-(void)instantiateNativeAd{
+    self.InMobiNativeAd = [[IMNative alloc] initWithPlacementId:self.placementID];
+    self.InMobiNativeAd.delegate = self;
+    [self.InMobiNativeAd load];
 }
 
 -(void)didReceiveMemoryWarning {
@@ -82,13 +84,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)dealloc {
+    [self.InMobiNativeAd recyclePrimaryView];
+    self.InMobiNativeAd.delegate = nil;
+    self.InMobiNativeAd = nil;
+}
+
+#pragma mark - Utility methods
 
 -(void)showAd{
-    UIView* AdPrimaryViewOfCorrectWidth = [_InMobiNativeAd primaryViewOfWidth:_screenHeight];
+    UIView* AdPrimaryViewOfCorrectWidth = [self.InMobiNativeAd primaryViewOfWidth:self.screenHeight];
     CGFloat degreesOfRotation = 90.0;
     AdPrimaryViewOfCorrectWidth.transform = CGAffineTransformRotate(AdPrimaryViewOfCorrectWidth.transform,
                                                                     degreesOfRotation * M_PI/180.0);
-    AdPrimaryViewOfCorrectWidth.frame = CGRectMake(0, 0, _screenWidth, _screenHeight);
+    AdPrimaryViewOfCorrectWidth.frame = CGRectMake(0, 0, self.screenWidth, self.screenHeight);
     [self.PrerollAdView addSubview:AdPrimaryViewOfCorrectWidth];
     self.navigationController.navigationBar.layer.zPosition = -1;
     self.PrerollAdView.hidden = false;
@@ -103,14 +112,14 @@
     self.InMobiNativeAd = [[IMNative alloc] initWithPlacementId:self.placementID];
     self.InMobiNativeAd.delegate = self;
     [self.InMobiNativeAd load];
-    [self.MoviePlayer play];
+    [self.MoviePlayer.player play];
     self.navigationController.navigationBar.layer.zPosition = -1;
     self.MoviePlayer.view.hidden = false;
     self.MoviePlayerCloseButton.hidden = false;
 }
 
 -(void)closeMoviePlayer{
-    [self.MoviePlayer stop];
+    [self.MoviePlayer.player pause];
     self.MoviePlayer.view.hidden = true;
     self.MoviePlayerCloseButton.hidden = true;
     self.navigationController.navigationBar.layer.zPosition = 0;
@@ -122,15 +131,11 @@
     [self performSelector:@selector(dismissAfterDelay) withObject:nil afterDelay:interval];
 }
 
--(void)dealloc {
-    [self.InMobiNativeAd recyclePrimaryView];
-    self.InMobiNativeAd.delegate = nil;
-    self.InMobiNativeAd = nil;
-}
-
 - (void)dismissAfterDelay{
     self.pw_label.hidden = TRUE;
 }
+
+#pragma mark - native ad call back
 
 /*The native ad notifies its delegate that it is ready. Fetching publisher-specific ad asset content from native.adContent. The publisher will specify the format. If the publisher does not provide a format, no ad will be loaded.*/
 -(void)nativeDidFinishLoading:(IMNative*)native{

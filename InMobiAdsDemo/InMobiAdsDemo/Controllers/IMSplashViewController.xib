@@ -33,9 +33,12 @@
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                     <state key="normal" title="Show Splash Ad "/>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show Splash Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hru-fe-nQK">
-                    <rect key="frame" x="166" y="237" width="133" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Splash Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hru-fe-nQK">
+                    <rect key="frame" x="87.5" y="319" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="O9U-hk-5Y1"/>
+                        <constraint firstAttribute="height" constant="30" id="zDv-uD-OMT"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -45,6 +48,8 @@
             <constraints>
                 <constraint firstItem="PU8-wv-zca" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="8EY-3l-0vu"/>
                 <constraint firstItem="PU8-wv-zca" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="PP2-fT-31Y"/>
+                <constraint firstItem="hru-fe-nQK" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lGH-5v-w6V"/>
+                <constraint firstItem="hru-fe-nQK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vzI-ef-I4W"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="34.5" y="107.5"/>
