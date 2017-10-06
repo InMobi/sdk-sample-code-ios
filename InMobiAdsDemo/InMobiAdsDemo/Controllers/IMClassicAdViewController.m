@@ -23,22 +23,21 @@
 
 @implementation IMClassicAdViewController
 
-- (void)viewDidLoad {
+-(void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self loadAdRequest];
 }
 
-- (void)didReceiveMemoryWarning {
+-(void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 -(void)loadAdRequest {
-    
     // Update the user interface for the detail item.
     if (_adItem) {
-        if([[_adItem objectForKey:@"Type"] isEqualToString:@"Banner"]) {
+        if ([[_adItem objectForKey:@"Type"] isEqualToString:@"Banner"]) {
             NSLog(@"Initializing %@",[_adItem objectForKey:@"Title"]);
             
             CGSize adSize = CGSizeFromString([_adItem objectForKey:@"Size"]);
@@ -56,20 +55,17 @@
             [self.view layoutIfNeeded];
             
         } else {
-            if([[_adItem objectForKey:@"Type"] isEqualToString:@"NativeVideo"]){
+            if ([[_adItem objectForKey:@"Type"] isEqualToString:@"NativeVideo"]) {
                 _adInterstitial = [[IMInterstitial alloc] initWithPlacementId:INMOBI_INTERSTITIAL_NATIVE_VIDEO delegate:self];
-            }
-            else if([[_adItem objectForKey:@"Type"] isEqualToString:@"WebVideo"]){
+            } else if ([[_adItem objectForKey:@"Type"] isEqualToString:@"WebVideo"]) {
                 _adInterstitial = [[IMInterstitial alloc] initWithPlacementId:INMOBI_INTERSTITIAL_RPOSCARD delegate:self];
-            }
-            else if([[_adItem objectForKey:@"Type"] isEqualToString:@"NativeDisplay"]){
+            } else if ([[_adItem objectForKey:@"Type"] isEqualToString:@"NativeDisplay"]) {
                 _adInterstitial = [[IMInterstitial alloc] initWithPlacementId:INMOBI_INTERSTITIAL_STATIC delegate:self];
             }
             
             [_statusActivityIndicator startAnimating];
             _statusLabel.hidden = NO;
             [_adInterstitial load];
-    
         }
         _statusLabel.text = @"Loading...";
     }

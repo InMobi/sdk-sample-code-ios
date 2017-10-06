@@ -24,7 +24,7 @@
 
 @implementation IMMainTableViewController
 
-- (void)viewDidLoad {
+-(void)viewDidLoad {
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -41,19 +41,19 @@
 
 }
 
-- (void)didReceiveMemoryWarning {
+-(void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
     return _adTypesArray.count;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
     NSDictionary *options = [_adTypesArray objectAtIndex:section];
     NSArray *types = options[@"Types"];
@@ -62,7 +62,7 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"adTypeCell"  forIndexPath:indexPath];
     
     // Configure the cell...
@@ -75,14 +75,14 @@
     return cell;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSDictionary *options = [_adTypesArray objectAtIndex:section];
     return options[@"Title"];
 }
 
 #pragma mark - Table View Delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     self.splashVC = [[IMSplashViewController alloc] init];
@@ -95,10 +95,10 @@
         case 0:
             if (indexPath.row == 0 || indexPath.row == 1) {
                [self performSegueWithIdentifier:@"strandsSegue" sender:[types objectAtIndex:indexPath.row]];
-            }else if(indexPath.row==2){
+            } else if(indexPath.row==2) {
                 self.splashVC.placementID = SPLASH_NATIVE;
                 [self.navigationController pushViewController:self.splashVC animated:true];
-            }else{
+            } else {
                 self.preRollVC.placementID = PREROLL_NATIVE;
                 [self.navigationController pushViewController:self.preRollVC animated:true];
             }
@@ -106,12 +106,10 @@
         case 1:
             if (indexPath.row == 1) {//Expandable Banner
                 [self performSegueWithIdentifier:@"classicAdSegueIB" sender:[types objectAtIndex:indexPath.row]];
-            }
-            else if(indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 4){
+            } else if(indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 4) {
                 //Case for Native Video , Web Video , Native Static and Normal Banner in sequential order
                 [self performSegueWithIdentifier:@"classicAdSegue" sender:[types objectAtIndex:indexPath.row]];
-            }
-            else {
+            } else {
                 //Case for Normal Banner
                 [self performSegueWithIdentifier:@"classicAdSegue" sender:[types objectAtIndex:indexPath.row]];
             }
@@ -126,26 +124,22 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
     if ([segue.identifier isEqualToString:@"classicAdSegue"]) {
         IMClassicAdViewController *adVC = segue.destinationViewController;
         adVC.adItem = sender;
-    }
-    else if ([segue.identifier isEqualToString:@"classicAdSegueIB"]) {
+    } else if ([segue.identifier isEqualToString:@"classicAdSegueIB"]) {
         IMClassicAdViewController_IB *adVC = segue.destinationViewController;
         adVC.adItem = sender;
-
-    }
-    else if ([segue.identifier isEqualToString:@"strandsSegue"]){
+    } else if ([segue.identifier isEqualToString:@"strandsSegue"]) {
         IMNativeViewController *adVC = segue.destinationViewController;
         if([sender valueForKey:@"Title"]){
             adVC.isStoryBoard = [[sender valueForKey:@"Title"] isEqualToString:@"Native Story Boards"];
         }
     }
 }
-
 
 @end

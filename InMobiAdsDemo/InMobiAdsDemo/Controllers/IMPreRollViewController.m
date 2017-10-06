@@ -26,7 +26,7 @@
 
 @implementation IMPreRollViewController
 
-- (void)viewDidLoad {
+-(void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
@@ -123,13 +123,13 @@
     self.navigationController.navigationBar.layer.zPosition = 0;
 }
 
-- (void)ShowMessage:(NSString *)message dismissAfter:(NSTimeInterval)interval{
+-(void)ShowMessage:(NSString *)message dismissAfter:(NSTimeInterval)interval{
     self.messageLabel.text = message;
     self.messageLabel.hidden = FALSE;
     [self performSelector:@selector(dismissAfterDelay) withObject:nil afterDelay:interval];
 }
 
-- (void)dismissAfterDelay{
+-(void)dismissAfterDelay{
     self.messageLabel.hidden = TRUE;
 }
 

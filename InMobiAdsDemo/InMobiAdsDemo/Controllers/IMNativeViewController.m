@@ -18,7 +18,7 @@
 @property (nonatomic,strong) NSMutableArray *tableData;
 @end
 @implementation IMNativeViewController
-- (void)viewDidLoad {
+-(void)viewDidLoad {
     self.tableData = [[NSMutableArray alloc] init];
     [self loadInitialData];
     
@@ -38,11 +38,11 @@
                         context:nil];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.tableData.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([self isAdAtIndexPath:indexPath]) {
         UITableViewCell *cell;
         cell = [tableView dequeueReusableCellWithIdentifier:@"adIdentifier"];
@@ -71,7 +71,7 @@
     }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([self isAdAtIndexPath:indexPath]) {
         UIView *adView = [self.native primaryViewOfWidth:tableView.contentSize.width];
         return adView.frame.size.height;
@@ -83,14 +83,14 @@
     return height;
 }
 
-- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+-(void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([tableView.indexPathsForVisibleRows indexOfObject:indexPath] == NSNotFound && [self isAdAtIndexPath:indexPath]) {
         [self.native recyclePrimaryView];
     }
 }
 
 #pragma mark - Internal Methods
-- (void)loadInitialData {
+-(void)loadInitialData {
     SampleData *item1 = [[SampleData alloc] init];
     item1.title = @"Neha Jha";
     item1.subtitle = @"Product Manager";
@@ -137,17 +137,17 @@
     [self.tableData addObject:item5];
 }
 
-- (BOOL)isAdAtIndexPath:(NSIndexPath *)indexPath {
+-(BOOL)isAdAtIndexPath:(NSIndexPath *)indexPath {
     return [[self.tableData objectAtIndex:indexPath.row] isKindOfClass:[IMNative class]];
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if ([object isEqual:_tableView] && [keyPath isEqualToString:@"contentOffset"]) {
         [self updateTableData];
     }
 }
 
-- (void)updateTableData {
+-(void)updateTableData {
     if (!self.nativeStrandsLoaded || self.nativeStrandsInserted) {
         return;
     }
@@ -231,7 +231,7 @@
     NSLog(@"Native Playing Video Finished");
 }
 
-- (void)dealloc {
+-(void)dealloc {
     self.native.delegate = nil;
     [self.tableView removeObserver:self
                     forKeyPath:@"contentOffset"

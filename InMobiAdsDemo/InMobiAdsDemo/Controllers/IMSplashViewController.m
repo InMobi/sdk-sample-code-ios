@@ -23,7 +23,7 @@ BOOL isSecondScreenDisplayed;
 
 @implementation IMSplashViewController
 
-- (void)viewDidLoad {
+-(void)viewDidLoad {
     [super viewDidLoad];
      isSecondScreenDisplayed = NO;
      self.screenWidth = [[UIScreen mainScreen] bounds].size.width;
@@ -60,7 +60,7 @@ BOOL isSecondScreenDisplayed;
     [super viewWillAppear:animated];
 }
 
-- (void)didReceiveMemoryWarning {
+-(void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -107,13 +107,13 @@ BOOL isSecondScreenDisplayed;
     self.show_button.hidden = false;
 }
 
-- (void)ShowMessage:(NSString *)message dismissAfter:(NSTimeInterval)interval{
+-(void)ShowMessage:(NSString *)message dismissAfter:(NSTimeInterval)interval{
     self.pw_label.hidden = false;
     self.pw_label.text = message;
     [self performSelector:@selector(dismissAfterDelay) withObject:nil afterDelay:interval];
 }
 
-- (void)dismissAfterDelay{
+-(void)dismissAfterDelay{
     self.pw_label.hidden = TRUE;
 }
 
