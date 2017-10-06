@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Title</key>
+		<string>Native Ads</string>
+		<key>Types</key>
+		<array>
+			<dict>
+				<key>Type</key>
+				<string>Story Boards</string>
+				<key>Title</key>
+				<string>Native Story Boards</string>
+			</dict>
+			<dict>
+				<key>Type</key>
+				<string>Movie Boards</string>
+				<key>Title</key>
+				<string>Native Movie Boards</string>
+			</dict>
+			<dict>
+				<key>Type</key>
+				<string>Splash </string>
+				<key>Title</key>
+				<string>Splash</string>
+			</dict>
+			<dict>
+				<key>Type</key>
+				<string>Preroll</string>
+				<key>Title</key>
+				<string>Preroll</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Classic Ads</string>
+		<key>Types</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Banner 320x50</string>
+				<key>Type</key>
+				<string>Banner</string>
+				<key>Size</key>
+				<string>{320,50}</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Banner 320x50 with IB</string>
+				<key>Type</key>
+				<string>BannerIB</string>
+				<key>Size</key>
+				<string>{320,50}</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Interstial Full Screen Native Video</string>
+				<key>Type</key>
+				<string>NativeVideo</string>
+				<key>Size</key>
+				<string>{320,480}</string>
+			</dict>
+			<dict>
+				<key>Size</key>
+				<string>{320,480}</string>
+				<key>Type</key>
+				<string>WebVideo</string>
+				<key>Title</key>
+				<string>Interstitial Full Screen Web Video</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Interstitial Static</string>
+				<key>Type</key>
+				<string>NativeDisplay</string>
+				<key>Size</key>
+				<string>{320,480}</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
