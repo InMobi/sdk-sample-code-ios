@@ -1,8 +1,6 @@
 //
 //  AppDelegate.h
 //  InMobiAdsDemo
-//
-//  Created by Tabrez Miyan on 29/09/17.
 //  Copyright © 2017 InMobi. All rights reserved.
 //
 
