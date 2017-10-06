@@ -56,13 +56,13 @@
             [self.view layoutIfNeeded];
             
         } else {
-            if([_adItem objectForKey:@"Type"] && [[_adItem objectForKey:@"Type"] isEqualToString:@"NativeVideo"]){
+            if([[_adItem objectForKey:@"Type"] isEqualToString:@"NativeVideo"]){
                 _adInterstitial = [[IMInterstitial alloc] initWithPlacementId:INMOBI_INTERSTITIAL_NATIVE_VIDEO delegate:self];
             }
-            if([_adItem objectForKey:@"Type"] && [[_adItem objectForKey:@"Type"] isEqualToString:@"WebVideo"]){
+            else if([[_adItem objectForKey:@"Type"] isEqualToString:@"WebVideo"]){
                 _adInterstitial = [[IMInterstitial alloc] initWithPlacementId:INMOBI_INTERSTITIAL_RPOSCARD delegate:self];
             }
-            if([_adItem objectForKey:@"Type"] && [[_adItem objectForKey:@"Type"] isEqualToString:@"NativeDisplay"]){
+            else if([[_adItem objectForKey:@"Type"] isEqualToString:@"NativeDisplay"]){
                 _adInterstitial = [[IMInterstitial alloc] initWithPlacementId:INMOBI_INTERSTITIAL_STATIC delegate:self];
             }
             
@@ -225,14 +225,5 @@
     NSLog(@"%s", __PRETTY_FUNCTION__);
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

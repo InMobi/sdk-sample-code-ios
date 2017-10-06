@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2D72DE8B9DFFE628C7928D91 /* Pods_InMobiAdsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE18C82BD5C7112AC70C272D /* Pods_InMobiAdsDemo.framework */; };
-		40B17B583D40E2101661C6A7 /* Pods_InMobiAdsDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF47993CD81A8BE32E74E699 /* Pods_InMobiAdsDemoUITests.framework */; };
 		BE33B89A1F83B116009C585B /* IMSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE33B8981F83B116009C585B /* IMSplashViewController.m */; };
 		BE33B89B1F83B116009C585B /* IMSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE33B8991F83B116009C585B /* IMSplashViewController.xib */; };
 		BE33B89F1F83B7DF009C585B /* IMPreRollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE33B89D1F83B7DF009C585B /* IMPreRollViewController.m */; };
@@ -19,8 +18,6 @@
 		C7D4D6741F7E5BD00074CE88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D4D6731F7E5BD00074CE88 /* main.m */; };
 		C7D4D6771F7E5BD00074CE88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D4D6761F7E5BD00074CE88 /* AppDelegate.m */; };
 		C7D4D6821F7E5BD00074CE88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D4D6801F7E5BD00074CE88 /* LaunchScreen.storyboard */; };
-		C7D4D68D1F7E5BD00074CE88 /* InMobiAdsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D4D68C1F7E5BD00074CE88 /* InMobiAdsDemoTests.m */; };
-		C7D4D6981F7E5BD00074CE88 /* InMobiAdsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D4D6971F7E5BD00074CE88 /* InMobiAdsDemoUITests.m */; };
 		C7D4D6AC1F7E5D510074CE88 /* IMSimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D4D6AB1F7E5D510074CE88 /* IMSimpleTableCell.m */; };
 		C7D4D6B31F7E5D5E0074CE88 /* IMClassicAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D4D6AE1F7E5D5E0074CE88 /* IMClassicAdViewController.m */; };
 		C7D4D6B41F7E5D5E0074CE88 /* IMClassicAdViewController_IB.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D4D6B01F7E5D5E0074CE88 /* IMClassicAdViewController_IB.m */; };
@@ -30,7 +27,6 @@
 		C7D4D6BC1F7E5D820074CE88 /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7D4D6BA1F7E5D820074CE88 /* SimpleTableCell.xib */; };
 		C7D4D6BE1F7E5F150074CE88 /* AdOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7D4D6BD1F7E5F150074CE88 /* AdOptions.plist */; };
 		C7D4D6C01F7E5F520074CE88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D4D6BF1F7E5F520074CE88 /* Images.xcassets */; };
-		E0C28631EA83C49910DC3216 /* Pods_InMobiAdsDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16020E8B7C7A76537C32698 /* Pods_InMobiAdsDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6BC1D810A3FC687ECB67E6C2 /* Pods-InMobiAdsDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InMobiAdsDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InMobiAdsDemoTests/Pods-InMobiAdsDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		7BF8A10206902E640E08C1DD /* Pods_InMobiAdsDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InMobiAdsDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9759CD4AE25BA25928001870 /* Pods-InMobiAdsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InMobiAdsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InMobiAdsDemo/Pods-InMobiAdsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9B846CBAA5B96E2DCB2B8F27 /* Pods-InMobiAdsDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InMobiAdsDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InMobiAdsDemoSwift/Pods-InMobiAdsDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		A16020E8B7C7A76537C32698 /* Pods_InMobiAdsDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InMobiAdsDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A657B931EF3785DE21E09A92 /* Pods-InMobiAdsDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InMobiAdsDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InMobiAdsDemoTests/Pods-InMobiAdsDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		ABBA77D41857AEFAE6D3C879 /* Pods-InMobiAdsDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InMobiAdsDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InMobiAdsDemoUITests/Pods-InMobiAdsDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE18C82BD5C7112AC70C272D /* Pods_InMobiAdsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InMobiAdsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF47993CD81A8BE32E74E699 /* Pods_InMobiAdsDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InMobiAdsDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE33B8971F83B116009C585B /* IMSplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMSplashViewController.h; sourceTree = "<group>"; };
@@ -77,11 +70,7 @@
 		C7D4D6811F7E5BD00074CE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7D4D6831F7E5BD00074CE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7D4D6881F7E5BD00074CE88 /* InMobiAdsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InMobiAdsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7D4D68C1F7E5BD00074CE88 /* InMobiAdsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InMobiAdsDemoTests.m; sourceTree = "<group>"; };
-		C7D4D68E1F7E5BD00074CE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7D4D6931F7E5BD00074CE88 /* InMobiAdsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InMobiAdsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7D4D6971F7E5BD00074CE88 /* InMobiAdsDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InMobiAdsDemoUITests.m; sourceTree = "<group>"; };
-		C7D4D6991F7E5BD00074CE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7D4D6A81F7E5D390074CE88 /* IMAppIds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAppIds.h; sourceTree = "<group>"; };
 		C7D4D6A91F7E5D390074CE88 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
 		C7D4D6AA1F7E5D510074CE88 /* IMSimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSimpleTableCell.h; sourceTree = "<group>"; };
@@ -99,7 +88,6 @@
 		C7D4D6BD1F7E5F150074CE88 /* AdOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AdOptions.plist; sourceTree = "<group>"; };
 		C7D4D6BF1F7E5F520074CE88 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F2E90CFB060A7AD48412A62A /* Pods-InMobiAdsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InMobiAdsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-InMobiAdsDemo/Pods-InMobiAdsDemo.release.xcconfig"; sourceTree = "<group>"; };
-		F68C944AC2ECB8BC10D9239D /* Pods-InMobiAdsDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InMobiAdsDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InMobiAdsDemoUITests/Pods-InMobiAdsDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +106,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0C28631EA83C49910DC3216 /* Pods_InMobiAdsDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +113,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B17B583D40E2101661C6A7 /* Pods_InMobiAdsDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,10 +124,6 @@
 			children = (
 				9759CD4AE25BA25928001870 /* Pods-InMobiAdsDemo.debug.xcconfig */,
 				F2E90CFB060A7AD48412A62A /* Pods-InMobiAdsDemo.release.xcconfig */,
-				A657B931EF3785DE21E09A92 /* Pods-InMobiAdsDemoTests.debug.xcconfig */,
-				6BC1D810A3FC687ECB67E6C2 /* Pods-InMobiAdsDemoTests.release.xcconfig */,
-				ABBA77D41857AEFAE6D3C879 /* Pods-InMobiAdsDemoUITests.debug.xcconfig */,
-				F68C944AC2ECB8BC10D9239D /* Pods-InMobiAdsDemoUITests.release.xcconfig */,
 				9B846CBAA5B96E2DCB2B8F27 /* Pods-InMobiAdsDemoSwift.debug.xcconfig */,
 				C52DE922ABFDA1F3626C7925 /* Pods-InMobiAdsDemoSwift.release.xcconfig */,
 			);
@@ -166,8 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				C7D4D6711F7E5BD00074CE88 /* InMobiAdsDemo */,
-				C7D4D68B1F7E5BD00074CE88 /* InMobiAdsDemoTests */,
-				C7D4D6961F7E5BD00074CE88 /* InMobiAdsDemoUITests */,
 				C7D4D6701F7E5BD00074CE88 /* Products */,
 				57699B23BD1C4AA730310052 /* Pods */,
 				5B9BD42EEF075CCD9EB1733C /* Frameworks */,
@@ -209,24 +189,6 @@
 				C7D4D6731F7E5BD00074CE88 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C7D4D68B1F7E5BD00074CE88 /* InMobiAdsDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				C7D4D68C1F7E5BD00074CE88 /* InMobiAdsDemoTests.m */,
-				C7D4D68E1F7E5BD00074CE88 /* Info.plist */,
-			);
-			path = InMobiAdsDemoTests;
-			sourceTree = "<group>";
-		};
-		C7D4D6961F7E5BD00074CE88 /* InMobiAdsDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C7D4D6971F7E5BD00074CE88 /* InMobiAdsDemoUITests.m */,
-				C7D4D6991F7E5BD00074CE88 /* Info.plist */,
-			);
-			path = InMobiAdsDemoUITests;
 			sourceTree = "<group>";
 		};
 		C7D4D6A51F7E5D250074CE88 /* Constants */ = {
@@ -295,12 +257,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7D4D69F1F7E5BD00074CE88 /* Build configuration list for PBXNativeTarget "InMobiAdsDemoTests" */;
 			buildPhases = (
-				B37B79ED185959A48BF868E6 /* [CP] Check Pods Manifest.lock */,
 				C7D4D6841F7E5BD00074CE88 /* Sources */,
 				C7D4D6851F7E5BD00074CE88 /* Frameworks */,
 				C7D4D6861F7E5BD00074CE88 /* Resources */,
-				237157DC17DC6500C23675A4 /* [CP] Embed Pods Frameworks */,
-				CCA9043577156CED5EA82508 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -316,12 +275,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7D4D6A21F7E5BD00074CE88 /* Build configuration list for PBXNativeTarget "InMobiAdsDemoUITests" */;
 			buildPhases = (
-				1E63E2FF16A51EE55FE88795 /* [CP] Check Pods Manifest.lock */,
 				C7D4D68F1F7E5BD00074CE88 /* Sources */,
 				C7D4D6901F7E5BD00074CE88 /* Frameworks */,
 				C7D4D6911F7E5BD00074CE88 /* Resources */,
-				F0253C810941BD2F6B05A309 /* [CP] Embed Pods Frameworks */,
-				381015586A55B1EDB423D5A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -429,54 +385,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InMobiAdsDemo/Pods-InMobiAdsDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1E63E2FF16A51EE55FE88795 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InMobiAdsDemoUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		237157DC17DC6500C23675A4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InMobiAdsDemoTests/Pods-InMobiAdsDemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		381015586A55B1EDB423D5A6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InMobiAdsDemoUITests/Pods-InMobiAdsDemoUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		80BE611391A4F3E2B3CD97F3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,54 +418,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B37B79ED185959A48BF868E6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InMobiAdsDemoTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CCA9043577156CED5EA82508 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InMobiAdsDemoTests/Pods-InMobiAdsDemoTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0253C810941BD2F6B05A309 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InMobiAdsDemoUITests/Pods-InMobiAdsDemoUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -581,7 +441,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D4D68D1F7E5BD00074CE88 /* InMobiAdsDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,7 +448,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D4D6981F7E5BD00074CE88 /* InMobiAdsDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,7 +606,6 @@
 		};
 		C7D4D6A01F7E5BD00074CE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A657B931EF3785DE21E09A92 /* Pods-InMobiAdsDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 867HB69W94;
@@ -762,7 +619,6 @@
 		};
 		C7D4D6A11F7E5BD00074CE88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BC1D810A3FC687ECB67E6C2 /* Pods-InMobiAdsDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 867HB69W94;
@@ -776,7 +632,6 @@
 		};
 		C7D4D6A31F7E5BD00074CE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABBA77D41857AEFAE6D3C879 /* Pods-InMobiAdsDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 867HB69W94;
 				INFOPLIST_FILE = InMobiAdsDemoUITests/Info.plist;
@@ -789,7 +644,6 @@
 		};
 		C7D4D6A41F7E5BD00074CE88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F68C944AC2ECB8BC10D9239D /* Pods-InMobiAdsDemoUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 867HB69W94;
 				INFOPLIST_FILE = InMobiAdsDemoUITests/Info.plist;

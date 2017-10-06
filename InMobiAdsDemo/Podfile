@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+platform :ios, ‘8.0’
 
 use_frameworks!
 
@@ -13,16 +13,6 @@ target 'InMobiAdsDemo' do
 
   # Pods for InMobiAdsDemo
   commonPods
-
-  target 'InMobiAdsDemoTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'InMobiAdsDemoUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end
 

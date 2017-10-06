@@ -10,16 +10,8 @@
 @implementation SampleData
 
 @end
+
 @implementation IMSimpleTableCell
-@synthesize Title = _Title;
-@synthesize SubTitle = _SubTitle;
-@synthesize Time_tt = _Time_tt;
-@synthesize Description_dd = _Description_dd;
-@synthesize thumbnailImageView = _thumbnailImageView;
-@synthesize BigImageView = _BigImageView;
-@synthesize Description_heading = _Description_heading;
-
-
 
 - (void)awakeFromNib {
     // Initialization code

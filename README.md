@@ -9,12 +9,17 @@ The following environment is required to run the Sample apps
     Xcode 9.0
     InMobi SDK 7.x
     iOS 8.0 and above
-	
+    
+For AdsDemo project make sure you have the latest version of pod installed after that you need to simply do
+    cd /{pathToSampleAppsDirectory}/InMobiAdsDemo
+    pod init
+    pod install
+   
 Three sample apps are provided as per Ad Formats
 
-	BannerSample
-	InterstitialSample 
-	NativeSample
+    BannerSample
+    InterstitialSample
+    NativeSample
 
 The latest InMobi iOS SDK is available in the InMobi folder along with its change logs.
 

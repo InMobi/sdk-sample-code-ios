@@ -107,17 +107,12 @@
             if (indexPath.row == 1) {//Expandable Banner
                 [self performSegueWithIdentifier:@"classicAdSegueIB" sender:[types objectAtIndex:indexPath.row]];
             }
-            else if(indexPath.row == 2){//Native Video
+            else if(indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 4){
+                //Case for Native Video , Web Video , Native Static and Normal Banner in sequential order
                 [self performSegueWithIdentifier:@"classicAdSegue" sender:[types objectAtIndex:indexPath.row]];
             }
-            else if(indexPath.row == 3){//Web Video
-                [self performSegueWithIdentifier:@"classicAdSegue" sender:[types objectAtIndex:indexPath.row]];
-            }
-            else if(indexPath.row == 4){//Native Static
-                [self performSegueWithIdentifier:@"classicAdSegue" sender:[types objectAtIndex:indexPath.row]];
-            }
-            //Normal Banner
             else {
+                //Case for Normal Banner
                 [self performSegueWithIdentifier:@"classicAdSegue" sender:[types objectAtIndex:indexPath.row]];
             }
             break;

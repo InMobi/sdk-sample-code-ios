@@ -21,13 +21,10 @@
 - (void)viewDidLoad {
     self.tableData = [[NSMutableArray alloc] init];
     [self loadInitialData];
-    [self loadInitialData];
-    if(self.isStoryBoard){
-        self.native = [[IMNative alloc] initWithPlacementId:INMOBI_NATIVE_STORYBOARD];
-    }
-    else{
-        self.native = [[IMNative alloc] initWithPlacementId:INMOBI_NATIVE_MOVIEBOARD];
-    }
+    
+    long long placementId = self.isStoryBoard ? INMOBI_NATIVE_STORYBOARD : INMOBI_NATIVE_MOVIEBOARD;
+    self.native = [[IMNative alloc] initWithPlacementId:placementId];
+    
     self.native.delegate = self;
     [self.native load];
     
@@ -42,7 +39,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _tableData.count;
+    return self.tableData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -62,13 +59,13 @@
             NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"SimpleTableCell" owner:self options:nil];
             cell = [nib objectAtIndex:0];
             id slide = [self.tableData objectAtIndex:indexPath.row];
-            SampleData *current_slide = slide;
-            cell.Title.text = current_slide.title;
-            cell.SubTitle.text = current_slide.subtitle;
-            cell.Time_tt.text = current_slide.time;
-            cell.Description_dd.text = current_slide.description_tt;
-            cell.thumbnailImageView.image = [UIImage imageNamed:current_slide.thumbimage];
-            cell.BigImageView.image = [UIImage imageNamed:current_slide.bigimage];
+            SampleData *currentSlide = slide;
+            cell.title.text = currentSlide.title;
+            cell.subTitle.text = currentSlide.subtitle;
+            cell.timeLabel.text = currentSlide.time;
+            cell.descriptionLabel.text = currentSlide.descriptionText;
+            cell.thumbnailImageView.image = [UIImage imageNamed:currentSlide.thumbImage];
+            cell.bigImageView.image = [UIImage imageNamed:currentSlide.bigImage];
         }
         return cell;
     }
@@ -98,45 +95,45 @@
     item1.title = @"Neha Jha";
     item1.subtitle = @"Product Manager";
     item1.time = @"1:50 AM";
-    item1.description_tt = @"Looking out for a Sponsorship Manager with 5+ yrs exp for a sports tourism company in Bangalore with strong grasp of media planning principles & excellent understanding of target segment, market intelligence and media medium technicalities. For more infos contact me at neha@zyoin.com";
-    item1.thumbimage = @"neha_jha.jpg";
-    item1.bigimage = @"neha_jha_big.png";
+    item1.descriptionText = @"Looking out for a Sponsorship Manager with 5+ yrs exp for a sports tourism company in Bangalore with strong grasp of media planning principles & excellent understanding of target segment, market intelligence and media medium technicalities. For more infos contact me at neha@zyoin.com";
+    item1.thumbImage = @"neha_jha.jpg";
+    item1.bigImage = @"neha_jha_big.png";
     [self.tableData addObject:item1];
     
     SampleData *item2 = [[SampleData alloc] init];
     item2.title = @"Nazia Firdose";
     item2.subtitle = @"HR";
     item2.time = @"9:50 AM";
-    item2.description_tt = @"Please pray for these children in Syria after the death of their mother. The oldest sister has to take care of her younger siblings. -Ayad L Gorgees. ***Please don't scroll past without Typing Amen! because they need our prayers!!";
-    item2.thumbimage = @"nazia.jpg";
-    item2.bigimage = @"nazia_big.png";
+    item2.descriptionText = @"Please pray for these children in Syria after the death of their mother. The oldest sister has to take care of her younger siblings. -Ayad L Gorgees. ***Please don't scroll past without Typing Amen! because they need our prayers!!";
+    item2.thumbImage = @"nazia.jpg";
+    item2.bigImage = @"nazia_big.png";
     [self.tableData addObject:item2];
     
     SampleData *item3 = [[SampleData alloc] init];
     item3.title = @"Dharmesh Shah";
     item3.subtitle = @"Founder at HubSpot";
     item3.time = @"4:50 PM";
-    item3.description_tt = @"Why, dear God, haven't you started marketing yet? http://dharme.sh/1Ewu63k by @gjain via @Inboundorg";
-    item3.thumbimage = @"dharmesh.jpg";
-    item3.bigimage = @"dharmesh_big.png";
+    item3.descriptionText = @"Why, dear God, haven't you started marketing yet? http://dharme.sh/1Ewu63k by @gjain via @Inboundorg";
+    item3.thumbImage = @"dharmesh.jpg";
+    item3.bigImage = @"dharmesh_big.png";
     [self.tableData addObject:item3];
     
     SampleData *item4 = [[SampleData alloc] init];
     item4.title = @"Piyush Shah";
     item4.subtitle = @"CPO";
     item4.time = @"6:50 PM";
-    item4.description_tt = @"With mobile being accepted as the definitive medium to access consumers’ minds and wallets, Brands have begun a multi-million dollar spending race to allure and retain customers.  Read on: https://lnkd.in/e8mcUfc";
-    item4.thumbimage = @"piyush.jpg";
-    item4.bigimage = @"piyush_big.png";
+    item4.descriptionText = @"With mobile being accepted as the definitive medium to access consumers’ minds and wallets, Brands have begun a multi-million dollar spending race to allure and retain customers.  Read on: https://lnkd.in/e8mcUfc";
+    item4.thumbImage = @"piyush.jpg";
+    item4.bigImage = @"piyush_big.png";
     [self.tableData addObject:item4];
     
     SampleData *item5 = [[SampleData alloc] init];
     item5.title = @"Jeff Weiner";
     item5.subtitle = @"CEO at Linkedin";
     item5.time = @"4:10 AM";
-    item5.description_tt = @"Honored to represent LinkedIn's Economic Graph capabilities at the White House earlier today and partnering to Upskill America.";
-    item5.thumbimage = @"jeff.jpg";
-    item5.bigimage = @"jeff_big.png";
+    item5.descriptionText = @"Honored to represent LinkedIn's Economic Graph capabilities at the White House earlier today and partnering to Upskill America.";
+    item5.thumbImage = @"jeff.jpg";
+    item5.bigImage = @"jeff_big.png";
     [self.tableData addObject:item5];
 }
 

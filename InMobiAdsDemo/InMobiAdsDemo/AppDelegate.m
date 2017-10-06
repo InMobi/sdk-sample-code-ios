@@ -2,28 +2,20 @@
 //  AppDelegate.m
 //  InMobiAdsDemo
 //
-//  Created by Tabrez Miyan on 29/09/17.
 //  Copyright © 2017 InMobi. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import <InMobiSDK/InMobiSDK.h>
 
-@interface AppDelegate ()
-
-@end
-
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
     [IMSdk initWithAccountID:@"123"];
     [IMSdk setLogLevel:kIMSDKLogLevelDebug];
-    [IMSdk getVersion];
-    
-    
+
     return YES;
 }
 

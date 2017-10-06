@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -136,12 +141,12 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
-                <outlet property="BigImageView" destination="VdO-7M-4C8" id="rmE-Hn-KYt"/>
-                <outlet property="Description_dd" destination="T5n-Hm-DOj" id="jPr-qy-hnW"/>
-                <outlet property="SubTitle" destination="FO4-aa-RX4" id="hLr-vN-a7k"/>
-                <outlet property="Time_tt" destination="RBt-pJ-Gv2" id="Gu0-qz-vLq"/>
-                <outlet property="Title" destination="Mg0-NY-Ot0" id="jKg-71-SLe"/>
+                <outlet property="bigImageView" destination="VdO-7M-4C8" id="rmE-Hn-KYt"/>
+                <outlet property="descriptionLabel" destination="T5n-Hm-DOj" id="jPr-qy-hnW"/>
+                <outlet property="subTitle" destination="FO4-aa-RX4" id="hLr-vN-a7k"/>
                 <outlet property="thumbnailImageView" destination="Gcc-JC-MSQ" id="eKr-Ew-E5W"/>
+                <outlet property="timeLabel" destination="RBt-pJ-Gv2" id="Gu0-qz-vLq"/>
+                <outlet property="title" destination="Mg0-NY-Ot0" id="jKg-71-SLe"/>
             </connections>
             <point key="canvasLocation" x="303" y="296.5"/>
         </tableViewCell>
