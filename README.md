@@ -31,6 +31,74 @@ These sample apps are provided under MIT license. For more information, please s
 
 ## Change logs
 
+
+###Build 7.1.0 [06/Apr/2018]
+-------------
+
+- Added support for GDPR compliance
+- Added skip callback to Native Ads
+- Removed support for iOS 7 devices. SDK will not initialise if the device is below iOS 8 [iOS 8 is deprecated as of v7.0.0]
+- Fixed a crash in carousel ads
+- Performance improvement by offloading certain tasks to the background threads
+- Bug Fixes
+
+- APIs Added
+	* IMSDK class
+	 + +(void)initWithAccountID:(NSString *)accountID consentDictionary: (NSDictionary*) consentDictionary;
+	 + +(void) updateGDPRConsent:(NSDictionary *)consentDictionary;
+
+	* IMCommonConstants class
+	 + #define IM_GDPR_CONSENT_AVAILABLE @"gdpr_consent_available"
+
+	* IMNativeDelegate class
+	 + -(void)userDidSkipPlayingMediaFromNative:(IMNative*)native;
+
+- APIs Removed
+	* IMSDK class
+	 - +(void)setNationality:(NSString*)nationality
+	 - +(void)setEthnicity:(IMSDKEthnicity)ethnicity;
+	 - +(void)setHouseholdIncome:(IMSDKHouseholdIncome)income;
+	 - +(void)setIncome:(unsigned int)income;
+
+	* IMCommonConstants class
+	 - -typedef NS_ENUM (NSInteger, IMSDKEthnicity) {
+ 		kIMSDKEthnicityHispanic = 1,
+     		kIMSDKEthnicityCaucasian,
+     		kIMSDKEthnicityAsian,
+     		kIMSDKEthnicityAfricanAmerican,
+     		kIMSDKEthnicityOther
+ 		};
+ 
+ 	- -typedef NS_ENUM(NSInteger, IMSDKHouseholdIncome) {
+     		kIMSDKHouseholdIncomeBelow5kUSD = 1,
+     		kIMSDKHouseholdIncomeBetween5kAnd10kUSD,
+     		kIMSDKHouseholdIncomeBetween10kAnd15kUSD,
+     		kIMSDKHouseholdIncomeBetween15kAnd20kUSD,
+     		kIMSDKHouseholdIncomeBetween20kAnd25kUSD,
+     		kIMSDKHouseholdIncomeBetween25kAnd50kUSD,
+     		kIMSDKHouseholdIncomeBetween50kAnd75kUSD,
+     		kIMSDKHouseholdIncomeBetween75kAnd100kUSD,
+     		kIMSDKHouseholdIncomeBetween100kAnd150kUSD,
+     		kIMSDKHouseholdIncomeAbove150kUSD
+ 		};
+
+###Build 7.0.5 [27/Dec/2017]
+-------------
+- Bug Fixes
+
+###Build 7.0.4 [1/Dec/2017]
+-------------
+- Support for iPhone X
+- Bug Fixes
+
+###Build 7.0.3 [11/Nov/2017]
+-------------
+- Bug Fixes
+
+###Build 7.0.2 [10/Nov/2017]
+-------------
+- Bug Fixes & Performance Improvements
+
 ###Build 7.0.1 [27/Sept/2017]
 -------------
 - Bug Fixes
