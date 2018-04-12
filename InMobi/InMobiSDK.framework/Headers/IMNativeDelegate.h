@@ -69,4 +69,8 @@
  * Notifies the delegate that the native ad has finished playing media.
  */
 -(void)nativeDidFinishPlayingMedia:(IMNative*)native;
+/**
+ * Notifies the delegate that the user has skipped the playing media.
+ */
+-(void)userDidSkipPlayingMediaFromNative:(IMNative*)native;
 @end

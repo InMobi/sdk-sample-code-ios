@@ -63,6 +63,10 @@
  */
 @property (nonatomic, strong) NSDictionary* extras;
 /**
+ * A unique identifier for the creative.
+ */
+@property (nonatomic, strong, readonly) NSString* creativeId;
+/**
  * Initialize a Native ad with the given PlacementId
  * @param placementId The placementId for loading the native ad
  */
@@ -89,4 +93,9 @@
  * Recycle the view that was presented by the native ad
  */
 -(void)recyclePrimaryView;
+/**
+ * Contains additional information of ad.
+ */
+- (NSDictionary *)getAdMetaInfo;
+
 @end
