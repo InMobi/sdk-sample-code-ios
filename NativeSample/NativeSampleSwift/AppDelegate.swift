@@ -23,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          */
         IMSdk.initWithAccountID(INMOBI_ACCOUNT_ID)
         /*
+         *For EU Region use the following init api to pass user consent for data collection, for GDPR Complaince.
+         *
+         let conscentDict: NSDictionary = [IM_GDPR_CONSENT_AVAILABLE : "true"]
+         IMSdk.initWithAccountID(INMOBI_ACCOUNT_ID, consentDictionary:conscentDict as! [AnyHashable : Any])
+         */
+        /*
          * Enable logging for better debuggability. Please turn off the logs before submitting your App to the AppStore
          */
         IMSdk.setLogLevel(IMSDKLogLevel.debug);

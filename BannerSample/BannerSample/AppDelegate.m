@@ -33,7 +33,7 @@
      *For EU Region use the following init api to pass user consent for data collection, for GDPR Complaince.
      *
      NSMutableDictionary *consentdict=[[NSMutableDictionary alloc]init];
-     [consentdict setObject:"true" forKey:IM_GDPR_CONSENT_AVAILABLE];
+     [consentdict setObject:@"true" forKey:IM_GDPR_CONSENT_AVAILABLE];
      [IMSdk initWithAccountID:INMOBI_ACCOUNT_ID consentDictionary:consentdict];
      */
     /*
