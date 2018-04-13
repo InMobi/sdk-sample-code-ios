@@ -81,6 +81,9 @@ class ViewController: UIViewController,IMNativeDelegate {
         NSLog("InMobi Did Interact With Params :%@",params);
         
     }
+    public func userDidSkipPlayingMedia(from native: IMNative!) {
+        NSLog("User Did Skip Playing Media ");
+    }
     
 }
 

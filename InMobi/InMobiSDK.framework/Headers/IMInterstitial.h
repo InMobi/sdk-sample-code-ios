@@ -75,6 +75,10 @@ typedef NS_ENUM(NSInteger, IMInterstitialAnimationType) {
  */
 @property (nonatomic, strong) NSDictionary* extras;
 /**
+ * A unique identifier for the creative.
+ */
+@property (nonatomic, strong, readonly) NSString* creativeId;
+/**
  * Initialize an Interstitial with the given PlacementId
  * @param placementId The placementId for loading the interstitial
  */
@@ -104,6 +108,10 @@ typedef NS_ENUM(NSInteger, IMInterstitialAnimationType) {
  * @param type The transition type for interstitial presentation.
  */
 -(void)showFromViewController:(UIViewController *)viewController withAnimation:(IMInterstitialAnimationType)type;
+/**
+- * Contains additional information of ad.
+- */
+- (NSDictionary *)getAdMetaInfo;
 
 @end
 
