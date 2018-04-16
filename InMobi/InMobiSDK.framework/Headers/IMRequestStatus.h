@@ -17,10 +17,12 @@ typedef NS_ENUM(NSInteger, IMStatusCode) {
     kIMStatusCodeRequestInvalid,
     kIMStatusCodeRequestPending,
     kIMStatusCodeRequestTimedOut,
+    kIMStatusCodeMultipleLoadsOnSameInstance,
     kIMStatusCodeInternalError,
     kIMStatusCodeServerError,
     kIMStatusCodeAdActive,
-    kIMStatusCodeEarlyRefreshRequest
+    kIMStatusCodeEarlyRefreshRequest,
+    kIMStatusCodeDroppingNetworkRequest
 };
 
 @interface IMRequestStatus : NSError

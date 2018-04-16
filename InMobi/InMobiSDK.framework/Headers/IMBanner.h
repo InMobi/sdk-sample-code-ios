@@ -46,6 +46,10 @@
  */
 @property (nonatomic) UIViewAnimationTransition transitionAnimation;
 /**
+ * A unique identifier for the creative.
+ */
+@property (nonatomic, strong, readonly) NSString* creativeId;
+/**
  * Initializes an IMBanner instance with the specified placementId.
  * @param frame CGRect for this view, according to the requested size.
  * @param placementId  the placement Id registered on the InMobi portal.
@@ -68,5 +72,10 @@
  */
 -(void)shouldAutoRefresh:(BOOL)refresh;
 -(void)setRefreshInterval:(NSInteger)interval;
+
+/**
+ * Contains additional information of ad.
+ */
+- (NSDictionary *)getAdMetaInfo;
 
 @end
