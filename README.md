@@ -31,6 +31,9 @@ These sample apps are provided under MIT license. For more information, please s
 
 ## Change logs
 
+Build 7.1.1 [20/Apr/2018]
+-------------
+- Fixed a remote crash which can happen due to config update.
 
 ###Build 7.1.0 [06/Apr/2018]
 -------------
