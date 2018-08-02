@@ -15,7 +15,7 @@ Build 7.1.0 [06/Apr/2018]
 
 - Added support for GDPR compliance
 - Added skip callback to Native Ads
-- Removed support for iOS 7 devices. SDK will not initialise if sdsa device is below iOS 8 [iOS 8 is deprecated as of v7.0.0]
+- Removed support for iOS 7 devices. SDK will not initialise if the device is below iOS 8 [iOS 7 is deprecated as of v7.0.0]
 - Fixed a crash in carousel ads
 - Performance improvement by offloading certain tasks to the background threads
 - Bug Fixes
