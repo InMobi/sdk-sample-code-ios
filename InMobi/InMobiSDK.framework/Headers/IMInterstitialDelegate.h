@@ -28,14 +28,25 @@
 #import <Foundation/Foundation.h>
 #import "IMRequestStatus.h"
 
+#ifndef INTERSTITIALDELEGATEINCLUDE_H
+#define INTERSTITIALDELEGATEINCLUDE_H
+
 @class IMInterstitial;
 @protocol IMInterstitialDelegate <NSObject>
 @optional
 /**
+ * The callback used to give the signals to the delegate. This callback is invoked after getSignals method is invoked on the IMInterstitial instance.
+ */
+-(void)interstitial:(IMInterstitial*)interstitial gotSignals:(NSData*)signals;
+/**
+ * Notifies the delegate that the getSignals call on IMInterstitial instance has failed to return the signals.
+ */
+-(void)interstitial:(IMInterstitial*)interstitial failedToGetSignalsWithError:(IMRequestStatus*)status;
+/**
  * Notifies the delegate that the ad server has returned an ad. Assets are not yet available.
  * Please use interstitialDidFinishLoading: to receive a callback when assets are also available.
  */
--(void)interstitialDidReceiveAd:(IMInterstitial *)interstitial;
+-(void)interstitialDidReceiveAd:(IMInterstitial*)interstitial;
 /**
  * Notifies the delegate that the interstitial has finished loading and can be shown instantly.
  */
@@ -43,7 +54,7 @@
 /**
  * Notifies the delegate that the interstitial has failed to load with some error.
  */
--(void)interstitial:(IMInterstitial*)interstitial didFailToLoadWithError:(IMRequestStatus*)error;
+-(void)interstitial:(IMInterstitial*)interstitial didFailToLoadWithError:(IMRequestStatus *)error;
 /**
  * Notifies the delegate that the interstitial would be presented.
  */
@@ -51,7 +62,7 @@
 /**
  * Notifies the delegate that the interstitial has been presented.
  */
--(void)interstitialDidPresent:(IMInterstitial *)interstitial;
+-(void)interstitialDidPresent:(IMInterstitial*)interstitial;
 /**
  * Notifies the delegate that the interstitial has failed to present with some error.
  */
@@ -77,6 +88,6 @@
  */
 -(void)userWillLeaveApplicationFromInterstitial:(IMInterstitial*)interstitial;
 
-
 @end
 
+#endif /* INTERSTITIALDELEGATEINCLUDE_H */

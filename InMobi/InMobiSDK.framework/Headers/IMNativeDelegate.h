@@ -29,6 +29,15 @@
 
 @class IMNative;
 @protocol IMNativeDelegate <NSObject>
+@optional
+/**
+ * The callback used to give the signals to the delegate. This callback is invoked after getSignals method is invoked on the IMNative instance.
+ */
+-(void)native:(IMNative*)native gotSignals:(NSData*)signals;
+/**
+ * Notifies the delegate that the getSignals call on the IMNative instance has failed to return the sginals.
+ */
+-(void)native:(IMNative*)native failedToGetSignalsWithError:(IMRequestStatus*)status;
 /**
  * Notifies the delegate that the native ad has finished loading
  */
@@ -73,4 +82,10 @@
  * Notifies the delegate that the user has skipped the playing media.
  */
 -(void)userDidSkipPlayingMediaFromNative:(IMNative*)native;
+/**
+ * Notifies the delegate that the media audio state has been changed - mute/unmute.
+ * @param audioStateMuted is YES when audio is turned off and NO when audio is turned on.
+ */
+-(void)native:(IMNative*)native adAudioStateChanged:(BOOL)audioStateMuted;
+
 @end

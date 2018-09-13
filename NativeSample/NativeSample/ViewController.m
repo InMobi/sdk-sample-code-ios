@@ -88,7 +88,6 @@
 -(void)nativeAdImpressed:(IMNative*)native{
     NSLog(@"InMobi Native has tracked an impression");
 }
-
 /**
  * Notifies the delegate that the user has performed the action to be incentivised with.
  */
@@ -107,6 +106,17 @@
 -(void)nativeDidFinishPlayingMedia:(IMNative*)native{
     NSLog(@"InMobi Native Did Finish Playing Media");
 }
-
+/**
+ * Notifies the delegate that the media audio state has been changed - mute/unmute.
+ * @param audioStateMuted is YES when audio is turned off and NO when audio is turned on.
+ */
+-(void)native:(IMNative *)native adAudioStateChanged:(BOOL)audioStateMuted{
+    if (audioStateMuted) {
+        NSLog(@"Inline video-ad audio state changed to mute");
+    } else {
+        NSLog(@"Inline video-ad audio state changed to unmute");
+    }
+    //This is called when inline video audio state changes.
+}
 
 @end

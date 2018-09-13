@@ -4,12 +4,12 @@
 //  Copyright (c) 2015 InMobi. All rights reserved.
 //
 
-#ifndef APIs_CommonConstants_h
-#define APIs_CommonConstants_h
+#ifndef COMMONCONSTANTSINCLUEDE_H
+#define COMMONCONSTANTSINCLUEDE_H
 
 #import <UIKit/UIKit.h>
 
-#define IM_GDPR_CONSENT_AVAILABLE @"gdpr_consent_available"
+static const NSString * IM_GDPR_CONSENT_AVAILABLE = @"gdpr_consent_available";
 
 typedef NS_ENUM(NSInteger, IMSDKLogLevel) {
     kIMSDKLogLevelNone,
@@ -45,4 +45,4 @@ typedef NS_ENUM(NSInteger, IMSDKAgeGroup) {
     kIMSDKAgeGroupAbove65
 };
 
-#endif
+#endif /* COMMONCONSTANTSINCLUEDE_H */

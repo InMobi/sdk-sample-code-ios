@@ -85,5 +85,13 @@ class ViewController: UIViewController,IMNativeDelegate {
         NSLog("User Did Skip Playing Media ");
     }
     
+    func native(_ native: IMNative!, adAudioStateChanged audioStateMuted: Bool) {
+        if (audioStateMuted) {
+            NSLog("Inline video-ad audio state changed to mute");
+        } else {
+            NSLog("Inline video-ad audio state changed to unmute");
+        }
+        //This is called when inline video audio state changes.
+    }
 }
 
