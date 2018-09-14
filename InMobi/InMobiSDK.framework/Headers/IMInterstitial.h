@@ -54,6 +54,9 @@
 #import <UIKit/UIKit.h>
 #import "IMInterstitialDelegate.h"
 
+#ifndef INTERSTITIALINCLUDE_H
+#define INTERSTITIALINCLUDE_H
+
 typedef NS_ENUM(NSInteger, IMInterstitialAnimationType) {
     kIMInterstitialAnimationTypeCoverVertical,
     kIMInterstitialAnimationTypeFlipHorizontal,
@@ -90,9 +93,17 @@ typedef NS_ENUM(NSInteger, IMInterstitialAnimationType) {
  */
 -(instancetype)initWithPlacementId:(long long)placementId delegate:(id<IMInterstitialDelegate>)delegate;
 /**
+ * Get signals from the SDK. The signals will be asynchronously given via the gotSignals method on the IMInterstitialDelegate protocol.
+ */
+-(void)getSignals;
+/**
  * Loads an Interstitial
  */
 -(void)load;
+/**
+ * Loads a Interstitial Ad with a specified response.
+ */
+-(void)load:(NSData*)response;
 /**
  * To query if the interstitial is ready to be shown
  */
@@ -109,9 +120,11 @@ typedef NS_ENUM(NSInteger, IMInterstitialAnimationType) {
  */
 -(void)showFromViewController:(UIViewController *)viewController withAnimation:(IMInterstitialAnimationType)type;
 /**
-- * Contains additional information of ad.
-- */
+ * Contains additional information of ad.
+ */
 - (NSDictionary *)getAdMetaInfo;
 
 @end
+
+#endif /* INTERSTITIALINCLUDE_H */
 

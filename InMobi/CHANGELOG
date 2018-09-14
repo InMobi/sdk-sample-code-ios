@@ -2,9 +2,27 @@
 InMobi Monetization SDK for iOS
 ===================================
 
+Build 7.2.0 [11/Sep/2018]
+-------------
+- Support for iOS 12
+- Block auto-redirection of ads without user interaction
+- Bug Fixes
+
+Build 7.1.5 [10/Aug/2018]
+-------------
+- Added callback for native ads on audio state change.
+- Fixed issue with SKStore where both SKStore and AppStore were opening on user-click.
+- Memory optimisation for banner ads.
+- Main thread sanity for Native ads,
+- Bug Fixes
+
+- APIs Added
+	* IMNative Class
+	 + -(void)native:(IMNative*)native adAudioStateChanged:(BOOL)audioState;
+
 Build 7.1.2 [31/Jul/2018]
 -------------
-- Fixed a bug related to creative id api.sdasd
+- Fixed a bug related to creative id api.
 
 Build 7.1.1 [20/Apr/2018]
 -------------

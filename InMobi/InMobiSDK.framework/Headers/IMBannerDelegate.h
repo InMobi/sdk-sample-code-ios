@@ -29,6 +29,15 @@
 
 @class IMBanner;
 @protocol IMBannerDelegate <NSObject>
+@optional
+/**
+ * The callback used to give the signals to the delegate. This callback is invoked after getSignals method is invoked on the Banner instance.
+ */
+-(void)banner:(IMBanner*)banner gotSignals:(NSData*)signals;
+/**
+ * Notifies the delegate that the getSignals call on the IMBanner instance has failed to return the sginals.
+ */
+-(void)banner:(IMBanner*)banner failedToGetSignalsWithError:(IMRequestStatus*)status;
 /**
  * Notifies the delegate that the banner has finished loading
  */

@@ -11,6 +11,10 @@
 /**
  * Enumeration for error codes
  */
+
+#ifndef REQUESTSTATUSINCLUDE_H
+#define REQUESTSTATUSINCLUDE_H
+
 typedef NS_ENUM(NSInteger, IMStatusCode) {
     kIMStatusCodeNetworkUnReachable,
     kIMStatusCodeNoFill,
@@ -25,6 +29,8 @@ typedef NS_ENUM(NSInteger, IMStatusCode) {
     kIMStatusCodeDroppingNetworkRequest
 };
 
+
+
 @interface IMRequestStatus : NSError
 /**
  * Create an InMobi specific error from NSError
@@ -35,3 +41,5 @@ typedef NS_ENUM(NSInteger, IMStatusCode) {
 -(instancetype)initWithDomain:(NSString *)domain code:(IMStatusCode)code userInfo:(NSDictionary *)dict;
 
 @end
+
+#endif /* REQUESTSTATUSINCLUDE_H */

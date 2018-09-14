@@ -78,9 +78,17 @@
  */
 -(instancetype)initWithPlacementId:(long long)placementId delegate:(id<IMNativeDelegate>)delegate;
 /**
+ * Get signals from the SDK. The signals will be asynchronously given via the gotSignals method on the IMNativeDelegate protocol.
+ */
+-(void)getSignals;
+/**
  * Loads a Native ad
  */
 -(void)load;
+/**
+ * Loads a Native Ad with a specified response.
+ */
+-(void)load:(NSData*)response;
 /**
  * Indicates if the native ad is ready to be displayed.
  */

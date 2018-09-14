@@ -63,9 +63,17 @@
  */
 -(instancetype)initWithFrame:(CGRect)frame placementId:(long long)placementId delegate:(id<IMBannerDelegate>)delegate;
 /**
+ * Get signals from the SDK. The signals will be asynchronously given via the gotSignals method on the IMBannerDelegate protocol.
+ */
+-(void)getSignals;
+/**
  * Loads a banner with default values.
  */
 -(void)load;
+/**
+ * Loads a banner with a specified response.
+ */
+-(void)load:(NSData*)response;
 /**
  * Specifies if the banner should auto refresh
  * @param refresh if the banner should be refreshed
