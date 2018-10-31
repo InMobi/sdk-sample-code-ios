@@ -26,7 +26,8 @@ typedef NS_ENUM(NSInteger, IMStatusCode) {
     kIMStatusCodeServerError,
     kIMStatusCodeAdActive,
     kIMStatusCodeEarlyRefreshRequest,
-    kIMStatusCodeDroppingNetworkRequest
+    kIMStatusCodeDroppingNetworkRequest,
+    kIMStatusCodeApplicationNotInActiveState
 };
 
 
