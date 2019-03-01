@@ -27,7 +27,8 @@ typedef NS_ENUM(NSInteger, IMStatusCode) {
     kIMStatusCodeAdActive,
     kIMStatusCodeEarlyRefreshRequest,
     kIMStatusCodeDroppingNetworkRequest,
-    kIMStatusCodeApplicationNotInActiveState
+    kIMStatusCodeApplicationNotInActiveState,
+    kIMStatusCodeMonetizationDisabled
 };
 
 
