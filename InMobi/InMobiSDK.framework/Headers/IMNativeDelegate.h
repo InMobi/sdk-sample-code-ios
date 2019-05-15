@@ -31,6 +31,10 @@
 @protocol IMNativeDelegate <NSObject>
 @optional
 /**
+ * Notifies the delegate that the native ad has downloaded markup
+ */
+-(void)nativeAdIsAvailable:(IMNative*)native;
+/**
  * The callback used to give the signals to the delegate. This callback is invoked after getSignals method is invoked on the IMNative instance.
  */
 -(void)native:(IMNative*)native gotSignals:(NSData*)signals;
