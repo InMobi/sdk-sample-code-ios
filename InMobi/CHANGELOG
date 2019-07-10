@@ -2,6 +2,15 @@
 InMobi Monetization SDK for iOS
 ===================================
 
+Build 7.2.8 [30/Apr/2019]
+-------------
+- Framework size reduction
+- Bug Fixes
+
+- APIs Added
+	* IMNative Class
+	 + -(void)nativeAdIsAvailable:(IMNative*)native;
+
 Build 7.2.7 [26/Feb/2019]
 -------------
 - Support for MMA Viewability in China
