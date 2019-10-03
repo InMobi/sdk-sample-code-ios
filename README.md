@@ -11,7 +11,9 @@ The following environment is required to run the Sample apps
     iOS 9.0 and above
     
 Make sure you have the latest version of pod installed after that you need to simply do
-    pod install
+
+	pod install
+	
 in the project directory
    
 Three sample apps are provided as per Ad Formats
