@@ -10,7 +10,7 @@ The following environment is required to run the Sample apps
     InMobi SDK 9.x.x
     iOS 9.0 and above
     
-Make sure you have the latest version of pod installed after that you need to simply do
+Important: Make sure you have the latest version of pod installed after that you need to simply do
 
 	pod install
 	

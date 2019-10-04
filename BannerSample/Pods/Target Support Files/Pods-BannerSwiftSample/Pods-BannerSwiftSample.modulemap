@@ -1,6 +1,0 @@
-framework module Pods_BannerSwiftSample {
-  umbrella header "Pods-BannerSwiftSample-umbrella.h"
-
-  export *
-  module * { export * }
-}

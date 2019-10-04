@@ -1,6 +1,0 @@
-framework module Pods_NativeSampleSwift {
-  umbrella header "Pods-NativeSampleSwift-umbrella.h"
-
-  export *
-  module * { export * }
-}
