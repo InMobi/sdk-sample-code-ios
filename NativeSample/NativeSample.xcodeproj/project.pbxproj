@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A98F2ACBC3B1C08F4E81730 /* Pods_NativeSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C870120E7C6E88B45931C3 /* Pods_NativeSample.framework */; };
 		BE23065C1F3C6CFC005BE1B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE23065B1F3C6CFC005BE1B5 /* main.m */; };
 		BE23065F1F3C6CFC005BE1B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE23065E1F3C6CFC005BE1B5 /* AppDelegate.m */; };
 		BE2306621F3C6CFC005BE1B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2306611F3C6CFC005BE1B5 /* ViewController.m */; };
@@ -18,17 +19,15 @@
 		BE23067D1F3C6D1E005BE1B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE23067B1F3C6D1E005BE1B5 /* Main.storyboard */; };
 		BE23067F1F3C6D1E005BE1B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE23067E1F3C6D1E005BE1B5 /* Assets.xcassets */; };
 		BE2306821F3C6D1E005BE1B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2306801F3C6D1E005BE1B5 /* LaunchScreen.storyboard */; };
-		BE4397781F45C84C001A9E26 /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4397771F45BD19001A9E26 /* InMobiSDK.framework */; };
-		BE9A7C731F41866800FD738B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9A7C721F41866800FD738B /* libsqlite3.tbd */; };
-		BE9A7C761F41869000FD738B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9A7C751F41869000FD738B /* libz.tbd */; };
-		BEB202291F727BE900C0E151 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE23066B1F3C6CFC005BE1B5 /* Info.plist */; };
-		BEB202321F727F9800C0E151 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEB202311F727F9800C0E151 /* Info.plist */; };
-		BED13C4E1F6FD34700E32B8D /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED13C4D1F6FD34700E32B8D /* InMobiSDK.framework */; };
-		BEE5184B1F41AC99006FC52D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9A7C721F41866800FD738B /* libsqlite3.tbd */; };
-		BEE5184C1F41ACA3006FC52D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9A7C751F41869000FD738B /* libz.tbd */; };
+		CA5F0F80807B8C393D98637B /* Pods_NativeSampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364A2EBE94A7AB4C0B6D64D5 /* Pods_NativeSampleSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		122A0561C6F6AA38258C2117 /* Pods-NativeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSample.debug.xcconfig"; path = "Target Support Files/Pods-NativeSample/Pods-NativeSample.debug.xcconfig"; sourceTree = "<group>"; };
+		2489BB1B6BCBD4F4F37F294C /* Pods-NativeSampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-NativeSampleSwift/Pods-NativeSampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		29C870120E7C6E88B45931C3 /* Pods_NativeSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NativeSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		364A2EBE94A7AB4C0B6D64D5 /* Pods_NativeSampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NativeSampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9864CCC0A3B6BD80A281632 /* Pods-NativeSampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSampleSwift.release.xcconfig"; path = "Target Support Files/Pods-NativeSampleSwift/Pods-NativeSampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		BE2306571F3C6CFC005BE1B5 /* NativeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE23065B1F3C6CFC005BE1B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE23065D1F3C6CFC005BE1B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +49,9 @@
 		BE9A7C751F41869000FD738B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		BEB202311F727F9800C0E151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BED13C4D1F6FD34700E32B8D /* InMobiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InMobiSDK.framework; path = ../../../Desktop/InMobi_iOS_SDK_7.0.0/InMobiSDK.framework; sourceTree = "<group>"; };
+		C3F0854C5ED8B5AD8543AF5B /* Pods-NativeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSample.release.xcconfig"; path = "Target Support Files/Pods-NativeSample/Pods-NativeSample.release.xcconfig"; sourceTree = "<group>"; };
+		E16A528F2345F08E00264C35 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		E16A52922345F0F800264C35 /* NativeSampleSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NativeSampleSwift.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BED13C4E1F6FD34700E32B8D /* InMobiSDK.framework in Frameworks */,
-				BEE5184B1F41AC99006FC52D /* libsqlite3.tbd in Frameworks */,
-				BEE5184C1F41ACA3006FC52D /* libz.tbd in Frameworks */,
+				6A98F2ACBC3B1C08F4E81730 /* Pods_NativeSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,15 +67,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE4397781F45C84C001A9E26 /* InMobiSDK.framework in Frameworks */,
-				BE9A7C761F41869000FD738B /* libz.tbd in Frameworks */,
-				BE9A7C731F41866800FD738B /* libsqlite3.tbd in Frameworks */,
+				CA5F0F80807B8C393D98637B /* Pods_NativeSampleSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3EC6E79877564B915EF4C87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				122A0561C6F6AA38258C2117 /* Pods-NativeSample.debug.xcconfig */,
+				C3F0854C5ED8B5AD8543AF5B /* Pods-NativeSample.release.xcconfig */,
+				2489BB1B6BCBD4F4F37F294C /* Pods-NativeSampleSwift.debug.xcconfig */,
+				A9864CCC0A3B6BD80A281632 /* Pods-NativeSampleSwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BE23064E1F3C6CFB005BE1B5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +92,7 @@
 				BE2306761F3C6D1E005BE1B5 /* NativeSampleSwift */,
 				BE2306581F3C6CFC005BE1B5 /* Products */,
 				BE2306871F3C6DE3005BE1B5 /* Frameworks */,
+				A3EC6E79877564B915EF4C87 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +132,7 @@
 		BE2306761F3C6D1E005BE1B5 /* NativeSampleSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E16A52922345F0F800264C35 /* NativeSampleSwift.entitlements */,
 				BE2306771F3C6D1E005BE1B5 /* AppDelegate.swift */,
 				BE2306791F3C6D1E005BE1B5 /* ViewController.swift */,
 				BE23067B1F3C6D1E005BE1B5 /* Main.storyboard */,
@@ -135,10 +146,13 @@
 		BE2306871F3C6DE3005BE1B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E16A528F2345F08E00264C35 /* WebKit.framework */,
 				BE4397771F45BD19001A9E26 /* InMobiSDK.framework */,
 				BED13C4D1F6FD34700E32B8D /* InMobiSDK.framework */,
 				BE9A7C751F41869000FD738B /* libz.tbd */,
 				BE9A7C721F41866800FD738B /* libsqlite3.tbd */,
+				29C870120E7C6E88B45931C3 /* Pods_NativeSample.framework */,
+				364A2EBE94A7AB4C0B6D64D5 /* Pods_NativeSampleSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE23066E1F3C6CFC005BE1B5 /* Build configuration list for PBXNativeTarget "NativeSample" */;
 			buildPhases = (
+				564ACFFAF675E7FA41CA9971 /* [CP] Check Pods Manifest.lock */,
 				BE2306531F3C6CFC005BE1B5 /* Sources */,
 				BE2306541F3C6CFC005BE1B5 /* Frameworks */,
 				BE2306551F3C6CFC005BE1B5 /* Resources */,
@@ -167,6 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE2306841F3C6D1E005BE1B5 /* Build configuration list for PBXNativeTarget "NativeSampleSwift" */;
 			buildPhases = (
+				5FB6A0D4162BCB286A45A622 /* [CP] Check Pods Manifest.lock */,
 				BE2306711F3C6D1E005BE1B5 /* Sources */,
 				BE2306721F3C6D1E005BE1B5 /* Frameworks */,
 				BE2306731F3C6D1E005BE1B5 /* Resources */,
@@ -187,7 +203,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Inmobi;
 				TargetAttributes = {
 					BE2306561F3C6CFC005BE1B5 = {
@@ -203,8 +219,8 @@
 				};
 			};
 			buildConfigurationList = BE2306521F3C6CFB005BE1B5 /* Build configuration list for PBXProject "NativeSample" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -226,7 +242,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB202291F727BE900C0E151 /* Info.plist in Resources */,
 				BE23066A1F3C6CFC005BE1B5 /* LaunchScreen.storyboard in Resources */,
 				BE2306671F3C6CFC005BE1B5 /* Assets.xcassets in Resources */,
 				BE2306651F3C6CFC005BE1B5 /* Main.storyboard in Resources */,
@@ -237,7 +252,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB202321F727F9800C0E151 /* Info.plist in Resources */,
 				BE2306821F3C6D1E005BE1B5 /* LaunchScreen.storyboard in Resources */,
 				BE23067F1F3C6D1E005BE1B5 /* Assets.xcassets in Resources */,
 				BE23067D1F3C6D1E005BE1B5 /* Main.storyboard in Resources */,
@@ -245,6 +259,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		564ACFFAF675E7FA41CA9971 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NativeSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FB6A0D4162BCB286A45A622 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NativeSampleSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE2306531F3C6CFC005BE1B5 /* Sources */ = {
@@ -314,15 +375,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -345,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -363,15 +432,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -388,9 +465,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -398,14 +476,18 @@
 		};
 		BE23066F1F3C6CFC005BE1B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122A0561C6F6AA38258C2117 /* Pods-NativeSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WZMMZ9FP6W;
-				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/NativeSample/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = testOrg.NativeRebootSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,14 +495,18 @@
 		};
 		BE2306701F3C6CFC005BE1B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F0854C5ED8B5AD8543AF5B /* Pods-NativeSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WZMMZ9FP6W;
-				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/NativeSample/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = testOrg.NativeRebootSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -428,36 +514,47 @@
 		};
 		BE2306851F3C6D1E005BE1B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2489BB1B6BCBD4F4F37F294C /* Pods-NativeSampleSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NativeSampleSwift/NativeSampleSwift.entitlements;
 				DEVELOPMENT_TEAM = WZMMZ9FP6W;
-				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/NativeSampleSwift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = testOrg.NativeRebootSampleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		BE2306861F3C6D1E005BE1B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9864CCC0A3B6BD80A281632 /* Pods-NativeSampleSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NativeSampleSwift/NativeSampleSwift.entitlements;
 				DEVELOPMENT_TEAM = WZMMZ9FP6W;
-				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/NativeSampleSwift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = testOrg.NativeRebootSampleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

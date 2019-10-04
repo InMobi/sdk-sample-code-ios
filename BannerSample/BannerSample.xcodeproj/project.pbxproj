@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,15 +18,13 @@
 		3DB9E5641D83681A00A4365A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB9E5621D83681A00A4365A /* Main.storyboard */; };
 		3DB9E5661D83681A00A4365A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB9E5651D83681A00A4365A /* Assets.xcassets */; };
 		3DB9E5691D83681A00A4365A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB9E5671D83681A00A4365A /* LaunchScreen.storyboard */; };
-		3DB9E61B1D836A5D00A4365A /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E61A1D836A5D00A4365A /* InMobiSDK.framework */; };
-		3DB9E61C1D836A6B00A4365A /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E61A1D836A5D00A4365A /* InMobiSDK.framework */; };
-		3DB9E61E1D836A7800A4365A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E61D1D836A7800A4365A /* libz.tbd */; };
-		3DB9E6201D836A7D00A4365A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E61F1D836A7D00A4365A /* libsqlite3.tbd */; };
-		3DB9E6211D836A8400A4365A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E61F1D836A7D00A4365A /* libsqlite3.tbd */; };
-		3DB9E6221D836A8900A4365A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E61D1D836A7800A4365A /* libz.tbd */; };
+		3E867E7A72F2B4C483F95AE9 /* Pods_BannerSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FAB36E3C310B2C0084511A /* Pods_BannerSample.framework */; };
+		ED00DF0230E529A26F5A1122 /* Pods_BannerSwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E227908722441911B4F79B6 /* Pods_BannerSwiftSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1C30E531947AE71D9A4C8B /* Pods-BannerSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BannerSwiftSample.release.xcconfig"; path = "Target Support Files/Pods-BannerSwiftSample/Pods-BannerSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
+		3AB324243D6FB395DDAED777 /* Pods-BannerSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BannerSwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-BannerSwiftSample/Pods-BannerSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 		3DB9E53E1D83680100A4365A /* BannerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BannerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB9E5421D83680100A4365A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3DB9E5441D83680100A4365A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,6 +45,12 @@
 		3DB9E61A1D836A5D00A4365A /* InMobiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InMobiSDK.framework; path = ../InMobi/InMobiSDK.framework; sourceTree = "<group>"; };
 		3DB9E61D1D836A7800A4365A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3DB9E61F1D836A7D00A4365A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		82EC8E68CD4B78569EF33AC6 /* Pods-BannerSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BannerSample.release.xcconfig"; path = "Target Support Files/Pods-BannerSample/Pods-BannerSample.release.xcconfig"; sourceTree = "<group>"; };
+		9E227908722441911B4F79B6 /* Pods_BannerSwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BannerSwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FAB36E3C310B2C0084511A /* Pods_BannerSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BannerSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C65B8F86A5ED61007DF8CD /* Pods-BannerSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BannerSample.debug.xcconfig"; path = "Target Support Files/Pods-BannerSample/Pods-BannerSample.debug.xcconfig"; sourceTree = "<group>"; };
+		E153DB252346061B0025003A /* BannerSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BannerSample.entitlements; sourceTree = "<group>"; };
+		E16A52862345EDF000264C35 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB9E6201D836A7D00A4365A /* libsqlite3.tbd in Frameworks */,
-				3DB9E61E1D836A7800A4365A /* libz.tbd in Frameworks */,
-				3DB9E61B1D836A5D00A4365A /* InMobiSDK.framework in Frameworks */,
+				3E867E7A72F2B4C483F95AE9 /* Pods_BannerSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,9 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB9E6221D836A8900A4365A /* libz.tbd in Frameworks */,
-				3DB9E6211D836A8400A4365A /* libsqlite3.tbd in Frameworks */,
-				3DB9E61C1D836A6B00A4365A /* InMobiSDK.framework in Frameworks */,
+				ED00DF0230E529A26F5A1122 /* Pods_BannerSwiftSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +80,7 @@
 				3DB9E55D1D83681A00A4365A /* BannerSwiftSample */,
 				3DB9E53F1D83680100A4365A /* Products */,
 				3DB9E6191D836A5C00A4365A /* Frameworks */,
+				4603822AF7DE37119F0EDCD8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +96,7 @@
 		3DB9E5401D83680100A4365A /* BannerSample */ = {
 			isa = PBXGroup;
 			children = (
+				E153DB252346061B0025003A /* BannerSample.entitlements */,
 				3DB9E5441D83680100A4365A /* AppDelegate.h */,
 				3DB9E5451D83680100A4365A /* AppDelegate.m */,
 				3DB9E5471D83680100A4365A /* ViewController.h */,
@@ -132,11 +134,25 @@
 		3DB9E6191D836A5C00A4365A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E16A52862345EDF000264C35 /* WebKit.framework */,
 				3DB9E61F1D836A7D00A4365A /* libsqlite3.tbd */,
 				3DB9E61D1D836A7800A4365A /* libz.tbd */,
 				3DB9E61A1D836A5D00A4365A /* InMobiSDK.framework */,
+				B9FAB36E3C310B2C0084511A /* Pods_BannerSample.framework */,
+				9E227908722441911B4F79B6 /* Pods_BannerSwiftSample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4603822AF7DE37119F0EDCD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7C65B8F86A5ED61007DF8CD /* Pods-BannerSample.debug.xcconfig */,
+				82EC8E68CD4B78569EF33AC6 /* Pods-BannerSample.release.xcconfig */,
+				3AB324243D6FB395DDAED777 /* Pods-BannerSwiftSample.debug.xcconfig */,
+				3A1C30E531947AE71D9A4C8B /* Pods-BannerSwiftSample.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +162,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DB9E5551D83680100A4365A /* Build configuration list for PBXNativeTarget "BannerSample" */;
 			buildPhases = (
+				B1B53165298A6CFD2A0B1F26 /* [CP] Check Pods Manifest.lock */,
 				3DB9E53A1D83680100A4365A /* Sources */,
 				3DB9E53B1D83680100A4365A /* Frameworks */,
 				3DB9E53C1D83680100A4365A /* Resources */,
@@ -163,6 +180,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DB9E56B1D83681A00A4365A /* Build configuration list for PBXNativeTarget "BannerSwiftSample" */;
 			buildPhases = (
+				13957AE6CC7A2141938E1A85 /* [CP] Check Pods Manifest.lock */,
 				3DB9E5581D83681900A4365A /* Sources */,
 				3DB9E5591D83681900A4365A /* Frameworks */,
 				3DB9E55A1D83681900A4365A /* Resources */,
@@ -183,12 +201,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = InMobi;
 				TargetAttributes = {
 					3DB9E53D1D83680100A4365A = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 867HB69W94;
 						ProvisioningStyle = Automatic;
 					};
 					3DB9E55B1D83681900A4365A = {
@@ -199,8 +216,8 @@
 				};
 			};
 			buildConfigurationList = 3DB9E5391D83680100A4365A /* Build configuration list for PBXProject "BannerSample" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -239,6 +256,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13957AE6CC7A2141938E1A85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BannerSwiftSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1B53165298A6CFD2A0B1F26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BannerSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DB9E53A1D83680100A4365A /* Sources */ = {
@@ -307,15 +371,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -324,12 +397,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -339,8 +416,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/../InMobi";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -358,15 +435,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -375,7 +461,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -384,11 +470,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/../InMobi";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -396,11 +483,17 @@
 		};
 		3DB9E5561D83680100A4365A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7C65B8F86A5ED61007DF8CD /* Pods-BannerSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 867HB69W94;
+				CODE_SIGN_ENTITLEMENTS = BannerSample/BannerSample.entitlements;
+				DEVELOPMENT_TEAM = WZMMZ9FP6W;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BannerSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.inmobi.BannerSample11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -408,11 +501,17 @@
 		};
 		3DB9E5571D83680100A4365A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82EC8E68CD4B78569EF33AC6 /* Pods-BannerSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 867HB69W94;
+				CODE_SIGN_ENTITLEMENTS = BannerSample/BannerSample.entitlements;
+				DEVELOPMENT_TEAM = WZMMZ9FP6W;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BannerSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.inmobi.BannerSample11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -420,38 +519,47 @@
 		};
 		3DB9E56C1D83681A00A4365A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB324243D6FB395DDAED777 /* Pods-BannerSwiftSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 867HB69W94;
-				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BannerSwiftSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.inmobi.BannerSwiftSample11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		3DB9E56D1D83681A00A4365A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A1C30E531947AE71D9A4C8B /* Pods-BannerSwiftSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 867HB69W94;
-				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../InMobi";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BannerSwiftSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.inmobi.BannerSwiftSample11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

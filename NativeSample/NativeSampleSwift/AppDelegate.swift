@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?) -> Bool {
         // Override point for customization after application launch.
         /*
          * Initialize the InMobi SDK immediately after the app launches.
@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          * For EU Region use the following init api to pass user consent for data collection, for GDPR Complaince.
          */
         let conscentDict: NSDictionary = [IM_GDPR_CONSENT_AVAILABLE : "true"]
-        IMSdk.initWithAccountID(INMOBI_ACCOUNT_ID, consentDictionary:conscentDict as! [AnyHashable : Any])
+        IMSdk.initWithAccountID(INMOBI_ACCOUNT_ID, consentDictionary:conscentDict as? [AnyHashable : Any])
         /*
          * Enable logging for better debuggability. Please turn off the logs before submitting your App to the AppStore
          */
