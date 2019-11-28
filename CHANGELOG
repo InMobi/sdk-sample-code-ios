@@ -2,6 +2,18 @@
 InMobi Monetization SDK for iOS
 ===================================
 
+Build 9.0.2 [20/Nov/2019]
+-------------
+- Add ability to compile SDK on Xcode 10.2 onwards
+- Bug Fixes
+
+Build 9.0.1 [25/Oct/2019]
+-------------
+- Add support for IAB GDPR consent string
+- Update OMSDK to v1.2.19
+- Seperate Moat SDK from InMobi SDK and add as an optional dependency
+- Completely remove UIWebView from the SDK
+- Bug Fixes
 
 Build 9.0.0 [20/Sept/2019]
 -------------
