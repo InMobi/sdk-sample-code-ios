@@ -6,7 +6,7 @@ Publicly available sample apps of InMobi providing simple integration steps. InM
 
 The following environment is required to run the Sample apps
 
-    Xcode 10.0
+    Xcode 10.2 and above
     InMobi SDK 9.x.x
     iOS 9.0 and above
     
@@ -31,6 +31,19 @@ To run the sample apps, open any of the Ad Format's .xcodeproj file with Xcode 9
 These sample apps are provided under MIT license. For more information, please see the LICENSE file. For information about InMobi SDK's license, please see the InMobi folder.
 
 ## Change logs
+
+Build 9.0.2 [20/Nov/2019]
+-------------
+- Add ability to compile SDK on Xcode 10.2 onwards
+- Bug Fixes
+
+Build 9.0.1 [25/Oct/2019]
+-------------
+- Add support for IAB GDPR consent string
+- Update OMSDK to v1.2.19
+- Seperate Moat SDK from InMobi SDK and add as an optional dependency
+- Completely remove UIWebView from the SDK
+- Bug Fixes
 
 ###Build 9.0.0 [20/Sept/2019]
 -------------
