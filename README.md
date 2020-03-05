@@ -32,6 +32,10 @@ These sample apps are provided under MIT license. For more information, please s
 
 ## Change logs
 
+Build 9.0.3 [10/Dec/2019]
+-------------
+- Bug Fixes
+
 Build 9.0.2 [20/Nov/2019]
 -------------
 - Add ability to compile SDK on Xcode 10.2 onwards
