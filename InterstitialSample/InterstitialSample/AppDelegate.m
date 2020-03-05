@@ -33,7 +33,15 @@
      */
     NSMutableDictionary *consentdict=[[NSMutableDictionary alloc]init];
     [consentdict setObject:@"true" forKey:IM_GDPR_CONSENT_AVAILABLE];
-    [IMSdk initWithAccountID:INMOBI_ACCOUNT_ID consentDictionary:consentdict];
+    void (^completionBlock)(NSError*) = ^( NSError* _Nullable  error) {
+        if (error) {
+            NSLog(@"SDK Initialization Error - %@", error.description);
+        }
+        else {
+            NSLog(@"IM Mediation SDK successfully initialized");
+        }
+    };
+    [IMSdk initWithAccountID:INMOBI_ACCOUNT_ID consentDictionary:consentdict andCompletionHandler:completionBlock];
     
     /*
      * Enable logging for better debuggability. Please turn off the logs before submitting your App to the AppStore
