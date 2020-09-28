@@ -2,6 +2,52 @@
 InMobi Monetization SDK for iOS
 ===================================
 
+
+Build 9.1.0 [23/Sep/2020]
+-------------
+- Added support for iOS 14
+- Added support for SKAdNetwork
+- Added support for App Tracking Transparency Framework
+- Bug Fixes
+
+Build 9.0.7 [24/Apr/2020]
+-------------
+- Added MAX Header Bidding Support
+- Added MoPub Audience Bidding Support
+- Added Custom Audience Bidding Support
+- New APIs Added;
+    IMBannerDelegate:
+    + -(void)banner:(IMBanner*)banner gotSignals:(NSData*)signals;
+    + -(void)banner:(IMBanner *)banner failedToGetSignalsWithError:(IMRequestStatus*)status;
+    + -(void)banner:(IMBanner*)banner didReceiveWithMetaInfo:(IMAdMetaInfo*)info;
+    + -(void)banner:(IMBanner*)banner didFailToReceiveWithError:(IMRequestStatus*)error;
+    IMInterstitialDelegate:
+    + -(void)interstitial:(IMInterstitial*)interstitial gotSignals:(NSData*)signals;
+    + -(void)interstitial:(IMInterstitial*)interstitial failedToGetSignalsWithError:(IMRequestStatus*)status;
+    + -(void)interstitial:(IMInterstitial*)interstitial didReceiveWithMetaInfo:(IMAdMetaInfo*)metaInfo;
+    + -(void)interstitial:(IMInterstitial*)interstitial didFailToReceiveWithError:(NSError*)error;
+    IMBannerPreloadManager:
+    + -(void)preload;
+    + -(void)load;
+   IMInterstitialPreloadManager:
+    + -(void)preload;
+    + -(void)load;
+   IMBanner:
+   + - (void)getSignals;
+   + - (void)load:(NSData*)response;
+   + @property (nonatomic, strong, readonly) IMBannerPreloadManager* preloadManager;
+   IMInterstitial:
+   + - (void)getSignals;
+   + -(void)load:(NSData*)response;
+   + @property (nonatomic, strong, readonly) IMInterstitialPreloadManager* preloadManager;
+   IMAdMetaInfo:
+   + @property (nonatomic, strong, readonly) NSString* creativeID;
+   + @property (nonatomic, strong, readonly) NSDictionary* bidInfo;
+   + - (double)getBid;
+- APIs Deprecated
+    IMInterstitialDelegate:
+        -(void)interstitialDidReceiveAd:(IMInterstitial*)interstitial;
+
 Build 9.0.6 [03/Mar/2020]
 -------------
 - APIs Added
