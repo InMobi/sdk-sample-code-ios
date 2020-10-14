@@ -6,7 +6,7 @@ Publicly available sample apps of InMobi providing simple integration steps. InM
 
 The following environment is required to run the Sample apps
 
-    Xcode 10.2 and above
+    Xcode 11.0 and above
     InMobi SDK 9.x.x
     iOS 9.0 and above
     
@@ -31,6 +31,71 @@ To run the sample apps, open any of the Ad Format's .xcodeproj file with Xcode 9
 These sample apps are provided under MIT license. For more information, please see the LICENSE file. For information about InMobi SDK's license, please see the InMobi folder.
 
 ## Change logs
+
+Build 9.1.0 [23/Sep/2020]
+-------------
+- Added support for iOS 14
+- Added support for SKAdNetwork
+- Added support for App Tracking Transparency Framework
+- Bug Fixes
+
+Build 9.0.7 [24/Apr/2020]
+-------------
+- Added MAX Header Bidding Support
+- Added MoPub Audience Bidding Support
+- Added Custom Audience Bidding Support
+- New APIs Added;
+    IMBannerDelegate:
+    + -(void)banner:(IMBanner*)banner gotSignals:(NSData*)signals;
+    + -(void)banner:(IMBanner *)banner failedToGetSignalsWithError:(IMRequestStatus*)status;
+    + -(void)banner:(IMBanner*)banner didReceiveWithMetaInfo:(IMAdMetaInfo*)info;
+    + -(void)banner:(IMBanner*)banner didFailToReceiveWithError:(IMRequestStatus*)error;
+    IMInterstitialDelegate:
+    + -(void)interstitial:(IMInterstitial*)interstitial gotSignals:(NSData*)signals;
+    + -(void)interstitial:(IMInterstitial*)interstitial failedToGetSignalsWithError:(IMRequestStatus*)status;
+    + -(void)interstitial:(IMInterstitial*)interstitial didReceiveWithMetaInfo:(IMAdMetaInfo*)metaInfo;
+    + -(void)interstitial:(IMInterstitial*)interstitial didFailToReceiveWithError:(NSError*)error;
+    IMBannerPreloadManager:
+    + -(void)preload;
+    + -(void)load;
+   IMInterstitialPreloadManager:
+    + -(void)preload;
+    + -(void)load;
+   IMBanner:
+   + - (void)getSignals;
+   + - (void)load:(NSData*)response;
+   + @property (nonatomic, strong, readonly) IMBannerPreloadManager* preloadManager;
+   IMInterstitial:
+   + - (void)getSignals;
+   + -(void)load:(NSData*)response;
+   + @property (nonatomic, strong, readonly) IMInterstitialPreloadManager* preloadManager;
+   IMAdMetaInfo:
+   + @property (nonatomic, strong, readonly) NSString* creativeID;
+   + @property (nonatomic, strong, readonly) NSDictionary* bidInfo;
+   + - (double)getBid;
+- APIs Deprecated
+    IMInterstitialDelegate:
+        -(void)interstitialDidReceiveAd:(IMInterstitial*)interstitial;
+
+Build 9.0.6 [03/Mar/2020]
+-------------
+- APIs Added
+    * IMSdk Class
+    + +(void)initWithAccountID:(NSString*)accountID andCompletionHandler:(void (^ _Nullable)( NSError * _Nullable )) completionBlock;
+    + +(void)initWithAccountID:(NSString*)accountID consentDictionary:(nullable NSDictionary*) consentDictionary andCompletionHandler:(void (^ _Nullable)( NSError * _Nullable )) completionBlock;
+- APIs Removed
+    * IMSdk Class
+    - +(void)initWithAccountID:(NSString*)accountID consentDictionary:(nullable NSDictionary*) consentDictionary andError:(NSError * _Nullable * _Nonnull)error;
+    - +(void)initWithAccountID:(NSString *)accountID andError:(NSError * _Nullable * _Nonnull)error;
+- Bug Fixes
+
+Build 9.0.4 [21/Jan/2020]
+-------------
+- Deprecated "initWithAccountID:consentDictionary:" api of IMSdk.
+- Added "initWithAccountID:consentDictionary:andError:" api to IMSdk. 
+- Video support for Banner ad
+- Improvement of fraud detection behaviour.
+- Bug Fixes
 
 Build 9.0.3 [10/Dec/2019]
 -------------
