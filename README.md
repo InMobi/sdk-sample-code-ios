@@ -32,6 +32,11 @@ These sample apps are provided under MIT license. For more information, please s
 
 ## Change logs
 
+Build 9.1.1 [11/Nov/2020]
+-------------
+- Added support for CMP-TCF v2
+- Bug Fixes
+
 Build 9.1.0 [23/Sep/2020]
 -------------
 - Added support for iOS 14
