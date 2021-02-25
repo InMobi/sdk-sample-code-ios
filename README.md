@@ -32,6 +32,16 @@ These sample apps are provided under MIT license. For more information, please s
 
 ## Change logs
 
+Build 9.1.5 [11/Feb/2021]
+-------------
+- Added support for auto management of AVAudioSession for audio measurability in WKWebView
+- New APIs Added;
+    IMSdk:
+    + +(NSString *)getToken; 
+    + +(NSString *)getTokenWithExtras:(nullable NSDictionary*)extras andKeywords:(nullable NSString*)keywords;
+    + +(void)shouldAutoManageAVAudioSesssion:(BOOL)value;
+- Bug Fixes
+
 Build 9.1.1 [11/Nov/2020]
 -------------
 - Added support for CMP-TCF v2
