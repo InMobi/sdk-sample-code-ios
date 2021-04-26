@@ -6,7 +6,7 @@ Publicly available sample apps of InMobi providing simple integration steps. InM
 
 The following environment is required to run the Sample apps
 
-    Xcode 11.0 and above
+    Xcode 12.0 and above
     InMobi SDK 9.x.x
     iOS 9.0 and above
     
@@ -31,6 +31,27 @@ To run the sample apps, open any of the Ad Format's .xcodeproj file with Xcode 9
 These sample apps are provided under MIT license. For more information, please see the LICENSE file. For information about InMobi SDK's license, please see the InMobi folder.
 
 ## Change logs
+
+Build 9.1.7 [01/Apr/2021]
+ -------------
+- Updated minimum supported version of Xcode to Xcode 12.0
+- Unified Id support
+- AdPods support
+- Bug Fixes
+- New APIs Added
+    IMSdk:
+    + +(void)setPublisherProvidedUnifiedId:(NSDictionary*)ids;
+    IMUnifiedIdService:
+    + +(void)push:(nullable IMUserDataModel *)data;
+    + +(void)reset;
+    + +(void)fetchUnifiedIds:(id<IMUnifiedIdDelegate>)delegate;
+    + +(void)enableDebugMode:(BOOL)debugMode;
+    IMUnifiedIdDelegate:
+    + -(void)onFetchCompleted:(nullable NSDictionary *)response error:(nullable NSError *)error;
+    IMUserDataModel:
+    + -(instancetype)initWithPhoneNumber:(nullable IMUserDataTypes *)phoneNumber emailId:(nullable IMUserDataTypes *)emailId extras:(nullable NSDictionary *)extras;
+    IMUserDataTypes:
+    + -(instancetype)initWithMd5:(nullable NSString *)md5 sha1:(nullable NSString *)sha1 sha256:(nullable NSString *)sha256;
 
 Build 9.1.5 [11/Feb/2021]
 -------------
