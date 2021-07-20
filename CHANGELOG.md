@@ -2,8 +2,22 @@
 InMobi Monetization SDK for iOS
 ===================================
 
-Build 9.1.7 [01/Apr/2021]
- -------------
+Build 9.2.0 [16/July/2021]
+-------------
+- Updated minimum supported version of Xcode to Xcode 12.5
+- SKAdNetwork 2.2 and 3.0 support
+- Landing page opening management
+- Native support for clicks and impression tracking
+- Load with response support for Native Ads.
+- Removed optional moat SDK
+- Bug fixes
+- New APIs Added
+    IMNative
+    + -(void)load:(NSData*)response;
+    
+
+Build 9.1.7 [01/April/2021]
+-------------
 - Updated minimum supported version of Xcode to Xcode 12.0
 - Unified Id support
 - AdPods support
@@ -22,7 +36,7 @@ Build 9.1.7 [01/Apr/2021]
     + -(instancetype)initWithPhoneNumber:(nullable IMUserDataTypes *)phoneNumber emailId:(nullable IMUserDataTypes *)emailId extras:(nullable NSDictionary *)extras;
     IMUserDataTypes:
     + -(instancetype)initWithMd5:(nullable NSString *)md5 sha1:(nullable NSString *)sha1 sha256:(nullable NSString *)sha256;
-     
+
 Build 9.1.5 [11/Feb/2021]
 -------------
 - Added support for auto management of AVAudioSession for audio measurability in WKWebView
