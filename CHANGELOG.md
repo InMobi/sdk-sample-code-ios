@@ -2,6 +2,15 @@
 InMobi Monetization SDK for iOS
 ===================================
 
+Build 9.2.1 [20/Aug/2021]
+-------------
+- Added support for Xcode 12.0.
+- Support for Partner GDPR consent
+- Bug fixes
+- New APIs Added
+    IMSDK
+    + +(void)setPartnerGDPRConsent:(nullable NSDictionary *)consentDictionary;
+
 Build 9.2.0 [16/July/2021]
 -------------
 - Updated minimum supported version of Xcode to Xcode 12.5
@@ -148,48 +157,48 @@ Build 9.0.0 [20/Sept/2019]
 - Various Bug Fixes and performance improvements.
 
 - Adapter updates for the following mediation partners:
-        * MoPub		    - v5.9.0
-        * Google Mobile Ads - v7.50.0	
+        * MoPub            - v5.9.0
+        * Google Mobile Ads - v7.50.0    
  
 - APIs Added
-	* IMBanner Class
-	 + -(void)cancel;
-	* IMInterstitial Class
-	 + -(void)cancel;
+    * IMBanner Class
+     + -(void)cancel;
+    * IMInterstitial Class
+     + -(void)cancel;
 
 - APIs Removed
-	* ASAdView Class
-	 - @property (nonatomic, assign) ASEnvironmentType env;
-	 - @property (nonatomic, assign) ASPlatformType platform;
-	 - @property (nonatomic, assign) BOOL isMuted;
-	 - @property (nonatomic, assign) BOOL outlineAd;
-	 - @property (nonatomic, assign) BOOL sizeAdToFit;
-	 - @property (nonatomic, assign) BOOL useHeaderBidding;
-	 - @property (nonatomic, strong) NSArray* keyWords;
-	 - @property (nonatomic, assign) BOOL allowAdvertiserCloseButton;
-	 - -(void)forceRefreshAd;
-	 - -(CGSize)adContentSize;	
-	 - -(void)rotateToOrientation:(UIInterfaceOrientation)newOrientation;
- 	 - -(void)play;
- 	 - -(void)pause;
+    * ASAdView Class
+     - @property (nonatomic, assign) ASEnvironmentType env;
+     - @property (nonatomic, assign) ASPlatformType platform;
+     - @property (nonatomic, assign) BOOL isMuted;
+     - @property (nonatomic, assign) BOOL outlineAd;
+     - @property (nonatomic, assign) BOOL sizeAdToFit;
+     - @property (nonatomic, assign) BOOL useHeaderBidding;
+     - @property (nonatomic, strong) NSArray* keyWords;
+     - @property (nonatomic, assign) BOOL allowAdvertiserCloseButton;
+     - -(void)forceRefreshAd;
+     - -(CGSize)adContentSize;    
+     - -(void)rotateToOrientation:(UIInterfaceOrientation)newOrientation;
+      - -(void)play;
+      - -(void)pause;
 
-	* ASAdViewDelegate Protocol
- 	 - -(void)willLeaveApplicatonFromAd:(ASAdView*)adView;
-	 - -(void)adSizeChanged:(ASAdView*)adView;
-	 - -(void)adView:(ASAdView*)adView didFireAdvertiserEventWithMessage:(NSString*)msg;
+    * ASAdViewDelegate Protocol
+      - -(void)willLeaveApplicatonFromAd:(ASAdView*)adView;
+     - -(void)adSizeChanged:(ASAdView*)adView;
+     - -(void)adView:(ASAdView*)adView didFireAdvertiserEventWithMessage:(NSString*)msg;
 
-	* ASInterstitialViewController Class
-	 - @property (nonatomic, assign) ASEnvironmentType env;
-	 - @property (nonatomic, assign) ASPlatformType platform;
-	 - @property (nonatomic, assign) BOOL isMuted;
-	 - @property (nonatomic, assign) BOOL showOutline;
-	 - @property (nonatomic, assign) BOOL useHeaderBidding;
- 	 - -(void)play;
- 	 - -(void)pause;
+    * ASInterstitialViewController Class
+     - @property (nonatomic, assign) ASEnvironmentType env;
+     - @property (nonatomic, assign) ASPlatformType platform;
+     - @property (nonatomic, assign) BOOL isMuted;
+     - @property (nonatomic, assign) BOOL showOutline;
+     - @property (nonatomic, assign) BOOL useHeaderBidding;
+      - -(void)play;
+      - -(void)pause;
 
-	* ASInterstitialViewControllerDelegate Protocol
-	 - -(void)interstitialViewControllerAdInteraction:(ASInterstitialViewController*)viewController;
-	 - -(void)interstitialViewController:(ASInterstitialViewController*)viewController didFireAdvertiserEventWithMessage:(NSString*)msg;
+    * ASInterstitialViewControllerDelegate Protocol
+     - -(void)interstitialViewControllerAdInteraction:(ASInterstitialViewController*)viewController;
+     - -(void)interstitialViewController:(ASInterstitialViewController*)viewController didFireAdvertiserEventWithMessage:(NSString*)msg;
 
 
 Build 8.2.0 [16/July/2019]
@@ -233,17 +242,17 @@ Build 8.0.5 [11/Mar/2019]
 -------------
 - Audience bidding support for MoPub
 - Adapter updates for the following mediation partners:
-	* AdColony - 3.3.6
-	* AppLovin - 6.1.4
-	* Chartboost - 7.3.0
-	* Facebook - 5.1.0
-	* Flurry - 9.2.3
-	* MoPub - 5.4.1
-	* MyTarget - 4.8.8
-	* Vungle - 6.3.2
- 	* OneMobile AOL (Millennial Media) - 6.8.2
-	* Vungle - 6.3.2
-	* Unity - 3.0.0
+    * AdColony - 3.3.6
+    * AppLovin - 6.1.4
+    * Chartboost - 7.3.0
+    * Facebook - 5.1.0
+    * Flurry - 9.2.3
+    * MoPub - 5.4.1
+    * MyTarget - 4.8.8
+    * Vungle - 6.3.2
+     * OneMobile AOL (Millennial Media) - 6.8.2
+    * Vungle - 6.3.2
+    * Unity - 3.0.0
 - Deprecated Tremor support
 - Deprecated Flurry banner support
 - Added support for additional reporting for AppLovin and Chartboost
@@ -278,8 +287,8 @@ Build 7.1.5 [10/Aug/2018]
 - Bug Fixes
 
 - APIs Added
-	* IMNative Class
-	 + -(void)native:(IMNative*)native adAudioStateChanged:(BOOL)audioState;
+    * IMNative Class
+     + -(void)native:(IMNative*)native adAudioStateChanged:(BOOL)audioState;
 
 Build 7.1.2 [31/Jul/2018]
 -------------
@@ -300,44 +309,44 @@ Build 7.1.0 [06/Apr/2018]
 - Bug Fixes
 
 - APIs Added
-	* IMSDK class
-	 + +(void)initWithAccountID:(NSString *)accountID consentDictionary: (NSDictionary*) consentDictionary;
-	 + +(void) updateGDPRConsent:(NSDictionary *)consentDictionary;
+    * IMSDK class
+     + +(void)initWithAccountID:(NSString *)accountID consentDictionary: (NSDictionary*) consentDictionary;
+     + +(void) updateGDPRConsent:(NSDictionary *)consentDictionary;
 
-	* IMCommonConstants class
-	 + #define IM_GDPR_CONSENT_AVAILABLE @"gdpr_consent_available"
+    * IMCommonConstants class
+     + #define IM_GDPR_CONSENT_AVAILABLE @"gdpr_consent_available"
 
-	* IMNativeDelegate class
-	 + -(void)userDidSkipPlayingMediaFromNative:(IMNative*)native;
+    * IMNativeDelegate class
+     + -(void)userDidSkipPlayingMediaFromNative:(IMNative*)native;
 
 - APIs Removed
-	* IMSDK class
-	 - +(void)setNationality:(NSString*)nationality
-	 - +(void)setEthnicity:(IMSDKEthnicity)ethnicity;
-	 - +(void)setHouseholdIncome:(IMSDKHouseholdIncome)income;
-	 - +(void)setIncome:(unsigned int)income;
+    * IMSDK class
+     - +(void)setNationality:(NSString*)nationality
+     - +(void)setEthnicity:(IMSDKEthnicity)ethnicity;
+     - +(void)setHouseholdIncome:(IMSDKHouseholdIncome)income;
+     - +(void)setIncome:(unsigned int)income;
 
-	* IMCommonConstants class
-	 - -typedef NS_ENUM (NSInteger, IMSDKEthnicity) {
- 		kIMSDKEthnicityHispanic = 1,
-     		kIMSDKEthnicityCaucasian,
-     		kIMSDKEthnicityAsian,
-     		kIMSDKEthnicityAfricanAmerican,
-     		kIMSDKEthnicityOther
- 		};
+    * IMCommonConstants class
+     - -typedef NS_ENUM (NSInteger, IMSDKEthnicity) {
+         kIMSDKEthnicityHispanic = 1,
+             kIMSDKEthnicityCaucasian,
+             kIMSDKEthnicityAsian,
+             kIMSDKEthnicityAfricanAmerican,
+             kIMSDKEthnicityOther
+         };
  
- 	- -typedef NS_ENUM(NSInteger, IMSDKHouseholdIncome) {
-     		kIMSDKHouseholdIncomeBelow5kUSD = 1,
-     		kIMSDKHouseholdIncomeBetween5kAnd10kUSD,
-     		kIMSDKHouseholdIncomeBetween10kAnd15kUSD,
-     		kIMSDKHouseholdIncomeBetween15kAnd20kUSD,
-     		kIMSDKHouseholdIncomeBetween20kAnd25kUSD,
-     		kIMSDKHouseholdIncomeBetween25kAnd50kUSD,
-     		kIMSDKHouseholdIncomeBetween50kAnd75kUSD,
-     		kIMSDKHouseholdIncomeBetween75kAnd100kUSD,
-     		kIMSDKHouseholdIncomeBetween100kAnd150kUSD,
-     		kIMSDKHouseholdIncomeAbove150kUSD
- 		};
+     - -typedef NS_ENUM(NSInteger, IMSDKHouseholdIncome) {
+             kIMSDKHouseholdIncomeBelow5kUSD = 1,
+             kIMSDKHouseholdIncomeBetween5kAnd10kUSD,
+             kIMSDKHouseholdIncomeBetween10kAnd15kUSD,
+             kIMSDKHouseholdIncomeBetween15kAnd20kUSD,
+             kIMSDKHouseholdIncomeBetween20kAnd25kUSD,
+             kIMSDKHouseholdIncomeBetween25kAnd50kUSD,
+             kIMSDKHouseholdIncomeBetween50kAnd75kUSD,
+             kIMSDKHouseholdIncomeBetween75kAnd100kUSD,
+             kIMSDKHouseholdIncomeBetween100kAnd150kUSD,
+             kIMSDKHouseholdIncomeAbove150kUSD
+         };
 
 Build 7.0.5 [27/Dec/2017]
 -------------
@@ -370,67 +379,67 @@ Consolidated change-logs for v6.9.0, v6.9.1 and v6.9.2
 - Remove support for iOS 7
 - Deprecating support for iOS 8
 - Brand new Native Ad solution:
-	* Native ads can now support videos, carousel and static Ad types
-	* Prefetching Native Ads for better load times
-	* Better way to customize the Ad to match the App’s native environment
+    * Native ads can now support videos, carousel and static Ad types
+    * Prefetching Native Ads for better load times
+    * Better way to customize the Ad to match the App’s native environment
 - Interactive Video Ad Experience:
-	* Brand new video Ad experience to increase user engagement in Interstitial Ad Format
+    * Brand new video Ad experience to increase user engagement in Interstitial Ad Format
 - Rich End Cards:
-	* Engaging end-cards are now supported via Rich-Media End-cards
+    * Engaging end-cards are now supported via Rich-Media End-cards
 - Support for GIF images
 - Performance improvements
 
 - APIs Added
-	* IMNative class
-	 + -(UIView*)primaryViewOfWidth:(CGFloat)width;
-	 + @property (nonatomic, strong, readonly) NSString* customAdContent;
-	 + @property (nonatomic, strong, readonly) NSString* adTitle;
-	 + @property (nonatomic, strong, readonly) NSString* adDescription;
-	 + @property (nonatomic, strong, readonly) UIImage* adIcon;
-	 + @property (nonatomic, strong, readonly) NSString* adCtaText;
-	 + @property (nonatomic, strong, readonly) NSString* adRating;
-	 + @property (nonatomic, strong, readonly) NSURL* adLandingPageUrl;
-	 + @property (nonatomic, readonly) BOOL isAppDownload;
-	 + -(BOOL)isReady;
-	 + -(void)reportAdClickAndOpenLandingPage;
+    * IMNative class
+     + -(UIView*)primaryViewOfWidth:(CGFloat)width;
+     + @property (nonatomic, strong, readonly) NSString* customAdContent;
+     + @property (nonatomic, strong, readonly) NSString* adTitle;
+     + @property (nonatomic, strong, readonly) NSString* adDescription;
+     + @property (nonatomic, strong, readonly) UIImage* adIcon;
+     + @property (nonatomic, strong, readonly) NSString* adCtaText;
+     + @property (nonatomic, strong, readonly) NSString* adRating;
+     + @property (nonatomic, strong, readonly) NSURL* adLandingPageUrl;
+     + @property (nonatomic, readonly) BOOL isAppDownload;
+     + -(BOOL)isReady;
+     + -(void)reportAdClickAndOpenLandingPage;
 
 
-	* IMNativeDelegate
-	 + -(void)native:(IMNative*)native rewardActionCompletedWithRewards:(NSDictionary*)rewards;
-	 + -(void)native:(IMNative*)native didInteractWithParams:(NSDictionary*)params;
-	 + -(void)nativeDidFinishPlayingMedia:(IMNative*)native;
+    * IMNativeDelegate
+     + -(void)native:(IMNative*)native rewardActionCompletedWithRewards:(NSDictionary*)rewards;
+     + -(void)native:(IMNative*)native didInteractWithParams:(NSDictionary*)params;
+     + -(void)nativeDidFinishPlayingMedia:(IMNative*)native;
 
 - APIs Removed
-	* IMNativeStrands class
-	 + @interface IMNativeStrands : NSObject
-	 + @property (nonatomic, weak) id<IMNativeStrandsDelegate>delegate;
-	 + @property (nonatomic, strong) NSString* keywords;
-	 + @property (nonatomic, strong) NSDictionary* extras;
-	 + -(instancetype)initWithPlacementId:(long long)placementId position:(NSInteger)position;
-	 + -(instancetype)initWithPlacementId:(long long)placementId;
-	 + -(void)load;
-	 + -(UIView*)strandsView;
-	 + - (void)recycleView;
-	 + - (CGSize)strandsViewSize;
+    * IMNativeStrands class
+     + @interface IMNativeStrands : NSObject
+     + @property (nonatomic, weak) id<IMNativeStrandsDelegate>delegate;
+     + @property (nonatomic, strong) NSString* keywords;
+     + @property (nonatomic, strong) NSDictionary* extras;
+     + -(instancetype)initWithPlacementId:(long long)placementId position:(NSInteger)position;
+     + -(instancetype)initWithPlacementId:(long long)placementId;
+     + -(void)load;
+     + -(UIView*)strandsView;
+     + - (void)recycleView;
+     + - (CGSize)strandsViewSize;
 
-	* IMNativeStrandsDelegate protocol
-	 + @interface IMNativeStrands : NSObject
-	 + -(void)nativeStrandsDidFinishLoading:(IMNativeStrands*)nativeStrands;
-	 + -(void)nativeStrands:(IMNativeStrands*)nativeStrands didFailToLoadWithError:(IMRequestStatus*)error;
-	 + -(void)nativeStrandsWillPresentScreen:(IMNativeStrands*)nativeStrands;
-	 + -(void)nativeStrandsDidPresentScreen:(IMNativeStrands*)nativeStrands;
-	 + -(void)nativeStrandsWillDismissScreen:(IMNativeStrands*)nativeStrands;
-	 + -(void)nativeStrandsDidDismissScreen:(IMNativeStrands*)nativeStrands;
-	 + -(void)userWillLeaveApplicationFromNativeStrands:(IMNativeStrands*)nativeStrands;
-	 + -(void)nativeStrandsAdImpressed:(IMNativeStrands*)nativeStrands;
-	 + -(void)nativeStrandsAdClicked:(IMNativeStrands*)nativeStrands;
+    * IMNativeStrandsDelegate protocol
+     + @interface IMNativeStrands : NSObject
+     + -(void)nativeStrandsDidFinishLoading:(IMNativeStrands*)nativeStrands;
+     + -(void)nativeStrands:(IMNativeStrands*)nativeStrands didFailToLoadWithError:(IMRequestStatus*)error;
+     + -(void)nativeStrandsWillPresentScreen:(IMNativeStrands*)nativeStrands;
+     + -(void)nativeStrandsDidPresentScreen:(IMNativeStrands*)nativeStrands;
+     + -(void)nativeStrandsWillDismissScreen:(IMNativeStrands*)nativeStrands;
+     + -(void)nativeStrandsDidDismissScreen:(IMNativeStrands*)nativeStrands;
+     + -(void)userWillLeaveApplicationFromNativeStrands:(IMNativeStrands*)nativeStrands;
+     + -(void)nativeStrandsAdImpressed:(IMNativeStrands*)nativeStrands;
+     + -(void)nativeStrandsAdClicked:(IMNativeStrands*)nativeStrands;
 
-	* IMNative class
-	 + @property (nonatomic, strong, readonly) NSString* adContent;
-	 + +(void)bindNative:(IMNative*)native toView:(UIView*)view;
-	 + +(void)unBindView:(UIView*)view;
-	 + -(void)reportAdClick:(NSDictionary*)params;
-	 + -(void)reportAdClickAndOpenLandingURL:(NSDictionary*)params;
+    * IMNative class
+     + @property (nonatomic, strong, readonly) NSString* adContent;
+     + +(void)bindNative:(IMNative*)native toView:(UIView*)view;
+     + +(void)unBindView:(UIView*)view;
+     + -(void)reportAdClick:(NSDictionary*)params;
+     + -(void)reportAdClickAndOpenLandingURL:(NSDictionary*)params;
 
 
 Build 6.8.1 [02/Jun/2017]
@@ -476,12 +485,12 @@ Build 6.0.0 [19/Sep/2016]
 - Integrates as a drag-drop replacement framework
 - Added support for WKWebview
 - Brand new video solution:
-	* Drag-drop library upgrade for existing SDK 5xx.
-	* High render rates
-	* Stall free video experience
-	* No Java Script
-	* Enormous data savings for users
-	* Better security and monetization
+    * Drag-drop library upgrade for existing SDK 5xx.
+    * High render rates
+    * Stall free video experience
+    * No Java Script
+    * Enormous data savings for users
+    * Better security and monetization
 - Added support for easier integration.
 - Added support for better debugging.
 - Support for IPV6.
@@ -492,57 +501,57 @@ Build 6.0.0 [19/Sep/2016]
 - Removed support for IMStrandTableViewAdapter
 
 - APIs Added
-	* IMInterstitialDelegate
-	 + -(void)interstitialDidReceiveAd:(IMInterstitial *)interstitial;
+    * IMInterstitialDelegate
+     + -(void)interstitialDidReceiveAd:(IMInterstitial *)interstitial;
 
-	* IMNativeDelegate
-	 + -(void)nativeAdImpressed:(IMNative*)native;
+    * IMNativeDelegate
+     + -(void)nativeAdImpressed:(IMNative*)native;
 
-	* IMNativeStrandsDelegate
-	 + -(void)nativeStrandsAdImpressed:(IMNativeStrands*)nativeStrands;
-	 + -(void)nativeStrandsAdClicked:(IMNativeStrands*)nativeStrands;
+    * IMNativeStrandsDelegate
+     + -(void)nativeStrandsAdImpressed:(IMNativeStrands*)nativeStrands;
+     + -(void)nativeStrandsAdClicked:(IMNativeStrands*)nativeStrands;
 
 - APIs Removed
-	* IMStrandTableViewAdapter class
-	 + @interface IMStrandTableViewAdapter : NSObject
-	 + @property (nonatomic, weak) id <IMStrandTableViewAdapterDelegate> delegate;
-	 + @property (nonatomic, strong) NSString* keywords;
-	 + @property (nonatomic, strong) NSDictionary* extras;
-	 + + (instancetype)adapterWithTableView:(UITableView *)tableView placementId:(long long)placementId adPositioning:(IMStrandPosition *)positioning tableViewCellClass:(Class)tableViewCellClass;
-	 + - (void)load;
-	 + - (void) clearAds;
+    * IMStrandTableViewAdapter class
+     + @interface IMStrandTableViewAdapter : NSObject
+     + @property (nonatomic, weak) id <IMStrandTableViewAdapterDelegate> delegate;
+     + @property (nonatomic, strong) NSString* keywords;
+     + @property (nonatomic, strong) NSDictionary* extras;
+     + + (instancetype)adapterWithTableView:(UITableView *)tableView placementId:(long long)placementId adPositioning:(IMStrandPosition *)positioning tableViewCellClass:(Class)tableViewCellClass;
+     + - (void)load;
+     + - (void) clearAds;
 
-	* UITableView (IMStrandTableViewAdapter) category
-	 + - (void)im_setStrandAdapter:(IMStrandTableViewAdapter *)adapter;
-	 + - (IMStrandTableViewAdapter *)im_strandAdapter;
-	 + - (void)im_setDataSource:(id<UITableViewDataSource>)dataSource;
-	 + - (id<UITableViewDataSource>)im_dataSource;
-	 + - (void)im_setDelegate:(id<UITableViewDelegate>)delegate;
-	 + - (id<UITableViewDelegate>)im_delegate;
-	 + - (void)im_beginUpdates;
-	 + - (void)im_endUpdates;
-	 + - (void)im_reloadData;
-	 + - (void)im_insertRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
-	 + - (void)im_deleteRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
-	 + - (void)im_reloadRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
-	 + - (void)im_moveRowAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath;
-	 + - (void)im_insertSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
-	 + - (void)im_deleteSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
-	 + - (void)im_reloadSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
-	 + - (void)im_moveSection:(NSInteger)section toSection:(NSInteger)newSection;
-	 + - (UITableViewCell *)im_cellForRowAtIndexPath:(NSIndexPath *)indexPath;
-	 + - (id)im_dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath;
-	 + - (void)im_deselectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated;
-	 + - (NSIndexPath *)im_indexPathForCell:(UITableViewCell *)cell;
-	 + - (NSIndexPath *)im_indexPathForRowAtPoint:(CGPoint)point;
-	 + - (NSIndexPath *)im_indexPathForSelectedRow;
-	 + - (NSArray *)im_indexPathsForRowsInRect:(CGRect)rect;
-	 + - (NSArray *)im_indexPathsForSelectedRows;
-	 + - (NSArray *)im_indexPathsForVisibleRows;
-	 + - (CGRect)im_rectForRowAtIndexPath:(NSIndexPath *)indexPath;
-	 + - (void)im_scrollToRowAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(UITableViewScrollPosition)scrollPosition animated:(BOOL)animated;
-	 + - (void)im_selectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition;
-	 + - (NSArray *)im_visibleCells;
+    * UITableView (IMStrandTableViewAdapter) category
+     + - (void)im_setStrandAdapter:(IMStrandTableViewAdapter *)adapter;
+     + - (IMStrandTableViewAdapter *)im_strandAdapter;
+     + - (void)im_setDataSource:(id<UITableViewDataSource>)dataSource;
+     + - (id<UITableViewDataSource>)im_dataSource;
+     + - (void)im_setDelegate:(id<UITableViewDelegate>)delegate;
+     + - (id<UITableViewDelegate>)im_delegate;
+     + - (void)im_beginUpdates;
+     + - (void)im_endUpdates;
+     + - (void)im_reloadData;
+     + - (void)im_insertRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
+     + - (void)im_deleteRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
+     + - (void)im_reloadRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
+     + - (void)im_moveRowAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath;
+     + - (void)im_insertSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
+     + - (void)im_deleteSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
+     + - (void)im_reloadSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
+     + - (void)im_moveSection:(NSInteger)section toSection:(NSInteger)newSection;
+     + - (UITableViewCell *)im_cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+     + - (id)im_dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath;
+     + - (void)im_deselectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated;
+     + - (NSIndexPath *)im_indexPathForCell:(UITableViewCell *)cell;
+     + - (NSIndexPath *)im_indexPathForRowAtPoint:(CGPoint)point;
+     + - (NSIndexPath *)im_indexPathForSelectedRow;
+     + - (NSArray *)im_indexPathsForRowsInRect:(CGRect)rect;
+     + - (NSArray *)im_indexPathsForSelectedRows;
+     + - (NSArray *)im_indexPathsForVisibleRows;
+     + - (CGRect)im_rectForRowAtIndexPath:(NSIndexPath *)indexPath;
+     + - (void)im_scrollToRowAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(UITableViewScrollPosition)scrollPosition animated:(BOOL)animated;
+     + - (void)im_selectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition;
+     + - (NSArray *)im_visibleCells;
 
 Build 5.3.2 [12/Aug/2016]
 -------------
@@ -558,64 +567,64 @@ Build 5.3.0 [11/Apr/2016]
 - A new Ad Format Native Strands is added.
 - Minor Bug Fixes
 - APIs Added
-	* IMStrandPosition class
-	 + @property (nonatomic, strong, readonly) NSMutableOrderedSet *fixedPositions;
-	 + @property (nonatomic, assign, readonly) NSUInteger stride;
-	 + + (instancetype)positioning;
-	 + - (void)addFixedIndexPath:(NSIndexPath *)indexPath;
-	 + - (void)enableRepeatingPositionsWithStride:(NSUInteger)stride;
-	 
-	* IMNativeStrands Class
-	 + @property (nonatomic, weak) id<IMNativeStrandsDelegate> delegate
-	 + @property (nonatomic, strong) NSString *keywords
-	 + @property (nonatomic, strong) NSDictionary *extras
-	 + - (instancetype)initWithPlacementId:(long long)placementId position:(NSInteger)position
-	 + - (instancetype)initWithPlacementId:(long long)placementId
-	 + - (void)load
-	 + - (UIView *)strandsView
-	 + - (void)recycleView
-	 + - (CGSize)strandsViewSize
-	 
-	* IMStrandTableViewAdapter class
-	 + @interface IMStrandTableViewAdapter : NSObject
-	 + @property (nonatomic, weak) id <IMStrandTableViewAdapterDelegate> delegate;
-	 + @property (nonatomic, strong) NSString* keywords;
-	 + @property (nonatomic, strong) NSDictionary* extras;
-	 + + (instancetype)adapterWithTableView:(UITableView *)tableView placementId:(long long)placementId adPositioning:(IMStrandPosition *)positioning tableViewCellClass:(Class)tableViewCellClass;
-	 + - (void)load;
-	 + - (void) clearAds;
+    * IMStrandPosition class
+     + @property (nonatomic, strong, readonly) NSMutableOrderedSet *fixedPositions;
+     + @property (nonatomic, assign, readonly) NSUInteger stride;
+     + + (instancetype)positioning;
+     + - (void)addFixedIndexPath:(NSIndexPath *)indexPath;
+     + - (void)enableRepeatingPositionsWithStride:(NSUInteger)stride;
+     
+    * IMNativeStrands Class
+     + @property (nonatomic, weak) id<IMNativeStrandsDelegate> delegate
+     + @property (nonatomic, strong) NSString *keywords
+     + @property (nonatomic, strong) NSDictionary *extras
+     + - (instancetype)initWithPlacementId:(long long)placementId position:(NSInteger)position
+     + - (instancetype)initWithPlacementId:(long long)placementId
+     + - (void)load
+     + - (UIView *)strandsView
+     + - (void)recycleView
+     + - (CGSize)strandsViewSize
+     
+    * IMStrandTableViewAdapter class
+     + @interface IMStrandTableViewAdapter : NSObject
+     + @property (nonatomic, weak) id <IMStrandTableViewAdapterDelegate> delegate;
+     + @property (nonatomic, strong) NSString* keywords;
+     + @property (nonatomic, strong) NSDictionary* extras;
+     + + (instancetype)adapterWithTableView:(UITableView *)tableView placementId:(long long)placementId adPositioning:(IMStrandPosition *)positioning tableViewCellClass:(Class)tableViewCellClass;
+     + - (void)load;
+     + - (void) clearAds;
 
-	* UITableView (IMStrandTableViewAdapter) category
-	 + - (void)im_setStrandAdapter:(IMStrandTableViewAdapter *)adapter;
-	 + - (IMStrandTableViewAdapter *)im_strandAdapter;
-	 + - (void)im_setDataSource:(id<UITableViewDataSource>)dataSource;
-	 + - (id<UITableViewDataSource>)im_dataSource;
-	 + - (void)im_setDelegate:(id<UITableViewDelegate>)delegate;
-	 + - (id<UITableViewDelegate>)im_delegate;
-	 + - (void)im_beginUpdates;
-	 + - (void)im_endUpdates;
-	 + - (void)im_reloadData;
-	 + - (void)im_insertRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
-	 + - (void)im_deleteRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
-	 + - (void)im_reloadRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
-	 + - (void)im_moveRowAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath;
-	 + - (void)im_insertSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
-	 + - (void)im_deleteSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
-	 + - (void)im_reloadSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
-	 + - (void)im_moveSection:(NSInteger)section toSection:(NSInteger)newSection;
-	 + - (UITableViewCell *)im_cellForRowAtIndexPath:(NSIndexPath *)indexPath;
-	 + - (id)im_dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath;
-	 + - (void)im_deselectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated;
-	 + - (NSIndexPath *)im_indexPathForCell:(UITableViewCell *)cell;
-	 + - (NSIndexPath *)im_indexPathForRowAtPoint:(CGPoint)point;
-	 + - (NSIndexPath *)im_indexPathForSelectedRow;
-	 + - (NSArray *)im_indexPathsForRowsInRect:(CGRect)rect;
-	 + - (NSArray *)im_indexPathsForSelectedRows;
-	 + - (NSArray *)im_indexPathsForVisibleRows;
-	 + - (CGRect)im_rectForRowAtIndexPath:(NSIndexPath *)indexPath;
-	 + - (void)im_scrollToRowAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(UITableViewScrollPosition)scrollPosition animated:(BOOL)animated;
-	 + - (void)im_selectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition;
-	 + - (NSArray *)im_visibleCells;
+    * UITableView (IMStrandTableViewAdapter) category
+     + - (void)im_setStrandAdapter:(IMStrandTableViewAdapter *)adapter;
+     + - (IMStrandTableViewAdapter *)im_strandAdapter;
+     + - (void)im_setDataSource:(id<UITableViewDataSource>)dataSource;
+     + - (id<UITableViewDataSource>)im_dataSource;
+     + - (void)im_setDelegate:(id<UITableViewDelegate>)delegate;
+     + - (id<UITableViewDelegate>)im_delegate;
+     + - (void)im_beginUpdates;
+     + - (void)im_endUpdates;
+     + - (void)im_reloadData;
+     + - (void)im_insertRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
+     + - (void)im_deleteRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
+     + - (void)im_reloadRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
+     + - (void)im_moveRowAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath;
+     + - (void)im_insertSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
+     + - (void)im_deleteSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
+     + - (void)im_reloadSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
+     + - (void)im_moveSection:(NSInteger)section toSection:(NSInteger)newSection;
+     + - (UITableViewCell *)im_cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+     + - (id)im_dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath;
+     + - (void)im_deselectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated;
+     + - (NSIndexPath *)im_indexPathForCell:(UITableViewCell *)cell;
+     + - (NSIndexPath *)im_indexPathForRowAtPoint:(CGPoint)point;
+     + - (NSIndexPath *)im_indexPathForSelectedRow;
+     + - (NSArray *)im_indexPathsForRowsInRect:(CGRect)rect;
+     + - (NSArray *)im_indexPathsForSelectedRows;
+     + - (NSArray *)im_indexPathsForVisibleRows;
+     + - (CGRect)im_rectForRowAtIndexPath:(NSIndexPath *)indexPath;
+     + - (void)im_scrollToRowAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(UITableViewScrollPosition)scrollPosition animated:(BOOL)animated;
+     + - (void)im_selectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition;
+     + - (NSArray *)im_visibleCells;
 
 Build 5.2.1 [24/Feb/2016]
 -------------
@@ -666,184 +675,184 @@ Build 5.0.0 [23/Sept/2015]
 - Analytics support removed
 - Minor Bug Fixes
 - APIs added
-	* IMSdk class
-	  + (void)setAgeGroup:(IMSDKAgeGroup)ageGroup
-	  + (void)setYearOfBirth:(NSInteger)yearOfBirth
-	  + (void)setHouseholdIncome:(IMSDKHouseholdIncome)income
+    * IMSdk class
+      + (void)setAgeGroup:(IMSDKAgeGroup)ageGroup
+      + (void)setYearOfBirth:(NSInteger)yearOfBirth
+      + (void)setHouseholdIncome:(IMSDKHouseholdIncome)income
           + (void)setNationality:(NSString*)nationality
-	* IMBanner class
-	  @property (nonatomic, strong) NSDictionary* extras
-	  - (instancetype)initWithFrame:(CGRect)frame placementId:(long long)placementId delegate:(id<IMBannerDelegate>)delegate
-	  - (void)setRefreshInterval:(NSInteger)interval
-	  - (void)shouldAutoRefresh:(BOOL)refresh
-	* IMInterstitial class
-	 @property (nonatomic, strong) NSDictionary* extras
-	 - (instancetype)initWithPlacementId:(long long)placementId delegate:(id<IMInterstitialDelegate>)delegate
-	 - (BOOL)isReady
-	 - (void)showFromViewController:(UIViewController *)viewController
-	* IMNative class
-	  @property (nonatomic, strong) NSDictionary* extras
-	  - (instancetype)initWithPlacementId:(long long)placementId delegate:(id<IMNativeDelegate>)delegate
-	  - (void)reportAdClickAndOpenLandingURL:(NSDictionary *)params
-	* IMCustomNative class
-	  + (void)bindNative:(IMNative*)native toView:(UIView *)view withImpressionTrackerScript:(NSString*)impressionTracker;
-	  + (void)bindNative:(IMNative*)native toView:(UIView *)view withImpressionTrackerURL:(NSURL*)impressionTrackerURL
-	  - (void)reportAdClick:(NSDictionary*)extras withCustomClickTrackerScript:(NSString*)clickTracker;
-	  - (void)reportAdClick:(NSDictionary*)extras withCustomClickTrackerURL:(NSURL*)clickTrackerURL;
-	  - (void)reportAdClickAndOpenLandingURL:(NSDictionary*)extras withCustomClickTrackerScript:(NSString*)clickTracker;
-	  - (void)reportAdClickAndOpenLandingURL:(NSDictionary*)extras withCustomClickTrackerURL:(NSURL*)clickTrackerURL;
-	* IMRequestStatus class
-	  - (instancetype)initWithDomain:(NSString *)domain code:(IMStatusCode)code userInfo:(NSDictionary *)dict
-	* IMBannerDelegate class
-	  - (void)bannerDidPresentScreen:(IMBanner *)banner
-	  - (void)banner:(IMBanner *)banner rewardActionCompletedWithRewards:(NSDictionary *)rewards
-	* IMInterstitialDelegate class
-	  - (void)interstitial:(IMInterstitial *)interstitial rewardActionCompletedWithRewards:(NSDictionary *)rewards
-	  - (void)interstitialDidPresent:(IMInterstitial *)interstitial
-	* IMNativeDelegate class
-	  - (void)nativeDidDismissScreen:(IMNative *)native
-	  - (void)nativeDidPresentScreen:(IMNative *)native
-	  - (void)nativeWillDismissScreen:(IMNative *)native
-	  - (void)nativeWillPresentScreen:(IMNative *)native
-	  - (void)userWillLeaveApplicationFromNative:(IMNative *)native
+    * IMBanner class
+      @property (nonatomic, strong) NSDictionary* extras
+      - (instancetype)initWithFrame:(CGRect)frame placementId:(long long)placementId delegate:(id<IMBannerDelegate>)delegate
+      - (void)setRefreshInterval:(NSInteger)interval
+      - (void)shouldAutoRefresh:(BOOL)refresh
+    * IMInterstitial class
+     @property (nonatomic, strong) NSDictionary* extras
+     - (instancetype)initWithPlacementId:(long long)placementId delegate:(id<IMInterstitialDelegate>)delegate
+     - (BOOL)isReady
+     - (void)showFromViewController:(UIViewController *)viewController
+    * IMNative class
+      @property (nonatomic, strong) NSDictionary* extras
+      - (instancetype)initWithPlacementId:(long long)placementId delegate:(id<IMNativeDelegate>)delegate
+      - (void)reportAdClickAndOpenLandingURL:(NSDictionary *)params
+    * IMCustomNative class
+      + (void)bindNative:(IMNative*)native toView:(UIView *)view withImpressionTrackerScript:(NSString*)impressionTracker;
+      + (void)bindNative:(IMNative*)native toView:(UIView *)view withImpressionTrackerURL:(NSURL*)impressionTrackerURL
+      - (void)reportAdClick:(NSDictionary*)extras withCustomClickTrackerScript:(NSString*)clickTracker;
+      - (void)reportAdClick:(NSDictionary*)extras withCustomClickTrackerURL:(NSURL*)clickTrackerURL;
+      - (void)reportAdClickAndOpenLandingURL:(NSDictionary*)extras withCustomClickTrackerScript:(NSString*)clickTracker;
+      - (void)reportAdClickAndOpenLandingURL:(NSDictionary*)extras withCustomClickTrackerURL:(NSURL*)clickTrackerURL;
+    * IMRequestStatus class
+      - (instancetype)initWithDomain:(NSString *)domain code:(IMStatusCode)code userInfo:(NSDictionary *)dict
+    * IMBannerDelegate class
+      - (void)bannerDidPresentScreen:(IMBanner *)banner
+      - (void)banner:(IMBanner *)banner rewardActionCompletedWithRewards:(NSDictionary *)rewards
+    * IMInterstitialDelegate class
+      - (void)interstitial:(IMInterstitial *)interstitial rewardActionCompletedWithRewards:(NSDictionary *)rewards
+      - (void)interstitialDidPresent:(IMInterstitial *)interstitial
+    * IMNativeDelegate class
+      - (void)nativeDidDismissScreen:(IMNative *)native
+      - (void)nativeDidPresentScreen:(IMNative *)native
+      - (void)nativeWillDismissScreen:(IMNative *)native
+      - (void)nativeWillPresentScreen:(IMNative *)native
+      - (void)userWillLeaveApplicationFromNative:(IMNative *)native
 - APIs updated
-	* Moved APIs from InMobi class to IMSdk
-	* IMSdk Class
+    * Moved APIs from InMobi class to IMSdk
+    * IMSdk Class
           + (void)initialize:(NSString *)publisherAppId
           updated to + (void)initWithAccountID:(NSString *)accountID
 
-	  + (void)setLocationWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude accuracy:(CGFloat)accuracyInMeters
+      + (void)setLocationWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude accuracy:(CGFloat)accuracyInMeters
           updated to +(void)setLocation:(CLLocation*)location
 
-	  + (void)setLogLevel:(IMLogLevel)logLevel
+      + (void)setLogLevel:(IMLogLevel)logLevel
           updated to +(void)setLogLevel:(IMSDKLogLevel)desiredLogLevel
 
           + (void)addUserID:(IMUserId)userId withValue:(NSString *)idValue
           updated to +(void)addId:(NSString*)identifier forType:(IMSDKIdType)type
 
-	  + (void)removeUserID:(IMUserId)userId
+      + (void)removeUserID:(IMUserId)userId
           updated to +(void)removeIdType:(IMSDKIdType)type
 
-	* IMBanner Class
+    * IMBanner Class
           @property (nonatomic, copy) NSString *appId
           updated to @property (nonatomic) long long placementId
 
           @property (nonatomic, assign) UIViewAnimationTransition refreshAnimation
-	  updated to @property (nonatomic) UIViewAnimationTransition transitionAnimation
+      updated to @property (nonatomic) UIViewAnimationTransition transitionAnimation
 
-	  - (id)initWithFrame:(CGRect)frame appId:(NSString *)appId adSize:(int)adSize
-	  updated to - (instancetype)initWithFrame:(CGRect)frame placementId:(long long)placementId
+      - (id)initWithFrame:(CGRect)frame appId:(NSString *)appId adSize:(int)adSize
+      updated to - (instancetype)initWithFrame:(CGRect)frame placementId:(long long)placementId
 
-	  - (void)loadBanner
-	  updated to - (void)load
+      - (void)loadBanner
+      updated to - (void)load
 
-	* IMInterstitial Class
+    * IMInterstitial Class
 
           - (id)initWithAppId:(NSString *)appId
           updated to - (instancetype)initWithPlacementId:(long long)placementId
 
-	  - (void)loadInterstitial
+      - (void)loadInterstitial
           updated to - (void)load
 
           - (void)presentInterstitialAnimated:(BOOL)animated
           updated to - (void)showFromViewController:(UIViewController *)viewController withAnimation:(IMInterstitialAnimationType)type
 
-	* IMNative Class
-	  @property (atomic, strong) NSString *content
-	  updated to @property (nonatomic, strong, readonly) NSString *adContent
+    * IMNative Class
+      @property (atomic, strong) NSString *content
+      updated to @property (nonatomic, strong, readonly) NSString *adContent
 
-	  - (id)initWithAppId:(NSString *)appId
+      - (id)initWithAppId:(NSString *)appId
           updated to - (instancetype)initWithPlacementId:(long long)placementId
 
-	  - (void)attachToView:(UIView *)view
-	  updated to + (void)bindNative:(IMNative*)native toView:(UIView*)view
+      - (void)attachToView:(UIView *)view
+      updated to + (void)bindNative:(IMNative*)native toView:(UIView*)view
 
-	  - (void)detachFromView
-	  updated to + (void)unBindView:(UIView*)view
+      - (void)detachFromView
+      updated to + (void)unBindView:(UIView*)view
 
-	  - (void)handleClick:(NSDictionary *)params
+      - (void)handleClick:(NSDictionary *)params
           updated to - (void)reportAdClick:(NSDictionary *)params
 
-	  - (void)loadAd
-	  updated to - (void)load
+      - (void)loadAd
+      updated to - (void)load
 
-	* IMBannerDelegate class
-	  - (void)banner:(IMBanner *)banner didFailToReceiveAdWithError:(IMError *)error
+    * IMBannerDelegate class
+      - (void)banner:(IMBanner *)banner didFailToReceiveAdWithError:(IMError *)error
           updated to - (void)banner:(IMBanner *)banner didFailToLoadWithError:(IMRequestStatus *)error
 
-	  - (void)bannerDidInteract:(IMBanner *)banner withParams:(NSDictionary *)dictionary
+      - (void)bannerDidInteract:(IMBanner *)banner withParams:(NSDictionary *)dictionary
           updated to - (void)banner:(IMBanner *)banner didInteractWithParams:(NSDictionary *)params
 
-	  - (void)bannerDidReceiveAd:(IMBanner *)banner
+      - (void)bannerDidReceiveAd:(IMBanner *)banner
           updated to - (void)bannerDidFinishLoading:(IMBanner *)banner
 
-	  - (void)bannerWillLeaveApplication:(IMBanner *)banner
+      - (void)bannerWillLeaveApplication:(IMBanner *)banner
           updated to - (void)userWillLeaveApplicationFromBanner:(IMBanner *)banner
 
-	* IMInterstitialDelegate Class
-	  - (void)interstitial:(IMInterstitial *)ad didFailToPresentScreenWithError:(IMError *)error
+    * IMInterstitialDelegate Class
+      - (void)interstitial:(IMInterstitial *)ad didFailToPresentScreenWithError:(IMError *)error
           updated to - (void)interstitial:(IMInterstitial *)interstitial didFailToPresentWithError:(IMRequestStatus *)error
 
-	  - (void)interstitial:(IMInterstitial *)ad didFailToReceiveAdWithError:(IMError *)error
+      - (void)interstitial:(IMInterstitial *)ad didFailToReceiveAdWithError:(IMError *)error
           updated to - (void)interstitial:(IMInterstitial *)interstitial didFailToLoadWithError:(IMRequestStatus *)error
 
-	  - (void)interstitialDidDismissScreen:(IMInterstitial *)ad
+      - (void)interstitialDidDismissScreen:(IMInterstitial *)ad
           updated to - (void)interstitialDidDismiss:(IMInterstitial *)interstitial
 
-	  - (void)interstitialDidInteract:(IMInterstitial *)ad withParams:(NSDictionary *)dictionary
+      - (void)interstitialDidInteract:(IMInterstitial *)ad withParams:(NSDictionary *)dictionary
           updated to - (void)interstitial:(IMInterstitial *)interstitial didInteractWithParams:(NSDictionary *)params
 
-	  - (void)interstitialDidReceiveAd:(IMInterstitial *)ad
+      - (void)interstitialDidReceiveAd:(IMInterstitial *)ad
           updated to - (void)interstitialDidFinishLoading:(IMInterstitial *)interstitial
 
-	  - (void)interstitialWillDismissScreen:(IMInterstitial *)ad
+      - (void)interstitialWillDismissScreen:(IMInterstitial *)ad
           updated to - (void)interstitialWillDismiss:(IMInterstitial *)interstitial
 
-	  - (void)interstitialWillLeaveApplication:(IMInterstitial *)ad
+      - (void)interstitialWillLeaveApplication:(IMInterstitial *)ad
           updated to - (void)userWillLeaveApplicationFromInterstitial:(IMInterstitial *)interstitial
 
-	  - (void)interstitialWillPresentScreen:(IMInterstitial *)ad
+      - (void)interstitialWillPresentScreen:(IMInterstitial *)ad
           updated to - (void)interstitialWillPresent:(IMInterstitial *)interstitial
 
-	* IMNativeDelegate class
-	  - (void)nativeAd:(IMNative *)native didFailWithError:(IMError *)error
+    * IMNativeDelegate class
+      - (void)nativeAd:(IMNative *)native didFailWithError:(IMError *)error
           updated to - (void)native:(IMNative *)native didFailToLoadWithError:(IMRequestStatus *)error
 
-	  - (void)nativeAdDidFinishLoading:(IMNative *)native
+      - (void)nativeAdDidFinishLoading:(IMNative *)native
           updated to - (void)nativeDidFinishLoading:(IMNative *)native
 
 - APIs removed
 
-	* IMSDK class
-	  + (void)setDeviceIdMask:(IMSDKDeviceIdMask)mask
-	  + (void)setDateOfBirth:(NSDate *)dateOfBirth
-	  + (void)setDateOfBirthWithMonth:(NSUInteger)month day:(NSUInteger)day year:(NSUInteger)year
-	  + (void)setSexualOrientation:(IMSexualOrientation)sexualOrientation
-	  + (void)setHasChildren:(IMHasChildren)children
-	  + (void)setMaritalStatus:(IMMaritalStatus)status
-	* IMBanner class
-	  @property (nonatomic) int adSize
+    * IMSDK class
+      + (void)setDeviceIdMask:(IMSDKDeviceIdMask)mask
+      + (void)setDateOfBirth:(NSDate *)dateOfBirth
+      + (void)setDateOfBirthWithMonth:(NSUInteger)month day:(NSUInteger)day year:(NSUInteger)year
+      + (void)setSexualOrientation:(IMSexualOrientation)sexualOrientation
+      + (void)setHasChildren:(IMHasChildren)children
+      + (void)setMaritalStatus:(IMMaritalStatus)status
+    * IMBanner class
+      @property (nonatomic) int adSize
           @property (nonatomic) long long slotId
-	  @property (nonatomic, strong) NSString* refTagKey
-	  @property (nonatomic, strong) NSString* refTagVal
-	  @property (nonatomic, strong) NSDictionary *additionaParameters
+      @property (nonatomic, strong) NSString* refTagKey
+      @property (nonatomic, strong) NSString* refTagVal
+      @property (nonatomic, strong) NSDictionary *additionaParameters
           - (id)initWithFrame:(CGRect)frame slotId:(long long)slotId
-	  - (void)stopLoading
-	 * IMInterstitial class
-	  @property (nonatomic, strong) NSDictionary *additionaParameters
-	  @property (nonatomic, copy) NSString *appId
-	  @property (nonatomic) long long slotId
-	  @property (nonatomic, weak) NSObject<IMIncentivisedDelegate> *incentivisedDelegate
-	  @property (readonly) IMInterstitialState state
-	  - (id)initWithSlotId:(long long)slotId
-	  - (void)stopLoading
-	  * IMNative class
-	  @property (nonatomic, strong) NSString* refTagKey
-	  @property (nonatomic, strong) NSString* refTagVal
-	  @property (nonatomic, strong) NSDictionary *additionaParameters
-	 * IMIncentivisedDelegate class
-	 * IMError class
-	 * InMobiAnalytics class
+      - (void)stopLoading
+     * IMInterstitial class
+      @property (nonatomic, strong) NSDictionary *additionaParameters
+      @property (nonatomic, copy) NSString *appId
+      @property (nonatomic) long long slotId
+      @property (nonatomic, weak) NSObject<IMIncentivisedDelegate> *incentivisedDelegate
+      @property (readonly) IMInterstitialState state
+      - (id)initWithSlotId:(long long)slotId
+      - (void)stopLoading
+      * IMNative class
+      @property (nonatomic, strong) NSString* refTagKey
+      @property (nonatomic, strong) NSString* refTagVal
+      @property (nonatomic, strong) NSDictionary *additionaParameters
+     * IMIncentivisedDelegate class
+     * IMError class
+     * InMobiAnalytics class
 
 Build 4.5.3 [13/May/2015]
 -------------
@@ -880,7 +889,7 @@ Build 4.3.0 [28/Apr/2014]
 -------------
 - Deprecating support for iOS 4.3
 - MRAID enhancements
-	* Added support for Calendar Events. Requires EventKit.framework and EventKitUI.framework to be added.
+    * Added support for Calendar Events. Requires EventKit.framework and EventKitUI.framework to be added.
 - Reward Ads support
 - Security related improvements
 - Including Sample App for Native Ads
@@ -928,37 +937,37 @@ Build 3.7.0 [15/Apr/2013]
 - Added SKStoreProductViewController for in-app context downloads.
 - Device uniqueIdentifier (UDID) is no longer being collected.
 - Added Frameworks
-	* StoreKit
-	* AudioToolBox
+    * StoreKit
+    * AudioToolBox
 - Optional Frameworks
 (Add these frameworks to provide additional capabilities for rich user experience.)
-	* Social
+    * Social
 - APIs added
-	* IMAdInterstitial:
-	 	@property(nonatomic,assign) IMAdMode adMode;
-	 	- (id)initWithAppId:(NSString *)appId slotId:(long long)slotId;
-	 	- (void)presentInterstitialAnimated:(BOOL)animated;
-	* IMAdView:
-		- (id)initWithFrame:(CGRect)frame
+    * IMAdInterstitial:
+         @property(nonatomic,assign) IMAdMode adMode;
+         - (id)initWithAppId:(NSString *)appId slotId:(long long)slotId;
+         - (void)presentInterstitialAnimated:(BOOL)animated;
+    * IMAdView:
+        - (id)initWithFrame:(CGRect)frame
           imAppId:(NSString *)appId
           imAdSize:(int)adSize
           imSlotId:(long long)slotId;
 - APIs deprecated
-	* IMAdInterstitial:
-	 	- (void)presentFromRootViewController:(UIViewController *)rootViewController
+    * IMAdInterstitial:
+         - (void)presentFromRootViewController:(UIViewController *)rootViewController
             animated:(BOOL)_animated;
-	* IMAdView:
-		@property (nonatomic, assign) UIViewController *rootViewController;
-		- (id)initWithFrame:(CGRect)frame
+    * IMAdView:
+        @property (nonatomic, assign) UIViewController *rootViewController;
+        - (id)initWithFrame:(CGRect)frame
             imAppId:(NSString *)appId
             imAdSize:(int)adSize rootViewController:(UIViewController *)viewController;
-		- (void)setAdTextColor:(NSString *)color;
-		- (void)setAdBackgroundColor:(NSString *)bgcolor;
-		- (void)setAdBackgroundGradientWithTopColor:(NSString *)topcolor
+        - (void)setAdTextColor:(NSString *)color;
+        - (void)setAdBackgroundColor:(NSString *)bgcolor;
+        - (void)setAdBackgroundGradientWithTopColor:(NSString *)topcolor
             bottomColor:(NSString *)bottomcolor;
-		- (BOOL)shouldRotateToInterfaceOrientation:(UIInterfaceOrientation)orientation;
-	* IMAdRequest:
-		@property (nonatomic, assign) BOOL testMode;
+        - (BOOL)shouldRotateToInterfaceOrientation:(UIInterfaceOrientation)orientation;
+    * IMAdRequest:
+        @property (nonatomic, assign) BOOL testMode;
 
 Build 3.6.5 [10/Jan/2013]
 -----------
@@ -989,42 +998,42 @@ Build 3.6.0 [15/Sep/2012]
 - CoreTelephony, AdSupport, and PassKit frameworks dependency added.
 - Introduction of InMobiCommons SDK. InMobiAdNetwork SDK has dependency on InMobiCommons SDK. Both should be included in the project as mentioned in the integration guidelines. Ensure that the InMobiAdNetwork and InMobiCommons libraries are from the latest release bundle. Refer to Apple documentation on the API exposed.
 -API Changes
-	* Class Added
-		IMCommonUtil
-	* Properties and Methods Added
-		IMCommonUtil.h
-		+ (void)setLogLevel:(IMLogLevelType)logLevel;
-		+ (IMLogLevelType)getLogLevel;
-		+ (void)setDeviceIdMask:(IMDeviceIdMask)deviceIdMask;
-		+ (IMDeviceIdMask)getDeviceIdMask;
-		+ (NSString *)getReleaseVersion;
+    * Class Added
+        IMCommonUtil
+    * Properties and Methods Added
+        IMCommonUtil.h
+        + (void)setLogLevel:(IMLogLevelType)logLevel;
+        + (IMLogLevelType)getLogLevel;
+        + (void)setDeviceIdMask:(IMDeviceIdMask)deviceIdMask;
+        + (IMDeviceIdMask)getDeviceIdMask;
+        + (NSString *)getReleaseVersion;
 
- 		IMAdView.h
+         IMAdView.h
         @property (nonatomic, assign) int imAdSize;
-		@property (nonatomic, assign) long long imSlotId;
-		@property (nonatomic, assign) UIViewAnimationTransition refreshAnimation;
-		- (id)initWithFrame:(CGRect)frame imAppId:(NSString *)appId imSlotId:(long long)slotId imAdSize:(int)adSize rootViewController:(UIViewController *)viewController;
-		- (void)stopLoading;
+        @property (nonatomic, assign) long long imSlotId;
+        @property (nonatomic, assign) UIViewAnimationTransition refreshAnimation;
+        - (id)initWithFrame:(CGRect)frame imAppId:(NSString *)appId imSlotId:(long long)slotId imAdSize:(int)adSize rootViewController:(UIViewController *)viewController;
+        - (void)stopLoading;
 
- 		IMAdInterstitial.h
-		@property (nonatomic, assign) long long imSlotId;
-		- (void)stopLoading;
+         IMAdInterstitial.h
+        @property (nonatomic, assign) long long imSlotId;
+        - (void)stopLoading;
 
- 		IMAdRequest.h
-		- (void)setDateOfBirthWithMonth:(NSUInteger)m day:(NSUInteger)d year:(NSUInteger)y;
-		- (void)setLocationWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude accuracy:(CGFloat)accuracyInMeters;
-	* Class Removed
-		IMSDKUtil
-	* Properties and Methods Removed
-		IMAdView.h
-		@property (nonatomic, assign) int imAdUnit;
-		@property (nonatomic, assign) int animationType;
-	* Properties and Methods Modified
-		Logging methods moved from IMSDKUtil to the IMCommonUtil class.
-		IMDeviceIdMask moved from IMAdRequest to the IMCommonUtil class.
-	* New Error Codes Introduced in IMAdError.h
-	 	kIMAdNetworkFetchTimedOut - When the ad fetch time is more than 1 minute.
-		kIMAdNetworkRenderingTimedOut - When the ad rendering time is more than 1 minute.
+         IMAdRequest.h
+        - (void)setDateOfBirthWithMonth:(NSUInteger)m day:(NSUInteger)d year:(NSUInteger)y;
+        - (void)setLocationWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude accuracy:(CGFloat)accuracyInMeters;
+    * Class Removed
+        IMSDKUtil
+    * Properties and Methods Removed
+        IMAdView.h
+        @property (nonatomic, assign) int imAdUnit;
+        @property (nonatomic, assign) int animationType;
+    * Properties and Methods Modified
+        Logging methods moved from IMSDKUtil to the IMCommonUtil class.
+        IMDeviceIdMask moved from IMAdRequest to the IMCommonUtil class.
+    * New Error Codes Introduced in IMAdError.h
+         kIMAdNetworkFetchTimedOut - When the ad fetch time is more than 1 minute.
+        kIMAdNetworkRenderingTimedOut - When the ad rendering time is more than 1 minute.
 
 Build 3.5.7 [31/Jul/2012]
 -----------
@@ -1058,28 +1067,28 @@ Build 3.5.0 [11/Apr/2012] Beta [30/Mar/2012]
 - Removed the Core Location framework from the SDK. Core Location is no longer a mandatory framework required to link with SDK i350.
 - Added 'MediaPlayer', 'Security', and 'AVFoundation' frameworks to SDK i350.
 - API added
-	* IMAdView.h
-		- (BOOL)shouldRotateToInterfaceOrientation:(UIInterfaceOrientation)orientation;
-	* IMAdRequest.h
-		typedef enum
-		{
-    		ID_LOGIN,
-    		ID_SESSION
-    	} IMIDType;
+    * IMAdView.h
+        - (BOOL)shouldRotateToInterfaceOrientation:(UIInterfaceOrientation)orientation;
+    * IMAdRequest.h
+        typedef enum
+        {
+            ID_LOGIN,
+            ID_SESSION
+        } IMIDType;
 
- 		typedef enum
-		{
-    		DeviceID_NONE   = 1 << 0,
-    		DeviceID_ODIN1  = 1 << 1
-		} DeviceIDMask;
-		@property (nonatomic,assign) CLLocation *location;
-		@property (nonatomic, copy) NSString *loginID;
-		@property (nonatomic, copy) NSString *sessionID;
-		- (void)setLocationWithCity:(NSString *)_city state:(NSString *)_state country:(NSString *)_country;
-		- (void) addIDType:(IDType)idType withValue: (NSString *)value;
+         typedef enum
+        {
+            DeviceID_NONE   = 1 << 0,
+            DeviceID_ODIN1  = 1 << 1
+        } DeviceIDMask;
+        @property (nonatomic,assign) CLLocation *location;
+        @property (nonatomic, copy) NSString *loginID;
+        @property (nonatomic, copy) NSString *sessionID;
+        - (void)setLocationWithCity:(NSString *)_city state:(NSString *)_state country:(NSString *)_country;
+        - (void) addIDType:(IDType)idType withValue: (NSString *)value;
 - Properties Removed
-	* IMAdRequest.h
-		@property (nonatomic, assign) BOOL isLocationEnquiryAllowed;
+    * IMAdRequest.h
+        @property (nonatomic, assign) BOOL isLocationEnquiryAllowed;
 
 Build 3.0.2 [21/Sep/2011]
 -----------

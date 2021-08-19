@@ -6,7 +6,7 @@ Publicly available sample apps of InMobi providing simple integration steps. InM
 
 The following environment is required to run the Sample apps
 
-    Xcode 12.5 and above
+    Xcode 12.0 and above
     InMobi SDK 9.x.x
     iOS 9.0 and above
     
@@ -31,6 +31,15 @@ To run the sample apps, open any of the Ad Format's .xcodeproj file with Xcode 9
 These sample apps are provided under MIT license. For more information, please see the LICENSE file. For information about InMobi SDK's license, please see the InMobi folder.
 
 ## Change logs
+
+Build 9.2.1 [20/Aug/2021]
+-------------
+- Added support for Xcode 12.0.
+- Support for Partner GDPR consent
+- Bug fixes
+- New APIs Added
+    IMSDK
+    + +(void)setPartnerGDPRConsent:(nullable NSDictionary *)consentDictionary;
 
 Build 9.2.0 [16/July/2021]
 -------------
