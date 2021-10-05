@@ -7,7 +7,7 @@ Publicly available sample apps of InMobi providing simple integration steps. InM
 The following environment is required to run the Sample apps
 
     Xcode 12.0 and above
-    InMobi SDK 9.x.x
+    InMobi SDK 10.x.x
     iOS 9.0 and above
     
 Important: Make sure you have the latest version of pod installed after that you need to simply do
