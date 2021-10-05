@@ -7,7 +7,7 @@ Publicly available sample apps of InMobi providing simple integration steps. InM
 The following environment is required to run the Sample apps
 
     Xcode 12.0 and above
-    InMobi SDK 9.x.x
+    InMobi SDK 10.x.x
     iOS 9.0 and above
     
 Important: Make sure you have the latest version of pod installed after that you need to simply do
@@ -31,6 +31,19 @@ To run the sample apps, open any of the Ad Format's .xcodeproj file with Xcode 9
 These sample apps are provided under MIT license. For more information, please see the LICENSE file. For information about InMobi SDK's license, please see the InMobi folder.
 
 ## Change logs
+
+Build 10.0.0 [30/Sep/2021]
+-------------
+- Added support for SKOverlay 
+- Added support for M1 Mac Simulator
+- Upgraded OMSDK  to v1.3.17
+- New APIs Added
+    IMBanner
+    +  NSString* contentUrl;
+    IMNative
+    +  NSString* contentUrl;
+    IMInterstitial
+    +  NSString* contentUrl;
 
 Build 9.2.1 [20/Aug/2021]
 -------------

@@ -2,6 +2,19 @@
 InMobi Monetization SDK for iOS
 ===================================
 
+Build 10.0.0 [30/Sep/2021]
+-------------
+- Added support for SKOverlay 
+- Added support for M1 Mac Simulator
+- Upgraded OMSDK  to v1.3.17
+- New APIs Added
+    IMBanner
+    +  NSString* contentUrl;
+    IMNative
+    +  NSString* contentUrl;
+    IMInterstitial
+    +  NSString* contentUrl;
+    
 Build 9.2.1 [20/Aug/2021]
 -------------
 - Added support for Xcode 12.0.
