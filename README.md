@@ -32,6 +32,10 @@ These sample apps are provided under MIT license. For more information, please s
 
 ## Change logs
 
+Build 10.0.1 [19/Oct/2021]
+-------------
+- Bug fixes
+
 Build 10.0.0 [30/Sep/2021]
 -------------
 - Added support for SKOverlay 
