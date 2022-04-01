@@ -1,6 +1,23 @@
 ===================================
 InMobi Monetization SDK for iOS
 ===================================
+Build 10.0.5 [30/Mar/2022]
+-------------
+- Added Support for OnDevice Targeting
+- Added Support for Family apps
+- New APIs Added
+    IMSDK
+    + +(void)setIsAgeRestricted:(BOOL)isRestricted;
+    IMODTargetingService
+    + +(void)push:(NSString *)hashId;
+- Bug fixes
+
+Build 10.0.2 [21/Jan/2022]
+-------------
+- Updated minimum supported version of Xcode to Xcode 12.5
+- Improvements in opening of landing page
+- Updated License and ReadMe
+
 Build 10.0.1 [19/Oct/2021]
 -------------
 - Bug fixes
