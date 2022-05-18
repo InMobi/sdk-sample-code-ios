@@ -1,6 +1,13 @@
 ===================================
 InMobi Monetization SDK for iOS
 ===================================
+Build 10.0.6 [13/May/2022]
+-------------
+- Added Support for Dynamic Orientation
+- Added Support for Custom Browser
+- Improvements in ad response size and rendering
+- Bug fixes
+
 Build 10.0.5 [30/Mar/2022]
 -------------
 - Added Support for OnDevice Targeting
