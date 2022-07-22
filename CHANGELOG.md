@@ -1,6 +1,10 @@
 ===================================
 InMobi Monetization SDK for iOS
 ===================================
+Build 10.0.7 [25/May/2022]
+-------------
+- Bug fixes
+
 Build 10.0.6 [13/May/2022]
 -------------
 - Added Support for Dynamic Orientation
