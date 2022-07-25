@@ -104,5 +104,11 @@
 -(void)userWillLeaveApplicationFromInterstitial:(IMInterstitial*)interstitial {
     NSLog(@"User will leave the application from InMobi Interstitial");
 }
+/**
+ * Notifies the delegate that the interstitial ad Impressed.
+ */
+-(void)interstitialAdImpressed:(IMInterstitial *)interstitial {
+    NSLog(@"InMobi Interstitial ad Impressed");
+}
 
 @end

@@ -105,6 +105,13 @@ class ViewController: UIViewController, IMInterstitialDelegate {
      func userWillLeaveApplication(from interstitial: IMInterstitial!) {
         NSLog("User will leave application from InMobi Interstitial");
     }
+    
+    /**
+     * Notifies the delegate that the interstitial ad Impressed.
+     */
+    func interstitialAdImpressed(_ interstitial: IMInterstitial!) {
+        NSLog("InMobi Interstitial ad Impressed");
+    }
 
     
 }

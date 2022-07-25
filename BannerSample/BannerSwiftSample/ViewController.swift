@@ -108,5 +108,11 @@ class ViewController: UIViewController, IMBannerDelegate {
         NSLog("InMobi Banner completed a rewarded action. Rewards : %@", rewards);
     }
     
+    /**
+     * Notifies the delegate that the banner ad impressed.
+     */
+    func bannerAdImpressed(_ banner: IMBanner!) {
+        NSLog("InMobi Banner Ad Impressed");
+    }
 }
 
