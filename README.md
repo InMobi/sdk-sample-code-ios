@@ -6,7 +6,7 @@ Publicly available sample apps of InMobi providing simple integration steps. InM
 
 The following environment is required to run the Sample apps
 
-    Xcode 12.0 and above
+    Xcode 13.0 and above
     InMobi SDK 10.x.x
     iOS 9.0 and above
     
@@ -31,6 +31,16 @@ To run the sample apps, open any of the Ad Format's .xcodeproj file with Xcode 9
 These sample apps are provided under MIT license. For more information, please see the LICENSE file. For information about InMobi SDK's license, please see the InMobi folder.
 
 ## Change logs
+
+Build 10.0.8 [15/July/2022]
+-------------
+- Added Support for Publisher callback - AdImpressed
+- Added Support for Contextual App Targeting
+- New APIs Added
+    IMBannerDelegate:
+    + -(void)bannerAdImpressed:(IMBanner*)banner;  
+    IMInterstitialDelegate:
+    + -(void)interstitialAdImpressed:(IMInterstitial*)interstitial;
 
 Build 10.0.7 [25/May/2022]
 -------------

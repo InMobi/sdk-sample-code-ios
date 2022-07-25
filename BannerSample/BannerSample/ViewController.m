@@ -108,5 +108,11 @@
     NSLog(@"InMobi Banner rewarded action completed. Rewards : %@", rewards);
 }
 
+/**
+ * Notifies the delegate that the banner ad impressed.
+ */
+-(void)bannerAdImpressed:(IMBanner *)banner {
+    NSLog(@"InMobi Banner Ad Impressed");
+}
 
 @end

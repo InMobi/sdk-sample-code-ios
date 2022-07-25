@@ -1,6 +1,16 @@
 ===================================
 InMobi Monetization SDK for iOS
 ===================================
+Build 10.0.8 [15/July/2022]
+-------------
+- Added Support for Publisher callback - AdImpressed
+- Added Support for Contextual App Targeting
+- New APIs Added
+    IMBannerDelegate:
+    + -(void)bannerAdImpressed:(IMBanner*)banner;  
+    IMInterstitialDelegate:
+    + -(void)interstitialAdImpressed:(IMInterstitial*)interstitial;
+    
 Build 10.0.7 [25/May/2022]
 -------------
 - Bug fixes
