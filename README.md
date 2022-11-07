@@ -32,6 +32,11 @@ These sample apps are provided under MIT license. For more information, please s
 
 ## Change logs
 
+Build 10.1.0 [08/Sep/2022]
+-------------
+- Added Support for Variable Size SKStore
+- Bug fixes
+
 Build 10.0.8 [15/July/2022]
 -------------
 - Added Support for Publisher callback - AdImpressed
