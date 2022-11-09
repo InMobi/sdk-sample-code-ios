@@ -2,6 +2,11 @@
 InMobi Monetization SDK for iOS
 ===================================
 
+Build 10.1.1 [31/Oct/2022] 
+-------------
+- Improved contextual targeting support
+- Bug Fixes
+
 Build 10.1.0 [08/Sep/2022]
 -------------
 - Added Support for Variable Size SKStore
