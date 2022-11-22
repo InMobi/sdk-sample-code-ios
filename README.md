@@ -32,6 +32,11 @@ These sample apps are provided under MIT license. For more information, please s
 
 ## Change logs
 
+Build 10.1.2 [18/Nov/2022]
+-------------
+- Audio Ads Support
+- Bug Fixes
+
 Build 10.1.1 [31/Oct/2022] 
 -------------
 - Improved contextual targeting support
