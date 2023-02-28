@@ -2,6 +2,13 @@
 InMobi Monetization SDK for iOS
 ===================================
 
+Build 10.1.3 [24/Feb/2023]
+-------------
+- Updated minimum supported version of Xcode to Xcode 14.0
+- Removed support for bitcode which is deprecated in Xcode 14
+- Removed support for iOS 9 & iOS 10
+- Bug Fixes
+
 Build 10.1.2 [18/Nov/2022]
 -------------
 - Audio Ads Support

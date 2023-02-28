@@ -6,9 +6,9 @@ Publicly available sample apps of InMobi providing simple integration steps. InM
 
 The following environment is required to run the Sample apps
 
-    Xcode 13.0 and above
+    Xcode 14.0 and above
     InMobi SDK 10.x.x
-    iOS 9.0 and above
+    iOS 11.0 and above
     
 Important: Make sure you have the latest version of pod installed after that you need to simply do
 
@@ -24,13 +24,20 @@ Three sample apps are provided as per Ad Formats
 
 The latest InMobi iOS SDK is available in the InMobi folder along with its change logs.
 
-To run the sample apps, open any of the Ad Format's .xcodeproj file with Xcode 9.0. For example, to run a Banner's sample, open the BannerSample.xcodeproj in the BannerSample folder and run via Xcode.
+To run the sample apps, open any of the Ad Format's .xcodeproj file with Xcode 14.0. For example, to run a Banner's sample, open the BannerSample.xcodeproj in the BannerSample folder and run via Xcode.
 
 ## License
 
 These sample apps are provided under MIT license. For more information, please see the LICENSE file. For information about InMobi SDK's license, please see the InMobi folder.
 
 ## Change logs
+
+Build 10.1.3 [24/Feb/2023]
+-------------
+- Updated minimum supported version of Xcode to Xcode 14.0
+- Removed support for bitcode which is deprecated in Xcode 14
+- Removed support for iOS 9 & iOS 10
+- Bug Fixes
 
 Build 10.1.2 [18/Nov/2022]
 -------------
