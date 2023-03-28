@@ -6,7 +6,7 @@
 //
 
 #ifndef INMOBI_BANNER_PLACEMENT
-#define INMOBI_BANNER_PLACEMENT     1447912324502
+#define INMOBI_BANNER_PLACEMENT     1672335615808
 #endif
 
 #import "ViewController.h"

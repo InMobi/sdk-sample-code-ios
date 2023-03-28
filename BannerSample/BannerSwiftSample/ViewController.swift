@@ -7,7 +7,7 @@
 import InMobiSDK.IMBanner
 import InMobiSDK.IMBannerDelegate
 
-let INMOBI_BANNER_PLACEMENT: Int64 = 1447912324502
+let INMOBI_BANNER_PLACEMENT: Int64 = 1672335615808
 
 import UIKit
 
