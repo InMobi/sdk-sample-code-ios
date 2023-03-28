@@ -9,7 +9,7 @@
 @import InMobiSDK.IMInterstitialDelegate;
 
 #ifndef INMOBI_INTERSTITIAL_PLACEMENT
-#define INMOBI_INTERSTITIAL_PLACEMENT   1446377525790
+#define INMOBI_INTERSTITIAL_PLACEMENT   1672200162238
 #endif
 
 #import "ViewController.h"
