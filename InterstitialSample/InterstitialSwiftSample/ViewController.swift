@@ -8,7 +8,7 @@
 import InMobiSDK.IMInterstitial
 import InMobiSDK.IMInterstitialDelegate
 
-let INMOBI_INTERSTITIAL_PLACEMENT: Int64 = 1446377525790
+let INMOBI_INTERSTITIAL_PLACEMENT: Int64 = 1672200162238
 
 import UIKit
 
