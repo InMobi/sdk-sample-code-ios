@@ -2,6 +2,12 @@
 InMobi Monetization SDK for iOS
 ===================================
 
+Build 10.1.4 [06/May/2023]
+-------------
+- Updated minimum supported version of Xcode to Xcode 14.1
+- Added SKAN 4.0 Support
+- Bug Fixes
+
 Build 10.1.3 [24/Feb/2023]
 -------------
 - Updated minimum supported version of Xcode to Xcode 14.0
