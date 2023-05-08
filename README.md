@@ -6,7 +6,7 @@ Publicly available sample apps of InMobi providing simple integration steps. InM
 
 The following environment is required to run the Sample apps
 
-    Xcode 14.0 and above
+    Xcode 14.1 and above
     InMobi SDK 10.x.x
     iOS 11.0 and above
     
@@ -31,6 +31,12 @@ To run the sample apps, open any of the Ad Format's .xcodeproj file with Xcode 1
 These sample apps are provided under MIT license. For more information, please see the LICENSE file. For information about InMobi SDK's license, please see the InMobi folder.
 
 ## Change logs
+
+Build 10.1.4 [06/May/2023]
+-------------
+- Updated minimum supported version of Xcode to Xcode 14.1
+- Added SKAN 4.0 Support
+- Bug Fixes
 
 Build 10.1.3 [24/Feb/2023]
 -------------
