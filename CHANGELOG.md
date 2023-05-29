@@ -2,6 +2,65 @@
 InMobi Monetization SDK for iOS
 ===================================
 
+Build 10.5.5 [25/May/2023]
+-------------
+- Adopt Swift Framework for SDK
+
+- Updated minimum supported version of Xcode to Xcode 14.1
+- Added SKAN 4.0 Support
+- Bug Fixes
+
+- APIs Added
+    New Class Added : IMBannerAudioHandler
+        func onView(_ view: UIView, addBannerAudioDelegate delegate: IMBannerAudioDelegate)
+
+    New Protocol Added : IMBannerAudioDelegate
+        func banner(_ banner: IMBanner, audioStatusChanged status: IMBannerAudioStatus)
+        
+    New Enum Added : IMBannerAudioStatus
+
+- Existing API change
+    IMBanner:
+        New variable added
+            - audioDelegate: IMBannerAudioDelegate
+            - isAudioAd: Bool
+
+    IMInterstital:
+        -(void)showFrom:(UIViewController*)viewController
+
+    Added IMCommonConstants File for accessing Constants:
+        - Usage
+            IMCommonConstants.IM_GDPR_CONSENT_AVAILABLE
+            IMCommonConstants.IM_GDPR_CONSENT_IAB
+            IMCommonConstants.IM_SUBJECT_TO_GDPR
+            IMCommonConstants.IM_PARTNER_GDPR_CONSENT_AVAILABLE
+            IMCommonConstants.IM_PARTNER_GDPR_APPLIES
+    Changes in Enum:
+        - IMSDKLogLevel
+            Usage : IMSDKLogLevelNone, IMSDKLogLevelError, IMSDKLogLevelDebug
+        - IMSDKGender
+            Usage : IMSDKGenderMale, IMSDKGenderFemale
+        - IMSDKEducation
+            Usage : IMSDKEducationHighSchoolOrLess, IMSDKEducationCollageOrGraduate, IMSDKEducationPostGraduateOrAbove
+        - IMSDKAgeGroup
+            Usage : IMSDKAgeGroupBelow18, IMSDKAgeGroupBetween18And24, IMSDKAgeGroupBetween25And29, IMSDKAgeGroupBetween30And34, IMSDKAgeGroupBetween35And44, IMSDKAgeGroupBetween45And54, IMSDKAgeGroupBetween55And65, IMSDKAgeGroupAbove65
+        - IMInterstitialAnimationType
+            Usage : IMInterstitialAnimationTypeCoverVertical, IMInterstitialAnimationTypeFlipHorizontal, IMInterstitialAnimationTypeAsNone
+
+- APIs Removed
+    IMBanner
+        -(void)getSignals
+    IMInterstitial
+        -(void)getSignals
+    IMBannerDelegate
+        -(void)banner:(IMBanner*)banner gotSignals:(NSData*)signals
+        -(void)banner:(IMBanner *)banner failedToGetSignalsWithError:(IMRequestStatus*)status
+    IMInterstitialDelegate
+        -(void)interstitial:(IMInterstitial*)interstitial gotSignals:(NSData*)signals
+        -(void)interstitial:(IMInterstitial*)interstitial failedToGetSignalsWithError:(IMRequestStatus*)status
+
+- For more documentation visit : https://support.inmobi.com/monetize/sdk-documentation/download-sdk
+
 Build 10.1.4 [06/May/2023]
 -------------
 - Updated minimum supported version of Xcode to Xcode 14.1
