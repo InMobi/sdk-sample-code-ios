@@ -48,14 +48,14 @@ class ViewController: UIViewController, IMBannerDelegate {
      * Notifies the delegate that the banner has finished loading
      */
     func bannerDidFinishLoading(_ banner: IMBanner) {
-        print("******InMobi Banner finished loading");
+        print("InMobi Banner finished loading");
     }
     
     /**
      * Notifies the delegate that the banner has failed to load with some error.
      */
     func banner(_ banner: IMBanner, didFailToLoadWithError error: IMRequestStatus) {
-        print("InMobi Banner failed to load with error : %@", error);
+        print("InMobi Banner failed to load with error : \(error.localizedDescription)");
     }
     
     /**
