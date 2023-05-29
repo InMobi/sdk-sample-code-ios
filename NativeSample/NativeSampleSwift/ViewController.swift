@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import InMobiSDK.IMNative
-import InMobiSDK.IMNativeDelegate
+import InMobiSDK
 
 let INMOBI_NATIVE_PLACEMENT: Int64 = 1681413960173
 
@@ -33,63 +32,65 @@ class ViewController: UIViewController,IMNativeDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    func nativeDidFinishLoading(_ native: IMNative!) {
-        NSLog("InMobi Native Did finished loading");
-        self.contentView.addSubview(native.primaryView(ofWidth: self.contentView.frame.size.width));
+    func nativeDidFinishLoading(_ native: IMNative) {
+        print("InMobi Native Did finished loading");
+        if let aView = native.primaryView(ofWidth: self.contentView.frame.size.width) {
+            self.contentView.addSubview(aView)
+        }
         self.AdTitle.text = native.adTitle;
         self.AdIcon.image = native.adIcon;
         // Additonal information needs to be supplied here
     }
     
-    func nativeWillPresentScreen(_ native: IMNative!) {
-        NSLog("InMobi Native Will Present Screen");
+    func nativeWillPresentScreen(_ native: IMNative) {
+        print("InMobi Native Will Present Screen");
     }
     
-    func nativeWillDismissScreen(_ native: IMNative!) {
-        NSLog("InMobi Native Will Dismiss Screen");
+    func nativeWillDismissScreen(_ native: IMNative) {
+        print("InMobi Native Will Dismiss Screen");
     }
     
-    func nativeDidDismissScreen(_ native: IMNative!) {
-        NSLog("InMobi Native Did Dismiss Screen");
+    func nativeDidDismissScreen(_ native: IMNative) {
+        print("InMobi Native Did Dismiss Screen");
     }
     
-    func nativeAdImpressed(_ native: IMNative!) {
-        NSLog("InMobi Native Has Tracked an impression");
+    func nativeAdImpressed(_ native: IMNative) {
+        print("InMobi Native Has Tracked an impression");
     }
     
-    func nativeDidPresentScreen(_ native: IMNative!) {
-        NSLog("InMobi Native Did Present Screen");
+    func nativeDidPresentScreen(_ native: IMNative) {
+        print("InMobi Native Did Present Screen");
     }
     
-    func userWillLeaveApplication(from native: IMNative!) {
-        NSLog("User Will Leave Application");
+    func userWillLeaveApplicationFromNative(_ native: IMNative) {
+        print("User Will Leave Application");
     }
 
-    func nativeDidFinishPlayingMedia(_ native: IMNative!) {
-        NSLog("InMobi Native Did Finish Playing Media");
+    func nativeDidFinishPlayingMedia(_ native: IMNative) {
+        print("InMobi Native Did Finish Playing Media");
     }
     
-    func native(_ native: IMNative!, didFailToLoadWithError error: IMRequestStatus!) {
-        NSLog("InMobi Native failed to load with error : %@", error);
+    func native(_ native: IMNative, didFailToLoadWithError error: IMRequestStatus) {
+        print("InMobi Native failed to load with error : \(error.localizedDescription)");
     }
     
     public func native(_ native: IMNative!, rewardActionCompletedWithRewards rewards: [AnyHashable : Any]!){
-        NSLog("Reward Action Completed With Rewards : %@", rewards);
+        print("Reward Action Completed With Rewards : \(rewards as AnyObject)");
     }
     
-    public func native(_ native: IMNative!, didInteractWithParams params: [AnyHashable : Any]!){
-        NSLog("InMobi Did Interact With Params :%@",params);
-        
-    }
-    public func userDidSkipPlayingMedia(from native: IMNative!) {
-        NSLog("User Did Skip Playing Media ");
+    func native(_ native: IMNative, didInteractWithParams params: [String : Any]?) {
+        print("InMobi Did Interact With Params : \(params as AnyObject)");
     }
     
-    func native(_ native: IMNative!, adAudioStateChanged audioStateMuted: Bool) {
+    public func userDidSkipPlayingMediaFromNative(_ native: IMNative) {
+        print("User Did Skip Playing Media ");
+    }
+    
+    func native(_ native: IMNative, adAudioStateChanged audioStateMuted: Bool) {
         if (audioStateMuted) {
-            NSLog("Inline video-ad audio state changed to mute");
+            print("Inline video-ad audio state changed to mute");
         } else {
-            NSLog("Inline video-ad audio state changed to unmute");
+            print("Inline video-ad audio state changed to unmute");
         }
         //This is called when inline video audio state changes.
     }

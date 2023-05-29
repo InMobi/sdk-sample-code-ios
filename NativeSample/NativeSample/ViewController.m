@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-@import InMobiSDK.IMNative;
-@import InMobiSDK.IMNativeDelegate;
+@import InMobiSDK;
+
 
 #ifndef INMOBI_ACCOUNT_ID
 #define INMOBI_NATIVE_PLACEMENT 1681413960173

@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-@import InMobiSDK.IMSdk;
-
+@import InMobiSDK;
 
 #define INMOBI_ACCOUNT_ID @"4028cb8b2c3a0b45012c406824e800ba"
 
@@ -27,7 +26,7 @@
      * For EU Region use the following init api to pass user consent for data collection, for GDPR Complaince.
      */
     NSMutableDictionary *consentdict=[[NSMutableDictionary alloc]init];
-    [consentdict setObject:@"true" forKey:IM_GDPR_CONSENT_AVAILABLE];
+    [consentdict setObject:@"true" forKey:IMCommonConstants.IM_GDPR_CONSENT_AVAILABLE];
     void (^completionBlock)(NSError*) = ^( NSError* _Nullable  error) {
         if (error) {
             NSLog(@"SDK Initialization Error - %@", error.description);
@@ -41,7 +40,7 @@
     /*
      * Enable logging for better debuggability. Please turn off the logs before submitting your App to the AppStore
      */
-    [IMSdk setLogLevel:kIMSDKLogLevelDebug];
+    [IMSdk setLogLevel:IMSDKLogLevelDebug];
     return YES;
 }
 
