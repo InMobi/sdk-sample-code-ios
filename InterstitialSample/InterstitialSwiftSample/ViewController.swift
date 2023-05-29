@@ -5,8 +5,7 @@
 //  Copyright © 2016 InMobi. All rights reserved.
 //
 
-import InMobiSDK.IMInterstitial
-import InMobiSDK.IMInterstitialDelegate
+import InMobiSDK
 
 let INMOBI_INTERSTITIAL_PLACEMENT: Int64 = 1672200162238
 
@@ -28,15 +27,15 @@ class ViewController: UIViewController, IMInterstitialDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-     func interstitialDidReceiveAd(_ interstitial: IMInterstitial!) {
-        NSLog("InMobi Interstitial received and ad");
+    func interstitialDidReceiveAd(_ interstitial: IMInterstitial) {
+        print("InMobi Interstitial received and ad");
     }
     
     /**
      * Notifies the delegate that the interstitial has finished loading and can be shown instantly.
      */
-     func interstitialDidFinishLoading(_ interstitial: IMInterstitial!) {
-        NSLog("InMobi Interstitial finished loading an ad");
+    func interstitialDidFinishLoading(_ interstitial: IMInterstitial) {
+        print("InMobi Interstitial finished loading an ad");
         
         if interstitial.isReady() {
             interstitial.show(from: self)
@@ -46,71 +45,71 @@ class ViewController: UIViewController, IMInterstitialDelegate {
     /**
      * Notifies the delegate that the interstitial has failed to load with some error.
      */
-     func interstitial(_ interstitial: IMInterstitial!, didFailToLoadWithError error: IMRequestStatus!) {
-        NSLog("InMobi Interstitial failed to load an ad with error : %@", error);
+    func interstitial(_ interstitial: IMInterstitial, didFailToLoadWithError error: IMRequestStatus) {
+        print("InMobi Interstitial failed to load an ad with error \(error.localizedDescription)");
     }
     
     /**
      * Notifies the delegate that the interstitial would be presented.
      */
-     func interstitialWillPresent(_ interstitial: IMInterstitial!) {
-        NSLog("InMobi Interstitial will be presented");
+    func interstitialWillPresent(_ interstitial: IMInterstitial) {
+        print("InMobi Interstitial will be presented");
     }
     
     /**
      * Notifies the delegate that the interstitial has been presented.
      */
-     func interstitialDidPresent(_ interstitial: IMInterstitial!) {
-        NSLog("InMobi Interstitial has been presented");
+    func interstitialDidPresent(_ interstitial: IMInterstitial) {
+        print("InMobi Interstitial has been presented");
     }
     
     /**
      * Notifies the delegate that the interstitial has failed to present with some error.
      */
-     func interstitial(_ interstitial: IMInterstitial!, didFailToPresentWithError error: IMRequestStatus!) {
-        NSLog("InMobi Interstitial failed to present with error : %@", error);
+    func interstitial(_ interstitial: IMInterstitial, didFailToPresentWithError error: IMRequestStatus) {
+        print("InMobi Interstitial failed to present with error : \(error.localizedDescription)");
     }
     
     /**
      * Notifies the delegate that the interstitial will be dismissed.
      */
-     func interstitialWillDismiss(_ interstitial: IMInterstitial!) {
-        NSLog("InMobi Interstitial will be dismissed");
+    func interstitialWillDismiss(_ interstitial: IMInterstitial) {
+        print("InMobi Interstitial will be dismissed");
     }
     
     /**
      * Notifies the delegate that the interstitial has been dismissed.
      */
-     func interstitialDidDismiss(_ interstitial: IMInterstitial!) {
-        NSLog("InMobi Interstitial has been dismissed");
+    func interstitialDidDismiss(_ interstitial: IMInterstitial) {
+        print("InMobi Interstitial has been dismissed");
     }
     
     /**
      * Notifies the delegate that the interstitial has been interacted with.
      */
-     func interstitial(_ interstitial: IMInterstitial!, didInteractWithParams params: [AnyHashable : Any]!) {
-        NSLog("InMobi Interstitial did interact with params : %@", params);
+    func interstitial(_ interstitial: IMInterstitial, didInteractWithParams params: [String : Any]?) {
+        print("InMobi Interstitial did interact with params : \(params as AnyObject)");
     }
     
     /**
      * Notifies the delegate that the user has performed the action to be incentivised with.
      */
-     func interstitial(_ interstitial: IMInterstitial!, rewardActionCompletedWithRewards rewards: [AnyHashable : Any]!) {
-        NSLog("InMobi Interstitial completed rewarded action : %@", rewards);
+    func interstitial(_ interstitial: IMInterstitial, rewardActionCompletedWithRewards rewards: [String : Any]) {
+        print("InMobi Interstitial completed rewarded action : \(rewards as AnyObject)");
     }
     
     /**
      * Notifies the delegate that the user will leave application context.
      */
-     func userWillLeaveApplication(from interstitial: IMInterstitial!) {
-        NSLog("User will leave application from InMobi Interstitial");
+    func userWillLeaveApplicationFromInterstitial(_ interstitial: IMInterstitial) {
+        print("User will leave application from InMobi Interstitial");
     }
     
     /**
      * Notifies the delegate that the interstitial ad Impressed.
      */
-    func interstitialAdImpressed(_ interstitial: IMInterstitial!) {
-        NSLog("InMobi Interstitial ad Impressed");
+    func interstitialAdImpressed(_ interstitial: IMInterstitial) {
+        print("InMobi Interstitial ad Impressed");
     }
 
     
