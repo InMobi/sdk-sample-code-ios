@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          *
          * For EU Region use the following init api to pass user consent for data collection, for GDPR Complaince.
          */
-        let conscentDict = [IM_GDPR_CONSENT_AVAILABLE : "true"]
+        let conscentDict = [IMCommonConstants.IM_GDPR_CONSENT_AVAILABLE : "true"]
         IMSdk.initWithAccountID(INMOBI_ACCOUNT_ID,
                                 consentDictionary: conscentDict,
                                 andCompletionHandler: { (error) in

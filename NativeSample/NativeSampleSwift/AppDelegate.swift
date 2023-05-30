@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import InMobiSDK.IMSdk
+import InMobiSDK
 let INMOBI_ACCOUNT_ID: String = "4028cb8b2c3a0b45012c406824e800ba"
 
 @UIApplicationMain
@@ -23,8 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          *
          * For EU Region use the following init api to pass user consent for data collection, for GDPR Complaince.
          */
-        let conscentDict: NSDictionary = [IM_GDPR_CONSENT_AVAILABLE : "true"]
-        IMSdk.initWithAccountID(INMOBI_ACCOUNT_ID, consentDictionary:conscentDict as? [AnyHashable : Any])
+        let conscentDict = [IMCommonConstants.IM_GDPR_CONSENT_AVAILABLE : "true"]
+        IMSdk.initWithAccountID(INMOBI_ACCOUNT_ID, consentDictionary: conscentDict, andCompletionHandler: { (error) in
+                if let err = error {
+                    print("\(err.localizedDescription)")
+                }
+        })
         /*
          * Enable logging for better debuggability. Please turn off the logs before submitting your App to the AppStore
          */

@@ -5,8 +5,7 @@
 //  Copyright © 2016 InMobi. All rights reserved.
 //
 
-@import InMobiSDK.IMBanner;
-@import InMobiSDK.IMBannerDelegate;
+@import InMobiSDK;
 
 #import <UIKit/UIKit.h>
 
