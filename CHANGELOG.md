@@ -2,6 +2,15 @@
 InMobi Monetization SDK for iOS
 ===================================
 
+Build 10.5.6 [28/June/2023]
+-------------
+- Support for U.S. data privacy laws
+    - APIs Added
+       New Class Added : IMPrivacyCompliance
+          @objc public static func setDoNotSell(_ doNotSell: Bool)
+          @objc public static func setUSPrivacyString(_ privacyString: String)
+- Support for Custom Product Pages
+
 Build 10.5.5 [25/May/2023]
 -------------
 - Adopt Swift Framework for SDK
