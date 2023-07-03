@@ -33,6 +33,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          * Enable logging for better debuggability. Please turn off the logs before submitting your App to the AppStore
          */
         IMSdk.setLogLevel(IMSDKLogLevel.debug);
+        
+        // Use the US Privacy Laws APIs to comply with privacy regulations
+        let US_PRIVACY_STRING = "<ENTER YOUR PRIVACY STRING HERE>"
+        IMPrivacyCompliance.setDoNotSell(true)
+        IMPrivacyCompliance.setUSPrivacyString(US_PRIVACY_STRING)
+        
         return true
     }
     

@@ -34,6 +34,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                         print("\(err.localizedDescription)")
                                     }
                                 })
+        
+        // Use the US Privacy Laws APIs to comply with privacy regulations
+        let US_PRIVACY_STRING = "<ENTER YOUR PRIVACY STRING HERE>"
+        IMPrivacyCompliance.setDoNotSell(true)
+        IMPrivacyCompliance.setUSPrivacyString(US_PRIVACY_STRING)
+        
         return true
     }
     
