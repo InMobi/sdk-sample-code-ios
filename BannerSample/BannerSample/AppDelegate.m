@@ -9,6 +9,7 @@
 
 #ifndef INMOBI_ACCOUNT_ID
 #define INMOBI_ACCOUNT_ID   @"4028cb8b2c3a0b45012c406824e800ba"
+#define US_PRIVACY_STRING   @"<ENTER YOUR PRIVACY STRING HERE>"
 #endif
 
 #import "AppDelegate.h"
@@ -44,6 +45,10 @@
      * Enable logging for better debuggability. Please turn off the logs before submitting your App to the AppStore
      */
     [IMSdk setLogLevel:IMSDKLogLevelDebug];
+    
+    // Use the US Privacy Laws APIs to comply with privacy regulations
+    [IMPrivacyCompliance setDoNotSell:YES];
+    [IMPrivacyCompliance setUSPrivacyString:US_PRIVACY_STRING];
     
     return YES;
 }

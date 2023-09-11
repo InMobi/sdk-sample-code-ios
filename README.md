@@ -32,6 +32,37 @@ These sample apps are provided under MIT license. For more information, please s
 
 ## Change logs
 
+Build 10.5.8 [07/Sep/2023]
+-------------
+- Support of User Ad Report
+- Support for movable Audio Icons
+- Bug Fixes
+    - APIs Added
+       New Class Added : IMMovableView
+          @objc public var isMovable
+       New Class Added : IMAudio
+           @objc public weak var delegate: IMAudioDelegate?
+           @objc public var placementId: Int64
+           @objc public var keywords: String?
+           @objc public var extras: [String: Any]?
+           @objc public var transitionAnimation: AnimationTransition
+           @objc public var contentUrl: String?
+           @objc public var creativeId: String?
+           @objc public init(frame: CGRect, placementId: Int64, delegate: IMAudioDelegate?)
+           @objc public func getAdMetaInfo() -> [String: Any]?
+           @objc public func load()
+           @objc public func show()
+           @objc public func cancel()
+
+Build 10.5.6 [28/June/2023]
+-------------
+- Support for U.S. data privacy laws
+    - APIs Added
+       New Class Added : IMPrivacyCompliance
+          @objc public static func setDoNotSell(_ doNotSell: Bool)
+          @objc public static func setUSPrivacyString(_ privacyString: String)
+- Support for Custom Product Pages
+
 Build 10.5.5 [25/May/2023]
 -------------
 - Adopt Swift Framework for SDK
