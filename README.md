@@ -6,9 +6,9 @@ Publicly available sample apps of InMobi providing simple integration steps. InM
 
 The following environment is required to run the Sample apps
 
-    Xcode 14.1 and above
+    Xcode 15.0 and above
     InMobi SDK 10.x.x
-    iOS 11.0 and above
+    iOS 12.0 and above
     
 Important: Make sure you have the latest version of pod installed after that you need to simply do
 
@@ -31,6 +31,66 @@ To run the sample apps, open any of the Ad Format's .xcodeproj file with Xcode 1
 These sample apps are provided under MIT license. For more information, please see the LICENSE file. For information about InMobi SDK's license, please see the InMobi folder.
 
 ## Change logs
+
+Build 10.8.0 [13/Nov/2024]
+-------------
+- Bug Fixes
+
+Build 10.7.8 [08/Oct/2024]
+-------------
+- Support for Publisher Signals.
+- Bug Fixes
+- New APIs Added
+    IMSDK
+    + @objc public class func putPublisherSignals(_ signals: [String: Any])
+    + @objc public class func getPublisherSignals() -> [String: Any]?
+    + @objc public class func resetPublisherSignals()
+- APIs Deprecated
+    IMBanner
+        - @objc public func cancel()
+    IMInterstitial
+        - @objc public func cancel()
+
+
+Build 10.7.5 [25/July/2024]
+-------------
+- Support for GPP
+- Bug Fixes
+
+Build 10.7.4 [14/June/2024]
+-------------
+- Bug Fixes
+- Existing API change
+    IMWatermark:
+        Updated init method
+            @objc public init(waterMarkImageData: Data)
+
+Build 10.7.2 [23/Apr/2024]
+-------------
+- Update to support Privacy Manifest detection by Apple App Store Connect
+- Technical Enhancement: Transitioned SDK framework from static to dynamic for improved performance and compatibility.
+
+Build 10.7.1 [20/Mar/2024]
+-------------
+- Bug Fixes
+
+Build 10.7.0 [13/Mar/2024]
+-------------
+- Inmobi SDK is supporting the guidelines proposed by Apple’s Privacy Manifest
+- Updated minimum supported version of Xcode to Xcode 15.0
+- Remove support for iOS 11.0
+- Upgraded OMSDK to v1.4.12
+- Bug Fixes
+
+Build 10.6.4 [07/Feb/2024]
+-------------
+- Improved ad loading & rendering performance in the full screen and video ad formats.
+- Upgraded OMSDK to v1.3.37
+- Bug Fixes
+
+Build 10.6.0 [19/Oct/2023]
+-------------
+- Bug Fixes
 
 Build 10.5.8 [07/Sep/2023]
 -------------
